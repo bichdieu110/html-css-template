@@ -57,3 +57,9 @@
     display: none;
   }
 }
+
+.u-tab-only {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}

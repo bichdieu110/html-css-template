@@ -6,7 +6,6 @@
   display: inline-block;
   position: relative;
   min-width: 100%;
-  background-color: #ddf;
 }
 
 .l-footer {
@@ -26,18 +25,9 @@
 }
 
 .l-topContent {
-  min-width: $pc_min_width;
-  max-width: $pc_max_width;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $pc_top_content_side_padding;
-  padding-left: $pc_top_content_side_padding;
-
-  @include mq_down(sp) {
-    min-width: auto;
-    padding-right: $sp_top_content_side_padding;
-    padding-left: $sp_top_content_side_padding;
-  }
+  display: flex;
+  // @include flexbox;
+  // @include justify-content(space-between);
 }
 
 .l-topSection {

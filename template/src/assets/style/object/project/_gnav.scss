@@ -1,14 +1,28 @@
 .p-gnav {
+  width: calc(100% - 241px);
+
   &_list {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
 
     &_item {
-      padding: 5px;
-      border: 1px solid #999;
+      padding: 36px 34px;
+      text-align: center;
 
-      &.is-logo {
-        width: 150px;
+      @include bp(tab) {
+        width: 100%;
+        border-bottom: #f0af55 1px solid;
+      }
+
+      a {
+        font-size: 1.7rem;
+
+        span {
+          display: block;
+          margin-top: 7px;
+
+          @include fs(10, 10);
+        }
       }
     }
   }
