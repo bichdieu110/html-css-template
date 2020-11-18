@@ -3,10 +3,25 @@
 // 共通
 // --------------------------------
 .l-header {
-  display: inline-block;
-  position: relative;
-  min-width: 100%;
-  background-color: #ddf;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+
+  &_container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    &_logo {
+      max-width: 241px;
+      margin-left: 53px;
+      padding: 17px 0 0;
+    }
+  }
 }
 
 .l-footer {
