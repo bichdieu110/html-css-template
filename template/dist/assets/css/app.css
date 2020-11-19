@@ -119,7 +119,8 @@ body {
   position: relative;
   width: 100%;
   color: #101e2a;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "NotoSansJP-Regular", "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
   font-size: 1.4rem;
   line-height: 1.5;
   word-break: break-all;
@@ -127,6 +128,35 @@ body {
 
 a {
   text-decoration: none;
+  transition: 0.2s all ease-in-out;
+}
+
+@font-face {
+  src: url("/assets/fonts/NotoSansJP-Bold.otf") format("opentype");
+  font-family: 'NotoSansJP-Bold';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("/assets/fonts/NotoSansJP-Medium.otf") format("opentype");
+  font-family: 'NotoSansJP-Medium';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("/assets/fonts/NotoSansJP-Regular.otf") format("opentype");
+  font-family: 'NotoSansJP-Regular';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("/assets/fonts/NotoSansJP-Light.otf") format("opentype");
+  font-family: 'NotoSansJP-Light';
+  font-style: normal;
+  font-weight: normal;
 }
 
 .l-header {
@@ -322,14 +352,14 @@ a {
 
 .p-gnav_list_item {
   display: inline-block;
-  padding: 36px 30px 0;
   text-align: center;
+  transition: all 0.4s ease 0s;
 }
 
 .p-gnav_list_item a {
   display: block;
   position: relative;
-  padding-bottom: 29px;
+  padding: 36px 30px 29px 30px;
   color: #000;
   font-size: 1.7rem;
   font-weight: 700;
@@ -340,9 +370,85 @@ a {
 .p-gnav_list_item a span {
   display: block;
   margin-top: 7px;
-  font-size: 0.625rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
+}
+
+.p-gnav_list_item .c-dropdown_submenu {
+  display: flex;
+  visibility: hidden;
+  z-index: 33;
+  position: absolute;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 153px;
+  margin: 0 auto;
+  padding: 15px 50px;
+  transform: rotateX(90deg);
+  transform-origin: top center;
+  background-color: #252526;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.p-gnav_list_item .c-dropdown_submenu_item-type:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 19%;
+  margin-right: 84px;
+  padding: 0 20px;
+  border-right: 1px solid #515154;
+  color: #fff;
+}
+
+.p-gnav_list_item .c-dropdown_submenu_item-type:first-child a {
+  font-size: 2.2rem;
+}
+
+.p-gnav_list_item .c-dropdown_submenu_item-type:first-child a span {
+  margin-top: 7px;
+  color: #dad4d4;
+}
+
+.p-gnav_list_item .c-dropdown_submenu_item-type:first-child a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.p-gnav_list_item .c-dropdown_submenu_item-type a {
+  display: initial;
+  padding: 0 0 2px 0;
+  border-bottom: 1px solid transparent;
+  color: white;
+}
+
+.p-gnav_list_item .c-dropdown_submenu_item-type a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.p-gnav_list_item.is-active, .p-gnav_list_item.c-orange {
+  background-color: #ea8105;
+}
+
+.p-gnav_list_item.is-active > a, .p-gnav_list_item.c-orange > a {
+  color: white;
+}
+
+.p-gnav_list_item:hover {
+  background-color: #ea8105;
+}
+
+.p-gnav_list_item:hover > a {
+  color: white;
+}
+
+.p-gnav_list_item:hover .c-dropdown_submenu {
+  visibility: visible;
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .p-section {
@@ -371,10 +477,11 @@ a {
 .p-mainVisual {
   position: relative;
   width: 100%;
-  min-width: 1000px;
-  min-height: 400px;
-  max-height: 675px;
+  padding-bottom: 120px;
   overflow: hidden;
+  background-color: #ededf0;
+  color: white;
+  animation: wrapfade 0.5s linear 2s both;
 }
 
 @media screen and (max-width: 768px) {
@@ -385,84 +492,332 @@ a {
   }
 }
 
-.p-mainVisual::before {
-  display: block;
-  padding-top: 56.25%;
-  content: "";
-}
-
-@media screen and (max-width: 768px) {
-  .p-mainVisual::before {
-    padding-top: 56.25%;
-  }
-}
-
-.p-mainVisual_bg {
+.p-mainVisual_box {
   display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
   align-items: center;
-  width: 100%;
+  height: 800px;
+  background-image: url(../images/bg_visual.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
-.p-mainVisual_bg > img {
-  width: 100%;
-}
-
-.p-mainVisual_content {
+.p-mainVisual_box_content {
   display: flex;
+  z-index: 99;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  right: 0;
+  left: 0;
+  flex-flow: column wrap;
   min-width: 1000px;
   max-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px;
-  transform: translateX(-50%);
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .p-mainVisual_content {
+  .p-mainVisual_box_content {
     min-width: auto;
     padding-right: 3.5%;
     padding-left: 3.5%;
   }
 }
 
-.p-mainVisual_content_title {
+.p-mainVisual_box_content_title {
   z-index: 3;
-  font-size: 60px;
+  margin-bottom: 20px;
+  font-size: 74px;
   font-weight: bold;
+  letter-spacing: 9px;
 }
 
 @media screen and (max-width: 768px) {
-  .p-mainVisual_content_title {
+  .p-mainVisual_box_content_title {
     font-size: 40px;
   }
 }
 
-.p-mainVisual_content_desc {
+.p-mainVisual_box_content_desc {
   z-index: 2;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
+  letter-spacing: 4px;
 }
 
 @media screen and (max-width: 768px) {
-  .p-mainVisual_content_desc {
+  .p-mainVisual_box_content_desc {
     font-size: 20px;
   }
+}
+
+.p-mainVisual_box_cover {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 890px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.p-mainVisual_box_cover .c-empty_base1 {
+  position: absolute;
+  right: 0;
+  width: 900px;
+  height: 100%;
+  transform: skewX(39deg);
+  transform-origin: top;
+  background-color: #d37117;
+  animation: base1 3s ease-out 2.7s both;
+  opacity: 0.8;
+  will-change: right;
+}
+
+.p-mainVisual_box_cover .c-empty_base2 {
+  position: absolute;
+  right: 0;
+  width: 580px;
+  height: 100%;
+  transform: skewX(-12deg);
+  transform-origin: bottom;
+  background-color: #ea8104;
+  animation: base2 3.2s ease-out 2.9s both;
+  opacity: 0.8;
+  will-change: right;
+}
+
+.p-mainVisual_box_cover .c-empty_particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.p-mainVisual_box_cover .c-empty_obj1 {
+  z-index: 10;
+  position: absolute;
+  right: 440px;
+  bottom: 210px;
+  width: 130px;
+  height: 42%;
+  overflow: hidden;
+  transform: skewX(-15deg);
+  transform-origin: bottom;
+  background: linear-gradient(to top, #e88200, #ffa93d);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  animation: obj1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.3s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj1_obj1s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewX(21deg);
+  transform-origin: top;
+  background: linear-gradient(to top, #ffa93d, #e88200);
+  animation: obj1s 0.4s ease-out 4.7s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj2 {
+  z-index: 12;
+  position: absolute;
+  top: -10px;
+  right: 330px;
+  width: 130px;
+  height: 39%;
+  overflow: hidden;
+  transform: skewX(15deg);
+  transform-origin: top;
+  background: linear-gradient(to top, #e88200, #ffa93d);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  animation: obj2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.5s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj2_obj2s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 500px;
+  transform: skewX(-22deg);
+  transform-origin: top;
+  background: linear-gradient(to top, #ffa93d, #e88200);
+  animation: obj1s 0.4s cubic-bezier(0.33, 1, 0.68, 1) 4.9s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj3 {
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+  right: 170px;
+  width: 170px;
+  height: 60%;
+  overflow: hidden;
+  transform: skewX(-15deg);
+  transform-origin: bottom;
+  background: linear-gradient(to top, #e88200, #ffa93d);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  animation: obj3 2s cubic-bezier(0.32, 0, 0.67, 0) 4.7s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj3_obj3s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewX(21deg);
+  transform-origin: top;
+  background: linear-gradient(to top, #ffa93d, #e88200);
+  animation: obj1s 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.1s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj4 {
+  z-index: 11;
+  position: absolute;
+  right: 100px;
+  bottom: -50px;
+  width: 200px;
+  height: 62%;
+  overflow: hidden;
+  transform: skewX(15deg);
+  transform-origin: bottom;
+  background: linear-gradient(to top, #e88200, #ffa93d);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  animation: obj4 2s cubic-bezier(0.32, 0, 0.67, 0) 4.9s both;
+  opacity: 1;
+  will-change: height;
+}
+
+.p-mainVisual_box_cover .c-empty_obj4_obj4s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 500px;
+  transform: skewX(-19deg);
+  transform-origin: top;
+  background: linear-gradient(to top, #ffa93d, #e88200);
+  animation: obj1s 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.3s both;
+  opacity: 1;
+  will-change: height;
 }
 
 .p-mainVisual.is-fixContent .p-mainVisual_bg {
   left: 50%;
   max-width: 1200px;
   transform: translateX(-50%);
+}
+
+@keyframes wrapfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes base1 {
+  0% {
+    right: -900px;
+    opacity: 0;
+  }
+  10% {
+    right: -15px;
+    opacity: 0.8;
+  }
+  100% {
+    right: 0;
+    opacity: 0.8;
+  }
+}
+
+@keyframes base2 {
+  0% {
+    right: -580px;
+    opacity: 0;
+  }
+  10% {
+    right: -15px;
+    opacity: 0.8;
+  }
+  100% {
+    right: 0;
+    opacity: 0.8;
+  }
+}
+
+@keyframes obj1 {
+  0% {
+    transform: skewX(-15deg) scale(1.3, 0);
+  }
+  27% {
+    transform: skewX(-15deg) scale(1.03, 1.03);
+  }
+  100% {
+    transform: skewX(-15deg) scale(1, 1);
+  }
+}
+
+@keyframes obj1s {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes obj2 {
+  0% {
+    transform: skewX(15deg) scale(1.3, 0);
+  }
+  27% {
+    transform: skewX(15deg) scale(1.03, 1.03);
+  }
+  100% {
+    transform: skewX(15deg) scale(1, 1);
+  }
+}
+
+@keyframes obj3 {
+  0% {
+    transform: skewX(-15deg) scale(1.3, 0);
+  }
+  27% {
+    transform: skewX(-15deg) scale(1.03, 1.03);
+  }
+  100% {
+    transform: skewX(-15deg) scale(1, 1);
+  }
+}
+
+@keyframes obj4 {
+  0% {
+    transform: skewX(15deg) scale(1.3, 0);
+  }
+  27% {
+    transform: skewX(15deg) scale(1.03, 1.03);
+  }
+  100% {
+    transform: skewX(15deg) scale(1, 1);
+  }
 }
 
 .p-mainSection {

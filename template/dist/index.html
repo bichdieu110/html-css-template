@@ -18,9 +18,9 @@
   <meta property="fb:app_id" content="" />
 
   <link rel="stylesheet" href="assets/css/app.css" />
-
-  <script>
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="./assets/js/particles.min.js" defer></script>
+  <script src="./assets/js/particlesJS.js" defer></script>
 </head>
 
 <body>
@@ -35,10 +35,18 @@
         <nav class="p-gnav">
           <ul class="p-gnav_list">
             <li class="p-gnav_list_item">
-              <a class="hr" href="#">News<span>お知らせ</span></a>
+              <a href="#">News<span>お知らせ</span></a>
             </li>
-            <li class="p-gnav_list_item">
+            <li class="p-gnav_list_item c-dropdown">
                 <a href="#">Company<span>私たちについて</span></a>
+                <ul class="c-dropdown_submenu">
+                  <li class="c-dropdown_submenu_item-type"><a href="#">Company<span>私たちについて</span></a></li>
+                  <li class="c-dropdown_submenu_item-type"><a href="#">あいさつ</a></li>
+                  <li class="c-dropdown_submenu_item-type"><a href="#">企業理念</a></li>
+                  <li class="c-dropdown_submenu_item-type"><a href="#">会社概要</a></li>
+                  <li class="c-dropdown_submenu_item-type"><a href="#">保護ポリシー</a></li>
+                  <li class="c-dropdown_submenu_item-type"><a href="#">アクセス</a></li>
+                </ul>
             </li>
             <li class="p-gnav_list_item">
                 <a href="#">Service<span>ソリューション/製品</span></a>
@@ -52,7 +60,7 @@
             <li class="p-gnav_list_item">
                 <a href="#">Career<span>採用情報</span></a>
             </li>
-            <li class="p-gnav_list_item">
+            <li class="p-gnav_list_item c-orange is-active">
                 <a href="#">Contact<span>お問い合わせ</span></a>
             </li>
           </ul>
@@ -62,18 +70,29 @@
   </header>
 
   <div class="p-mainVisual">
-    <div class="p-mainVisual_bg">
-      <img src="assets/images/visual_1600x900.png">
-    </div>
-    <div class="p-mainVisual_content">
-      <h1 class="p-mainVisual_content_title">
-        Site Visual
-      </h1>
-      <div class="p-mainVisual_content_desc">
-        Hello World!<br>
-        This Visual is window width inner<br>
-        ウインドウ幅に合わせたvisual<br>
-        コンテンツ幅までは、page_templateの方で
+    <div class="p-mainVisual_box">
+      <div class="p-mainVisual_box_content">
+        <h1 class="p-mainVisual_box_content_title">テクノロジーと感動を<br>「かたち」に</h1>
+        <p class="p-mainVisual_box_content_desc">
+          スピードと飛躍的技術がもたらすイノベーションを鍵に<br>お客様の次世代を開く一歩を支援する企業となる。
+        </p>
+      </div>
+      <div class="p-mainVisual_box_cover c-empty">
+        <div class="c-empty_base1"></div>
+        <div class="c-empty_base2"></div>
+        <div class="c-empty_particles" id="particles-js"><canvas class="particles-js-canvas-el" width="1349" height="680" style="width: 100%; height: 100%;"></canvas></div>
+        <div class="c-empty_obj1">
+          <div class="c-empty_obj1_obj1s"></div>
+        </div>
+        <div class="c-empty_obj2">
+          <div class="c-empty_obj2_obj2s"></div>
+        </div>
+        <div class="c-empty_obj3">
+          <div class="c-empty_obj3_obj3s"></div>
+        </div>
+        <div class="c-empty_obj4">
+          <div class="c-empty_obj4_obj4s"></div>
+        </div>
       </div>
     </div>
   </div>
