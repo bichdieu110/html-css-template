@@ -1,6 +1,46 @@
 .p-header {
-  display: inline-block;
-  position: relative;
-  min-width: 100%;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include bp(tab) {
+    padding: 10px;
+  }
+
+  &_logo {
+    width: 240px;
+    margin-left: 50px;
+    @include bp(tab) {
+      margin: 0;
+    }
+  }
+
+  &_nav {
+    &_list {
+      display: flex;
+      // flex-wrap: wrap;
+      &_item {
+        padding: 20px 23px;
+        text-align: center;
+        a {
+          font-weight: bold;
+          color: $color_gray;
+          font-size: 17px;
+        }
+        span {
+          font-weight: normal;
+          color: $color_gray_light;
+          font-size: 10px;
+        }
+        &_last {
+          background: $color_orange;
+          a {
+            color: $color_white;
+          }
+          span {
+            color: $color_white;
+          }
+        }
+      }
+    }
+  }
 }

@@ -7,14 +7,12 @@
   // デフォルトオフ
   "css.validate": false,
   "scss.validate": false,
-
   "[css]": {
     "editor.formatOnSave": false
   },
   "[scss]": {
     "editor.formatOnSave": false
   },
-
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   }

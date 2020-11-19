@@ -5,8 +5,9 @@ html {
 body {
   position: relative;
   width: 100%;
-  color: $color_primary;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: $color_font_base;
+  // font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: $global-font-family;
   font-size: 1.4rem;
   line-height: 1.5;
   word-break: break-all;

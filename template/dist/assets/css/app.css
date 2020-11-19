@@ -118,8 +118,8 @@ html {
 body {
   position: relative;
   width: 100%;
-  color: #101e2a;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #535050;
+  font-family: "NotoSansJP-Regular", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   word-break: break-all;
@@ -129,11 +129,47 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  src: url("../../assets/fonts/NotoSansJP-Bold.otf") format("opentype");
+  font-family: 'NotoSansJP-Bold';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/NotoSansJP-Medium.otf") format("opentype");
+  font-family: 'NotoSansJP-Medium';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/NotoSansJP-Regular.otf") format("opentype");
+  font-family: 'NotoSansJP-Regular';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../../assets/NotoSansJP-Light.otf") format("opentype");
+  font-family: 'NotoSansJP-Light';
+  font-style: normal;
+  font-weight: normal;
+}
+
 .l-header {
-  display: inline-block;
-  position: relative;
-  min-width: 100%;
-  background-color: #ddf;
+  box-sizing: border-box;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 90px;
+  background: #fff;
+}
+
+.l-main {
+  margin-top: 90px;
 }
 
 .l-footer {
@@ -235,6 +271,25 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .only-pc {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .only-sp {
+    display: none !important;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .c-button {
   display: inline-block;
   width: 200px;
@@ -257,6 +312,18 @@ a {
   opacity: 0.62;
 }
 
+.c-read-more {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.c-read-more a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
 .c-pageHeading {
   margin-bottom: 30px;
 }
@@ -277,6 +344,19 @@ a {
   font-weight: bold;
 }
 
+.c-box-heading {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.c-box-heading_sub {
+  color: #898989;
+  font-size: 15px;
+}
+
 .c-paragraph {
   font-size: 18px;
   line-height: 1.6;
@@ -290,10 +370,59 @@ a {
 }
 
 .p-header {
-  display: inline-block;
-  position: relative;
-  min-width: 100%;
-  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .p-header {
+    padding: 10px;
+  }
+}
+
+.p-header_logo {
+  width: 240px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .p-header_logo {
+    margin: 0;
+  }
+}
+
+.p-header_nav_list {
+  display: flex;
+}
+
+.p-header_nav_list_item {
+  padding: 20px 23px;
+  text-align: center;
+}
+
+.p-header_nav_list_item a {
+  color: #463031;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.p-header_nav_list_item span {
+  color: #898989;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.p-header_nav_list_item_last {
+  background: #ea8105;
+}
+
+.p-header_nav_list_item_last a {
+  color: #fff;
+}
+
+.p-header_nav_list_item_last span {
+  color: #fff;
 }
 
 .p-footer {

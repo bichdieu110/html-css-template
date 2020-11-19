@@ -19,3 +19,14 @@
     opacity: 0.62;
   }
 }
+
+.c-read-more {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  a {
+    color: $color_white;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}

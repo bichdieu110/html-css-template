@@ -1,0 +1,5 @@
+@mixin fs($fontsize: 16, $lineheight: 26, $base: 16) {
+  font-size: $fontsize + px;
+  font-size: ($fontsize / $base) * 1rem;
+  line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
+}

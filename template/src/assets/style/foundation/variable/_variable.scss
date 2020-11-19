@@ -30,6 +30,28 @@ $pc_page_sidebar_margin: 20px;
 $color_primary: #101e2a;
 $color_error: #ff1f00;
 
-$color_font_base: #232323;
-
 $color_bg_content: #eee;
+
+$color_font_base: #535050;
+$color_white: #fff;
+$color_black: #000;
+$color_red: #F84646;
+$color_gray: #463031;
+$color_gray_light: #898989;
+$color_orange: #ea8105;
+$bg_main: #eae9e9;
+$color_dark_gray: #252526;
+
+// index
+$header_index : 999;
+
+// --------------------
+// Global Variables
+// --------------------
+$global-font-size: 14px;
+$global-font-family: 'NotoSansJP-Regular', sans-serif;
+$font-family-notosansjplight: "NotoSansJP-Light", sans-serif;
+$font-family-notosansjpmedium: "NotoSansJP-Medium", sans-serif;
+$font-family-notosansjpbold: "NotoSansJP-Bold", sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$spacer: 16px;

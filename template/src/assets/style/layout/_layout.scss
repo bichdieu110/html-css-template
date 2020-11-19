@@ -3,10 +3,18 @@
 // 共通
 // --------------------------------
 .l-header {
-  display: inline-block;
-  position: relative;
-  min-width: 100%;
-  background-color: #ddf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  background: $color_white;
+  z-index: $header_index;
+  height: 90px;
+}
+
+.l-main{
+  margin-top: 90px;
 }
 
 .l-footer {
@@ -106,4 +114,23 @@
     padding-right: $sp_page_content_side_padding;
     padding-left: $sp_page_content_side_padding;
   }
+}
+
+.only-pc {
+  @include bp(tab) {
+    display: none !important;
+  }
+}
+
+.only-sp {
+  @include bp(pc) {
+    display: none !important;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
 }

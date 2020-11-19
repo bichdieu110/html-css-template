@@ -15,3 +15,15 @@
     font-weight: bold;
   }
 }
+
+.c-box-heading {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 24px;
+  &_sub {
+    font-size: 15px;
+    color: $color_gray_light;
+  }
+}

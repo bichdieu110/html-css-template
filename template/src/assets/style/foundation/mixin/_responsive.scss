@@ -30,3 +30,59 @@ $breakpoint_down: (
 //     color: red;
 //   }
 // }
+
+// breakpoint settings ------------------------------
+@mixin bp($bp_1: 0, $bp_2: 0) {
+  $bp_main: 400;
+  $bp_sub: 768;
+
+  @if $bp_1== "sp" {
+    @media (max-width: #{$bp_main}px) {
+      @content;
+    }
+  }
+
+  @else if $bp_1=='tab' {
+    @media (max-width: #{$bp_sub}px) {
+      @content;
+    }
+  }
+
+  @else if $bp_1=='pc' {
+    @media (min-width: #{$bp_sub + 1}px) {
+      @content;
+    }
+  }
+
+  @else if $bp_1=='ls' {
+    @media (orientation: landscape) {
+      @content;
+    }
+  }
+
+  @else if $bp_1=='pt' {
+    @media (orientation: portrait) {
+      @content;
+    }
+  }
+
+  @else {
+    @if $bp_1 !=0 and $bp_2 !=0 {
+      @media (min-width: $bp_1) and (max-width: $bp_2) {
+        @content;
+      }
+    }
+
+    @else if $bp_1==0 {
+      @media (max-width: $bp_2) {
+        @content;
+      }
+    }
+
+    @else if $bp_2==0 {
+      @media (min-width: $bp_1) {
+        @content;
+      }
+    }
+  }
+}
