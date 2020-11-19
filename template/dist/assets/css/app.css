@@ -75,6 +75,7 @@ section {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -174,10 +175,15 @@ a {
 }
 
 .l-pageMain {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
 .l-pageSidebar {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 300px;
   margin-right: 20px;
@@ -192,6 +198,16 @@ a {
 }
 
 .l-pageBody {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row-reverse;
   align-items: stretch;
@@ -204,6 +220,10 @@ a {
 }
 
 .l-pageBody .is-sidebar-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -236,6 +256,7 @@ a {
 }
 
 .c-button {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
   display: inline-block;
   width: 200px;
   height: 54px;
@@ -301,6 +322,12 @@ a {
 }
 
 .p-gnav_list {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: flex-end;
 }
@@ -367,6 +394,12 @@ a {
 }
 
 .p-mainVisual_bg {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0;
@@ -381,6 +414,18 @@ a {
 }
 
 .p-mainVisual_content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0;
@@ -429,6 +474,8 @@ a {
 }
 
 .p-mainVisual.is-fixContent .p-mainVisual_bg {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   left: 50%;
   max-width: 1200px;
   transform: translateX(-50%);
