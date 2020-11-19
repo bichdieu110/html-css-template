@@ -3,10 +3,14 @@
 
   &_list {
     display: flex;
+    height: 100%;
     justify-content: flex-end;
 
+    @include bp(0, 1200px) {
+      display: none;
+    }
+
     &_item {
-      padding: 36px 34px;
       text-align: center;
 
       @include bp(tab) {
@@ -15,7 +19,16 @@
       }
 
       a {
-        font-size: 1.7rem;
+        display: block;
+        min-width: 145px;
+        padding: 36px 34px;
+
+        &:hover {
+          background-color: #eb8205;
+          color: #fff;
+        }
+
+        @include fs(17, 17);
 
         span {
           display: block;

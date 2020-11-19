@@ -8,6 +8,7 @@ const autoprefixer = require('autoprefixer');
 const cssdeclsort = require('css-declaration-sorter');
 const sassGlob = require('gulp-sass-glob'); // @importを纏めて指定
 const browserSync = require('browser-sync');
+wait = require('gulp-wait'),
 
 sass.compiler = require('node-sass');
 
@@ -34,6 +35,7 @@ const compileSass = done => {
     .pipe(plumber({
       errorHandler: notify.onError('Error: <%= error.message %>')
     }))
+    .pipe(wait(500))
     .pipe(sassGlob())
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(postcss(postcssPlugins))

@@ -2,8 +2,9 @@
   position: relative;
   width: 100%;
   min-width: $pc_min_width;
-  min-height: $pc_top_visual_min_height;
-  max-height: $pc_top_visual_max_height;
+  height: setvwpc(890px);
+  // min-height: $pc_top_visual_min_height;
+  // max-height: $pc_top_visual_max_height;
   overflow: hidden;
 
   @include mq_down(sp) {
@@ -30,6 +31,11 @@
     left: 0;
     align-items: center;
     width: 100%;
+    height: 100%;
+    background-image: url("../images/common/slide.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     > img {
       width: 100%;
@@ -39,7 +45,7 @@
   &_content {
     display: flex;
     position: absolute;
-    top: 0;
+    top: setvwpc(-150px);
     bottom: 0;
     left: 50%;
     flex-direction: column;
@@ -50,6 +56,7 @@
     padding-right: $pc_top_content_side_padding;
     padding-left: $pc_top_content_side_padding;
     transform: translateX(-50%);
+    color: #fff;
 
     @include mq_down(sp) {
       min-width: auto;
@@ -59,21 +66,65 @@
 
     &_title {
       z-index: 3;
-      font-size: 60px;
       font-weight: bold;
 
+      @include fs(74, 111);
+
       @include mq_down(sp) {
-        font-size: 40px;
+        @include fs(20, 30);
       }
     }
 
     &_desc {
       z-index: 2;
-      font-size: 30px;
       font-weight: bold;
 
-      @include mq_down(sp) {
-        font-size: 20px;
+      @include fs(20, 40);
+
+      @include bp(tab) {
+        @include fs-vwsp(12, 18);
+      }
+    }
+
+    &_news {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      bottom: 5vw;
+      left: 0;
+      padding: 27px 37px;
+      background-color: #fff;
+      box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
+
+      @include bp(tab) {
+        display: none;
+      }
+
+      b {
+        margin-right: 10px;
+        color: #000;
+        letter-spacing: 1px;
+
+        @include fs(16, 20);
+      }
+
+      span {
+        margin-right: 14px;
+        color: #e88200;
+        letter-spacing: 1px;
+
+        @include fs(14, 20);
+      }
+
+      a {
+        letter-spacing: 2.5px;
+
+        @include fs(14, 20);
+
+        @include bp(tab) {
+          display: block;
+          width: 100%;
+        }
       }
     }
   }

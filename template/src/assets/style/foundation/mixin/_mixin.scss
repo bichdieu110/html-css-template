@@ -113,6 +113,11 @@
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
+@mixin fs-vwsp($fontsize: 16, $lineheight: 26, $area-width: 320) {
+  font-size: #{($fontsize / $area-width) * 100}vw;
+  line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
+}
+
 @mixin fontanti {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

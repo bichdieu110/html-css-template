@@ -111,15 +111,49 @@ img {
   content: "";
 }
 
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+@font-face {
+  src: url("assets/fonts/NotoSansJP-Bold.otf") format("opentype");
+  font-family: 'NotoSansJP-Bold';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("assets/fonts/NotoSansJP-Medium.otf") format("opentype");
+  font-family: 'NotoSansJP-Medium';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("/assets/fonts/NotoSansJP-Regular.otf") format("opentype");
+  font-family: 'NotoSansJP-Regular';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("assets/fonts/NotoSansJP-Light.otf") format("opentype");
+  font-family: 'NotoSansJP-Light';
+  font-style: normal;
+  font-weight: normal;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: 16px;
 }
 
 body {
   position: relative;
   width: 100%;
-  color: #101e2a;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #2d2d2d;
+  font-family: "NotoSansJP-Regular", sans-serif;
+  font-feature-settings: 'palt' 1;
   font-size: 1.4rem;
   line-height: 1.5;
   word-break: break-all;
@@ -303,10 +337,16 @@ a {
 .p-gnav_list {
   display: flex;
   justify-content: flex-end;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .p-gnav_list {
+    display: none;
+  }
 }
 
 .p-gnav_list_item {
-  padding: 36px 34px;
   text-align: center;
 }
 
@@ -318,7 +358,17 @@ a {
 }
 
 .p-gnav_list_item a {
-  font-size: 1.7rem;
+  display: block;
+  min-width: 145px;
+  padding: 36px 34px;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1;
+}
+
+.p-gnav_list_item a:hover {
+  background-color: #eb8205;
+  color: #fff;
 }
 
 .p-gnav_list_item a span {
@@ -356,8 +406,7 @@ a {
   position: relative;
   width: 100%;
   min-width: 1000px;
-  min-height: 400px;
-  max-height: 675px;
+  height: 61.80556vw;
   overflow: hidden;
 }
 
@@ -389,6 +438,11 @@ a {
   left: 0;
   align-items: center;
   width: 100%;
+  height: 100%;
+  background-image: url("../images/common/slide.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p-mainVisual_bg > img {
@@ -398,7 +452,7 @@ a {
 .p-mainVisual_content {
   display: flex;
   position: absolute;
-  top: 0;
+  top: -10.41667vw;
   bottom: 0;
   left: 50%;
   flex-direction: column;
@@ -409,6 +463,7 @@ a {
   padding-right: 20px;
   padding-left: 20px;
   transform: translateX(-50%);
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -421,25 +476,81 @@ a {
 
 .p-mainVisual_content_title {
   z-index: 3;
-  font-size: 60px;
+  font-size: 74px;
+  font-size: 4.625rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
   .p-mainVisual_content_title {
-    font-size: 40px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
   }
 }
 
 .p-mainVisual_content_desc {
   z-index: 2;
-  font-size: 30px;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
+  line-height: 2;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .p-mainVisual_content_desc {
-    font-size: 20px;
+    font-size: 3.75vw;
+    line-height: 1.5;
+  }
+}
+
+.p-mainVisual_content_news {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 5vw;
+  left: 0;
+  padding: 27px 37px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
+}
+
+@media (max-width: 768px) {
+  .p-mainVisual_content_news {
+    display: none;
+  }
+}
+
+.p-mainVisual_content_news b {
+  margin-right: 10px;
+  color: #000;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+.p-mainVisual_content_news span {
+  margin-right: 14px;
+  color: #e88200;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  line-height: 1.429;
+}
+
+.p-mainVisual_content_news a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 2.5px;
+  line-height: 1.429;
+}
+
+@media (max-width: 768px) {
+  .p-mainVisual_content_news a {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -517,7 +628,7 @@ a {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .u-tab-only {
     display: none;
   }
