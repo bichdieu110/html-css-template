@@ -372,7 +372,7 @@ a {
   line-height: 1;
 }
 
-.p-gnav_list_item a:hover {
+.p-gnav_list_item a.is-active, .p-gnav_list_item a:hover {
   background-color: #eb8205;
   color: #fff;
 }
