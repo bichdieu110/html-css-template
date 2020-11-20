@@ -25,8 +25,14 @@
   align-items: center;
   margin-top: 20px;
   a {
-    color: $color_white;
     margin-right: 10px;
     font-size: 14px;
+  }
+  &_link{
+    color: $color_white;
+  }
+  &:after {
+    content: url("../../assets/images/icon/btn-read-more.png");
+    display: inline-block;
   }
 }

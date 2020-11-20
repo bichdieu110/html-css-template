@@ -314,8 +314,16 @@ a {
 
 .c-read-more a {
   margin-right: 10px;
-  color: #fff;
   font-size: 14px;
+}
+
+.c-read-more_link {
+  color: #fff;
+}
+
+.c-read-more:after {
+  display: inline-block;
+  content: url("../../assets/images/icon/btn-read-more.png");
 }
 
 .c-pageHeading {

@@ -403,3 +403,183 @@
     }
   }
 }
+
+.p-career {
+  background: url("../../assets/images/common/bg-career.png") no-repeat;
+  padding: 80px 0;
+  background-size: cover;
+  &_box {
+    text-align: center;
+    background: $color_dark_gray;
+    padding: 80px 0;
+    &_title {
+      color: $color_white;
+      // @include fs(34, 0);
+      font-size: 34px;
+      font-weight: bold;
+      @include bp(tab) {
+        // @include fs(26, 0);
+        font-size: 26px;
+      }
+    }
+    &_sub-title {
+      // @include fs(15);
+      font-size: 15px;
+      color: $color_gray_light;
+      @include bp(tab) {
+        // @include fs(13);
+        font-size: 13px;
+      }
+    }
+    &_content {
+      color: $color_gray_light;
+      // @include fs(16);
+      font-size: 16px;
+      margin: 50px 0;
+      @include bp(tab) {
+        margin: 30px;
+        // @include fs(14);
+        font-size: 14px;
+      }
+    }
+  }
+  &_read-more {
+    justify-content: center;
+  }
+}
+
+.p-news {
+  padding: 100px 0;
+  &_title {
+    font-weight: bold;
+    // @include fs(34, 0);
+    font-size: 34px;
+    text-align: center;
+  }
+  &_sub-title {
+    @include fs(15);
+    color: $color-gray-light;
+    text-align: center;
+  }
+  &_list {
+    &_item {
+      display: flex;
+      align-items: center;
+      border-bottom: solid 1px $color_gray_light;
+      padding: 30px 20px;
+      @include bp(tab) {
+        flex-direction: column;
+        align-items: normal;
+      }
+      &_date {
+        // @include fs(14);
+        font-size: 14px;
+        font-weight: bold;
+      }
+      &_btn-news {
+        // @include fs(12);
+        font-size: 12px;
+        color: $color_orange;
+        border: solid 1px $color_orange;
+        text-align: center;
+        width: 180px;
+        margin: 0 20px;
+        @include bp(tab) {
+          margin: 20px 0;
+        }
+      }
+      &_title {
+        @include fs(14);
+      }
+    }
+  }
+  &_read-more {
+    justify-content: center;
+    margin-top: 70px;
+    &_link {
+      color: $color_black;
+    }
+  }
+}
+
+.p-column {
+  background: $bg_main;
+  &_background {
+    padding: 70px 0;
+    background-repeat: no-repeat;
+    background-position: left;
+    background: url("../../assets/images/common/column-bg.png") no-repeat;
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+  }
+  &_sub-title {
+    font-size: 15px;
+    color: $color_gray_light;
+    text-align: center;
+  }
+
+  &_list {
+    margin: 30px 0;
+    display: flex;
+    @include bp(tab) {
+      flex-direction: column;
+    }
+    &_item {
+      width: 33.333%;
+      position: relative;
+      @include bp(tab) {
+        width: 100%;
+      }
+      &_img-wrapper {
+        @include bp(tab) {
+          width: 100%;
+        }
+        &_img{
+          @include bp(tab) {
+            width: 100%;
+          }
+        }
+      }
+      &_box {
+        position: absolute;
+        background: $bg_main;
+        right: 0;
+        bottom: -60px;
+        width: 65%;
+        padding: 10px 30px 10px 10px;
+        @include bp(tab) {
+          position: unset;
+          width: 100%;
+        }
+        &_date {
+          color: $color_orange;
+          font-weight: bold;
+          font-size: 12px;
+        }
+        &_title {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &_content {
+          font-size: 14px;
+        }
+        &_new {
+          font-size: 12px;
+          font-weight: bold;
+          color: $color_orange;
+        }
+      }
+      &_category {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $color_orange;
+        color: $color_white;
+        padding: 0 10px;
+      }
+    }
+  }
+}
