@@ -1,4 +1,4 @@
-particlesJS("particles-js", {
+particlesJS("ji_particles", {
     particles: {
         number: { value: 20, density: { enable: true, value_area: 1000 } },
         color: { value: "#ffa83d" },
@@ -21,67 +21,3 @@ particlesJS("particles-js", {
     },
     retina_detect: true,
 });
-// var image1 = document.getElementsByClassName('paraImage1');
-// new simpleParallax(image1, {
-//     delay: 2,
-//     scale: 1.1,
-//     orientation: 'down right',
-//     transition: 'cubic-bezier(0,0,0,1)'
-// });
-
-// var image2 = document.getElementsByClassName('paraImage2');
-// new simpleParallax(image2, {
-//     delay: 2,
-//     scale: 1.1,
-//     orientation: 'up left',
-//     transition: 'cubic-bezier(0,0,0,1)'
-// });
-
-// var image3 = document.getElementsByClassName('paraImage3');
-// new simpleParallax(image3, {
-//     delay: 2,
-//     scale: 1.1,
-//     orientation: 'up',
-//     transition: 'cubic-bezier(0,0,0,1)'
-// });
-
-// var path = "#mvsvg path";
-
-// var tl = new TimelineMax({
-//   repeat: -1,
-//   repeatDelay: .5,
-//   // delay: .3,
-//   yoyo: true
-// });
-
-// tl.set(path, {
-//   scale: 0,
-//   opacity: 0,
-//   transformOrigin: "left bottom"
-// })
-
-// tl.staggerTo(path, 2, {
-//   scale: 1,
-//   opacity: 1,
-//   ease: Elastic.easeInOut,
-// }, 0.05, 0, allDone)
-
-// function allDone(){
-//   TweenMax.set(path, {
-//     transformOrigin: "right top"
-//   })
-// }
-
-// var from = {
-//   scale: 0,
-//   opacity: 0,
-//   transformOrigin: "left center"
-// }
-
-// var to = {
-//   scale: 1,
-//   opacity: 1,
-//   ease: Elastic.easeInOut
-// }
-
-// tl.staggerFromTo(path, 1.5, from, to, 0.05, 0);

@@ -1,21 +1,20 @@
 .c-button {
   display: inline-block;
-  width: 200px;
-  height: 54px;
-  padding: 0;
-  border: none;
-  border-radius: 3px;
-  background-color: #d0d6dc;
-  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
-  color: $color_primary;
+  margin: 42px 4px 0;
+  color: #fff;
   font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 54px;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
+  font-weight: 700;
+  letter-spacing: 0.15em;
 
-  &:hover {
-    opacity: 0.62;
+  &::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 188px;
+    height: 7px;
+    margin-left: 16px;
+    background-image: url('../images/ico-next.svg');
+    background-repeat: no-repeat;
   }
 }

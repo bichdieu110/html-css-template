@@ -10,7 +10,7 @@
   <meta name="description" content="" />
 
   <meta property="og:title" content="" />
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta property="og:image" content="" />
   <meta property="og:site_name" content="" />
@@ -18,9 +18,14 @@
   <meta property="fb:app_id" content="" />
 
   <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/slick-theme.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
   <script src="./assets/js/particles.min.js" defer></script>
   <script src="./assets/js/particlesJS.js" defer></script>
+  <script src="./assets/js/slick.min.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -69,35 +74,111 @@
     </div>
   </header>
 
-  <div class="p-mainVisual">
-    <div class="p-mainVisual_box">
-      <div class="p-mainVisual_box_content">
-        <h1 class="p-mainVisual_box_content_title">テクノロジーと感動を<br>「かたち」に</h1>
-        <p class="p-mainVisual_box_content_desc">
-          スピードと飛躍的技術がもたらすイノベーションを鍵に<br>お客様の次世代を開く一歩を支援する企業となる。
-        </p>
-      </div>
-      <div class="p-mainVisual_box_cover c-empty">
-        <div class="c-empty_base1"></div>
-        <div class="c-empty_base2"></div>
-        <div class="c-empty_particles" id="particles-js"><canvas class="particles-js-canvas-el" width="1349" height="680" style="width: 100%; height: 100%;"></canvas></div>
-        <div class="c-empty_obj1">
-          <div class="c-empty_obj1_obj1s"></div>
+  <div class="l-topBody">
+    <div class="p-mainVisual">
+      <div class="p-mainVisual_box">
+        <div class="p-mainVisual_box_content">
+          <h1 class="p-mainVisual_box_content_title">テクノロジーと感動を<br>「かたち」に</h1>
+          <p class="p-mainVisual_box_content_desc">
+            スピードと飛躍的技術がもたらすイノベーションを鍵に<br>お客様の次世代を開く一歩を支援する企業となる。
+          </p>
         </div>
-        <div class="c-empty_obj2">
-          <div class="c-empty_obj2_obj2s"></div>
+        <div class="p-mainVisual_box_cover c-empty">
+          <div class="c-empty_base1"></div>
+          <div class="c-empty_base2"></div>
+          <div class="c-empty_base3"></div>
+          <div class="c-empty_particles" id="ji_particles"><canvas class="particles-js-canvas-el" width="1349" height="680" style="width: 100%; height: 100%;"></canvas></div>
+          <div class="c-empty_obj1">
+            <div class="c-empty_obj1_obj1s"></div>
+          </div>
+          <div class="c-empty_obj2">
+            <div class="c-empty_obj2_obj2s"></div>
+          </div>
+          <div class="c-empty_obj3">
+            <div class="c-empty_obj3_obj3s"></div>
+          </div>
+          <div class="c-empty_obj4">
+            <div class="c-empty_obj4_obj4s"></div>
+          </div>
         </div>
-        <div class="c-empty_obj3">
-          <div class="c-empty_obj3_obj3s"></div>
-        </div>
-        <div class="c-empty_obj4">
-          <div class="c-empty_obj4_obj4s"></div>
+        <div class="p-mainVisual_box_news">
+          <ul>
+            <li>
+              <b>News</b><span>2020 04.30</span><a href="#">テキストテキストテキストテキストテキストテキストテキストテキスト</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <main class="l-topBody">
+  <main class="l-topMain">
+    <div class="l-topContent">
+      <section class="p-Featured">
+        <div class="p-Featured_title">
+          <h2 class="c-titleSection">
+            Featured
+            <span>特集</span>
+          </h2>
+        </div>
+        <div class="p-Featured_slide">
+          <ul class="p-Featured_slide_list c-listFeatured jc_listFeatured">
+            <li class="c-listFeatured_item">
+              <a href="#">
+                <figure class="c-listFeatured_item_img">
+                  <img src="assets/images/img_featured_01.jpg" alt="タイトルがはいりますタイトルがはいります。タイトルがはいります">
+                </figure>
+                <figcaption class="c-listFeatured_item_desc">
+                  <h3>タイトルがはいりますタイトルがはいります。タイトルがはいります。</h3>
+                  <p class="c-listFeatured_item_desc_paragraph">
+                    <span class="c-date">2020 04.30</span><span class="c-view">101</span>
+                  </p>
+                </figcaption>
+              </a>
+            </li>
+            <li class="c-listFeatured_item">
+              <a href="#">
+                <figure class="c-listFeatured_item_img">
+                  <img src="assets/images/img_featured_02.jpg" alt="タイトルがはいりますタイトルがはいります。タイトルがはいります">
+                  <figcaption class="c-listFeatured_item_desc">
+                    <h3>タイトルがはいりますタイトルがはいります。タイトルがはいります。</h3>
+                    <p class="c-listFeatured_item_desc_paragraph">
+                      <span class="c-date">2020 04.30</span><span class="c-view">101</span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="c-listFeatured_item">
+              <a href="#">
+                <figure class="c-listFeatured_item_img">
+                  <img src="assets/images/img_featured_02.jpg" alt="">
+                  <figcaption class="c-listFeatured_item_desc">
+                    <h3>タイトルがはいりますタイトルがはいります。タイトルがはいります。</h3>
+                    <p class="c-listFeatured_item_desc_paragraph">
+                      <span class="c-date">2020 04.30</span><span class="c-view">101</span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="l-topSection">
+      <section class="p-Company">
+        <div class="p-Company_title">
+          <h2 class="c-titleSection">Company<span>私たちについて</span></h2>
+        </div>
+        <div class="p-Company_desc">
+          <h3 class="c-name">私たちナレッジワークスは</h3>
+          <p class="c-paragraph">私たちナレッジワークスは「飛躍的技術がもたらすイノベーションを鍵に、<br>お客様の次世代を開く」という理念のもと、ARやAIといった先進テクノロジーの実装力をもって、<br>企業・ユーザーの皆様に価値あるサービス／記憶に残るサービスをご提供するため<br>日々活動しています。</p>
+          <a class="c-button" href="./company">Read More</a>
+        </div>
+      </section>
+    </div>
+
     <div class="l-topSection">
       <div class="l-topContent">
         <section class="p-topSection">
@@ -148,7 +229,7 @@
   </main>
 
   <footer class="l-footer">
-    <div class="l-topContent">
+    <div class="l-pageContent">
       <footer class="p-footer">
         <address>ARCHIPELAGO Inc. All RIghts Reserved.</address>
       </footer>
