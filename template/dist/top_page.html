@@ -16,7 +16,7 @@
     <meta property="og:description" content="" />
     <meta property="fb:app_id" content="" />
 
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <!-- <link rel="stylesheet" href="assets/css/app.css" /> -->
     <link rel="stylesheet" href="assets/css/top_page.css" />
 
     <script></script>
@@ -393,60 +393,46 @@
         </div>
       </section>
 
-      <div class="p-contact">
+      <section class="p-contact">
         <div class="p-contact_background">
-          <div class="p-contact_form container">
-            <div class="p-contact_form_heading">
-              <h2 class="p-contact_form_heading_title">Contact Us</h2>
-              <p class="p-contact_form_heading_sub-title">お問い合わせ</p>
-              <p class="p-contact_form_heading_content">
+          <div class="l-contact container">
+            <div class="p-contact_heading">
+              <h2 class="p-contact_heading_title">Contact Us</h2>
+              <p class="p-contact_heading_sub-title">お問い合わせ</p>
+              <p class="p-contact_heading_content">
                 製品/モデルのお問い合わせはお問い合わせフォームよりご確認ください。<br />
                 製品/サービス以外のお問い合わせはこちらをご利用ください。
               </p>
             </div>
-            <div class="p-contact_form_faq-line">
-              <div class="p-contact_form_faq-line_line"></div>
-              <p class="p-contact_form_faq-line_faq">FAQ</p>
-              <div class="p-contact_form_faq-line_line"></div>
+            <div class="p-contact_faq-line">
+              <div class="p-contact_faq-line_line"></div>
+              <p class="p-contact_faq-line_faq">FAQ</p>
+              <div class="p-contact_faq-line_line"></div>
             </div>
-            <div class="contact-form">
-              <select class="contact--question--select-box">
+            <div class="p-contact_form">
+              <select class="c-form_question">
                 <option value="何ができますか？（得意ですか？）"
-                  ><img
-                    class="question-icon"
-                    src="<?php echo URL_IMAGE?>/icon/Q.png"
-                  />何ができますか？（得意ですか？）</option
+                  >何ができますか？（得意ですか？</option
                 >
                 <option value="何ができますか？（得意ですか？）"
-                  ><img
-                    class="question-icon"
-                    src="<?php echo URL_IMAGE?>/icon/Q.png"
-                  />何ができますか？（得意ですか？）</option
+                  >何ができますか？（得意ですか？）</option
                 >
                 <option value="何ができますか？（得意ですか？）"
-                  ><img
-                    class="question-icon"
-                    src="<?php echo URL_IMAGE?>/icon/Q.png"
-                  />何ができますか？（得意ですか？）</option
+                  >何ができますか？（得意ですか？）</option
                 >
               </select>
-              <select class="contact--question--select-box">
+              <select class="c-form_question">
+                <option value="費用感はどのくらいですか？"
+                  >費用感はどのくらいですか？</option
+                >
                 <option value="費用感はどのくらいですか？"
                   ><img
                     class="question-icon"
-                    src="<?php echo URL_IMAGE?>/icon/Q.png"
                   />費用感はどのくらいですか？</option
                 >
                 <option value="費用感はどのくらいですか？"
                   ><img
                     class="question-icon"
-                    src="<?php echo URL_IMAGE?>/icon/Q.png"
-                  />費用感はどのくらいですか？</option
-                >
-                <option value="費用感はどのくらいですか？"
-                  ><img
-                    class="question-icon"
-                    src="<?php echo URL_IMAGE?>/icon/Q.png"
                   />費用感はどのくらいですか？</option
                 >
               </select>
@@ -455,89 +441,91 @@
               <div class="line"></div>
             </div>
             <h2 class="form--title">お問い合わせフォーム</h2>
-            <div class="contact-form">
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">会社名</p>
-                  <p class="required">必須</p>
+            <div class="p-contact_form">
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">会社名</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <input class="form-input" />
+                <input class="c-form_input" />
               </div>
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">部署名</p>
-                  <p class="required">必須</p>
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">部署名</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <input class="form-input" />
+                <input class="c-form_input" />
               </div>
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">役職</p>
-                  <p class="required">必須</p>
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">役職</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <input class="form-input" />
-              </div>
-
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">姓</p>
-                  <p class="required">必須</p>
-                </div>
-                <input class="form-input" />
+                <input class="c-form_input" />
               </div>
 
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">名</p>
-                  <p class="required">必須</p>
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">姓</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <input class="form-input" />
+                <input class="c-form_input" />
               </div>
 
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">電話</p>
-                  <p class="required">必須</p>
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">名</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <input class="form-input" />
+                <input class="c-form_input" />
               </div>
 
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">メールアドレス</p>
-                  <p class="required">必須</p>
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">電話</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <input class="form-input" />
+                <input class="c-form_input" />
               </div>
 
-              <div class="form-item">
-                <div class="item-name">
-                  <p class="name">KnowledgeWorksをどこでお知りになりましたか</p>
-                  <p class="required">必須</p>
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">メールアドレス</p>
+                  <p class="p-contact_form_item_name_required">必須</p>
                 </div>
-                <select class="contact--question--select-box">
+                <input class="c-form_input" />
+              </div>
+
+              <div class="p-contact_form_item">
+                <div class="p-contact_form_item_name">
+                  <p class="p-contact_form_item_name_name">
+                    KnowledgeWorksをどこでお知りになりましたか
+                  </p>
+                  <p class="p-contact_form_item_name_required">必須</p>
+                </div>
+                <select class="c-form_question">
                   <option>―なし―</option>
                 </select>
               </div>
 
-              <div class="btn-submit-wrapper">
-                <button class="btn-submit">
-                  送信する<img
-                    class="ic-submit only-pc"
-                    src="<?php echo URL_IMAGE?>/icon/btn-submit.png"
-                  />
+              <div class="l-content_center">
+                <button class="c-button-submit">
+                  送信する
                 </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="l-footer">
-      <div class="l-topContent">
+      <div class="l-topContent l-content_center">
         <footer class="p-footer">
-          <address>ARCHIPELAGO Inc. All RIghts Reserved.</address>
+          <a href="#">Page Top</a>
+          <address>
+            Copyright © Knowledge Works Inc. All Rights Reserved.
+          </address>
         </footer>
       </div>
     </footer>

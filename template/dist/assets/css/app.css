@@ -176,7 +176,7 @@ a {
   display: inline-block;
   position: relative;
   min-width: 100%;
-  background-color: #ddf;
+  background: #252526;
 }
 
 .l-topContent {
@@ -284,6 +284,11 @@ a {
   margin: 0 auto;
 }
 
+.l-content_center {
+  display: flex;
+  justify-content: center;
+}
+
 .c-button {
   display: inline-block;
   width: 200px;
@@ -324,6 +329,19 @@ a {
 .c-read-more:after {
   display: inline-block;
   content: url("../../assets/images/icon/btn-read-more.png");
+}
+
+.c-button-submit {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  border: none;
+  background: #ea8105;
+  color: #fff;
+}
+
+.c-button-submit .ic-submit {
+  margin-left: 30px;
 }
 
 .c-pageHeading {
@@ -371,6 +389,21 @@ a {
   }
 }
 
+.c-form_input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: #f3f3f6;
+}
+
+.c-form_question {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background: #f3f3f6;
+}
+
 .p-header {
   display: flex;
   align-items: center;
@@ -415,6 +448,18 @@ a {
   font-weight: normal;
 }
 
+.p-header_nav_list_item:hover {
+  background: #ea8105;
+}
+
+.p-header_nav_list_item:hover a {
+  color: #fff;
+}
+
+.p-header_nav_list_item:hover span {
+  color: #fff;
+}
+
 .p-header_nav_list_item_last {
   background: #ea8105;
 }
@@ -429,6 +474,23 @@ a {
 
 .p-footer {
   padding: 20px 0;
+}
+
+.p-footer {
+  padding: 50px 0;
+  background: #252526;
+  text-align: center;
+}
+
+.p-footer a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.p-footer address {
+  margin-top: 30px;
+  color: #898989;
+  font-size: 12px;
 }
 
 .p-gnav_list {

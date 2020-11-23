@@ -21,7 +21,7 @@
   display: inline-block;
   position: relative;
   min-width: 100%;
-  background-color: #ddf;
+  background: $color_dark_gray;
 }
 
 // --------------------------------
@@ -132,4 +132,9 @@
   max-width: 1240px;
   margin: 0 auto;
   position: relative;
+}
+
+.l-content_center{
+  display: flex;
+  justify-content: center;
 }

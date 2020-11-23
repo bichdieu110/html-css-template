@@ -36,3 +36,15 @@
     display: inline-block;
   }
 }
+
+.c-button-submit{
+  background: $color_orange;
+  color: $color_white;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  border: none;
+  .ic-submit {
+    margin-left: 30px;
+  }
+}

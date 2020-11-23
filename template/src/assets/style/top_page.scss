@@ -537,7 +537,7 @@
         @include bp(tab) {
           width: 100%;
         }
-        &_img{
+        &_img {
           @include bp(tab) {
             width: 100%;
           }
@@ -581,5 +581,109 @@
         padding: 0 10px;
       }
     }
+  }
+}
+
+.p-contact {
+  background: $bg_main;
+  &_background {
+    padding-bottom: 144px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    @include bp(tab) {
+      padding-bottom: 80px;
+    }
+  }
+
+  &_heading {
+    text-align: center;
+    margin-bottom: 50px;
+    &_title {
+      // @include fs(34, 0);
+      font-size: 34px;
+    }
+    &_sub-title {
+      // @include fs(15);
+      font-size: 15px;
+      color: $color-gray-light;
+      margin-bottom: 44px;
+    }
+    &_content {
+      // @include fs(16);
+      font-size: 16px;
+    }
+  }
+  &_faq-line {
+    display: flex;
+    align-items: center;
+    &_line {
+      height: 1px;
+      width: 100%;
+      background: $color_gray_light;
+    }
+    &_faq {
+      margin: 0 70px;
+      white-space: nowrap;
+    }
+  }
+
+  &_form {
+    padding: 60px 100px;
+    @include bp(tab) {
+      padding: 20px 30px;
+    }
+    &_item {
+      margin-bottom: 30px;
+      &_name {
+        // @include flexbox();
+        display: flex;
+        margin-bottom: 10px;
+        &_name {
+          font-weight: bold;
+          // @include fs(14);
+          font-size: 14px;
+          margin-right: 10px;
+        }
+        &_required {
+          @include fs(12);
+          color: $color_orange;
+          border: solid 1px $color_orange;
+          padding: 0 5px;
+        }
+      }
+    }
+    .btn-submit-wrapper {
+      display: flex;
+      justify-content: center;
+      .btn-submit {
+        background: $color_orange;
+        color: $color_white;
+        padding: 10px 50px;
+        display: flex;
+        align-items: center;
+        .ic-submit {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .form--title {
+    text-align: center;
+    margin: 60px 0;
+    @include bp(tab) {
+      margin: 30px 0;
+    }
+  }
+}
+
+.l-contact {
+  background: $color_white;
+  padding: 100px;
+  box-shadow: 0px 3px 8px $color_gray_light;
+  @include bp(tab) {
+    padding: 50px 30px;
   }
 }
