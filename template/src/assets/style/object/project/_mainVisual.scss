@@ -140,7 +140,7 @@
       transform-origin: bottom;
       animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.3s both;
       opacity: 1;
-      background: linear-gradient(#E88200, #FFA93D);
+      background: linear-gradient(#e88200, #ffa93d);
       box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
 
       .child {
@@ -153,14 +153,14 @@
         transform-origin: top;
         animation: small1-child 1.4s ease-out 5.7s both;
         opacity: 1;
-        background: linear-gradient(#FFA93D, #E88200);
+        background: linear-gradient(#ffa93d, #e88200);
       }
     }
 
     &-small2 {
       position: absolute;
       top: -10px;
-      right: 330px;
+      right: 230px;
       width: 130px;
       height: 39%;
       overflow: hidden;
@@ -168,8 +168,9 @@
       transform-origin: top;
       animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.5s both;
       opacity: 1;
-      background: linear-gradient( #E88200, #FFA93D);
+      background: linear-gradient(#e88200, #ffa93d);
       box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+      // will-change: height;
 
       .child {
         position: absolute;
@@ -180,7 +181,7 @@
         transform: skewX(-22deg);
         animation: small1-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 4.9s both;
         opacity: 1;
-        background: linear-gradient(top, #FFA93D, #E88200);
+        background: linear-gradient(#ffa93d, #e88200);
       }
     }
 
