@@ -53,7 +53,7 @@
   }
 }
 
-.p-mainVisual {
+.p-banner {
   position: relative;
   width: 100%;
   min-width: $pc_min_width;
@@ -61,6 +61,7 @@
   // min-height: $pc_top_visual_min_height;
   // max-height: $pc_top_visual_max_height;
   overflow: hidden;
+  background-color: #ededf0;
 
   @include mq_down(sp) {
     min-width: auto;
@@ -160,6 +161,7 @@
 
     &-small2 {
       position: absolute;
+      z-index: 3;
       top: -10px;
       right: 330px;
       width: 130px;
@@ -215,8 +217,8 @@
     &-small3 {
       position: absolute;
       z-index: 2;
-      right: 105px;
-      bottom: 0;
+      right: 175px;
+      bottom: -70px;
       width: 200px;
       height: 53%;
       overflow: hidden;
@@ -276,7 +278,7 @@
     &-small4 {
       position: absolute;
       z-index: 1;
-      right: 100px;
+      right: 189px;
       bottom: 75px;
       width: 200px;
       height: 62%;

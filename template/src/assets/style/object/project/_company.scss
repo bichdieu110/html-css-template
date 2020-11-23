@@ -1,0 +1,18 @@
+
+.p-companySection {
+  &_group-text {
+    margin-top: -60px;
+    margin-left: 15vw;
+    padding: 115px 100px 167px 155px;
+    background-color: #252526;
+    color: #fff;
+
+    @include bp(tab) {
+      padding: 115px 40px 167px 40px;
+    }
+
+    .c-heading-section {
+      text-align: left;
+    }
+  }
+}

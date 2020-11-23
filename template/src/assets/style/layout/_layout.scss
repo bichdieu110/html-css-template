@@ -21,7 +21,7 @@
 // --------------------------------
 // Topページ
 // --------------------------------
-.l-topBody {
+.l-main {
 }
 
 .l-topMain {
@@ -98,4 +98,11 @@
     padding-right: $sp_page_content_side_padding;
     padding-left: $sp_page_content_side_padding;
   }
+}
+
+.l-container {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
 }

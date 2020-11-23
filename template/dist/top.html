@@ -17,10 +17,11 @@
   <meta property="og:description" content="" />
   <meta property="fb:app_id" content="" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/slick.css" />
   <link rel="stylesheet" href="assets/css/page_top.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/particles.min.js" defer></script>
+  <script src="./assets/js/slick.min.js" defer></script>
   <script src="./assets/js/main.js" defer></script>
 </head>
 
@@ -64,85 +65,91 @@
     </div>
   </header>
 
-  <div class="p-mainVisual">
-    <div class="p-mainVisual_bg">
-    </div>
-    <div class="p-mainVisual_content">
-      <h1 class="p-mainVisual_content_title">テクノロジーと感動を<br>「かたち」に</h1>
-      <div class="p-mainVisual_content_desc">
-        スピードと飛躍的技術がもたらすイノベーションを鍵に<br>お客様の次世代を開く一歩を支援する企業となる。
+  <main class="l-main">
+    <section class="p-banner">
+      <div class="p-banner_bg">
       </div>
-      <ul class="p-mainVisual_content_news">
-        <li><b>News</b><span>2020.04.30</span><a href="javascript:void(0);">テキストテキストテキストテキストテキストテキストテキストテキスト</a></li>
-      </ul>
-    </div>
-    <div class="p-mainVisual_parallelogram" id="banner-particles">
-      <div class="p-mainVisual_parallelogram-big1"></div>
-      <div class="p-mainVisual_parallelogram-big2"></div>
-      <div class="p-mainVisual_parallelogram-small1">
-        <div class="child"></div>
+      <div class="p-banner_content">
+        <h1 class="p-banner_content_title">テクノロジーと感動を<br>「かたち」に</h1>
+        <div class="p-banner_content_desc">
+          スピードと飛躍的技術がもたらすイノベーションを鍵に<br>お客様の次世代を開く一歩を支援する企業となる。
+        </div>
+        <ul class="p-banner_content_news">
+          <li><b>News</b><span>2020.04.30</span><a href="javascript:void(0);">テキストテキストテキストテキストテキストテキストテキストテキスト</a></li>
+        </ul>
       </div>
-      <div class="p-mainVisual_parallelogram-small2">
-        <div class="child"></div>
+      <div class="p-banner_parallelogram" id="banner-particles">
+        <div class="p-banner_parallelogram-big1"></div>
+        <div class="p-banner_parallelogram-big2"></div>
+        <div class="p-banner_parallelogram-small1">
+          <div class="child"></div>
+        </div>
+        <div class="p-banner_parallelogram-small2">
+          <div class="child"></div>
+        </div>
+        <div class="p-banner_parallelogram-small3">
+          <div class="child"></div>
+        </div>
+        <div class="p-banner_parallelogram-small4">
+          <div class="child"></div>
+        </div>
       </div>
-      <div class="p-mainVisual_parallelogram-small3">
-        <div class="child"></div>
-      </div>
-      <div class="p-mainVisual_parallelogram-small4">
-        <div class="child"></div>
-      </div>
-    </div>
-  </div>
-
-  <main class="l-topBody">
-    <div class="l-topSection">
-      <div class="l-topContent">
-        <section class="p-featuredSection">
-          <div class="container">
-            <h2 class="c-heading-section">Featured<span>特集</span></h2>
-            <div class="slider featured-list">
-              <div class="featured-list_item">
-                <div class="slide-inner">
-                  <a href="javascript:void(0);"><div class="img" style="background-image: url(<?php echo URL_IMAGE?>/top/feature/item-1.png);"></div></a>
-                  <div class="featured-content">
-                    <div class="featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
-                    <div class="featured-date">2020 04.30<span class="view">101</span></div>
-                  </div>
-                </div>
+    </section>
+    <section class="p-featuredSection">
+      <div class="l-container">
+        <h2 class="c-heading-section">Featured<span>特集</span></h2>
+        <div class="slider p-featured-list jc_featured-list">
+          <div class="p-featured-list_item">
+            <div class="slide-inner">
+              <a href="javascript:void(0);">
+                <div class="img" style="background-image: url(assets/images/top/feature/item-1.png);"></div>
+              </a>
+              <div class="p-featured-content">
+                <div class="p-featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
+                <div class="p-featured-date">2020 04.30<span class="view">101</span></div>
               </div>
-              <div class="featured-list_item">
-                <div class="slide-inner">
-                  <a href="javascript:void(0);"><div class="img" style="background-image: url(<?php echo URL_IMAGE?>/top/feature/item-2.png);"></div></a>
-                  <div class="featured-content">
-                    <div class="featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
-                    <div class="featured-date">2020 04.30<span class="view">101</span></div>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="p-featured-list_item">
+            <div class="slide-inner">
+              <a href="javascript:void(0);"><div class="img" style="background-image: url(assets/images/top/feature/item-2.png);"></div></a>
+              <div class="p-featured-content">
+                <div class="p-featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
+                <div class="p-featured-date">2020 04.30<span class="view">101</span></div>
               </div>
-              <div class="featured-list_item">
-                <div class="slide-inner">
-                  <a href="javascript:void(0);"><div class="img" style="background-image: url(<?php echo URL_IMAGE?>/top/feature/item-1.png);"></div></a>
-                  <div class="featured-content">
-                    <div class="featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
-                    <div class="featured-date">2020 04.30<span class="view">101</span></div>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="p-featured-list_item">
+            <div class="slide-inner">
+              <a href="javascript:void(0);"><div class="img" style="background-image: url(assets/images/top/feature/item-1.png);"></div></a>
+              <div class="p-featured-content">
+                <div class="p-featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
+                <div class="p-featured-date">2020 04.30<span class="view">101</span></div>
               </div>
-              <div class="featured-list_item">
-                <div class="slide-inner">
-                  <a href="javascript:void(0);"><div class="img" style="background-image: url(<?php echo URL_IMAGE?>/top/feature/item-2.png);"></div></a>
-                  <div class="featured-content">
-                    <div class="featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
-                    <div class="featured-date">2020 04.30<span class="view">101</span>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <div class="p-featured-list_item">
+            <div class="slide-inner">
+              <a href="javascript:void(0);"><div class="img" style="background-image: url(assets/images/top/feature/item-2.png);"></div></a>
+              <div class="p-featured-content">
+                <div class="p-featured-title"><a href="javascript:void(0);">タイトルがはいりますタイトルがはいります。タイトルがはいります。</a></div>
+                <div class="p-featured-date">2020 04.30<span class="view">101</span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="p-companySection">
+      <div class="p-companySection_group-text">
+        <h2 class="c-heading-section">Company<span>私たちについて</span></h2>
+        <h3>私たちナレッジワークスは</h3>
+        <p>私たちナレッジワークスは「飛躍的技術がもたらすイノベーションを鍵に、<br>お客様の次世代を開く」という理念のもと、ARやAIといった先進テクノロジーの実装力をもって、<br>企業・ユーザーの皆様に価値あるサービス／記憶に残るサービスをご提供するため<br>日々活動しています。</p>
+        <a href="./company" class="c-btn-rm">Read More</a>
+      </div>
+    </section>
+
     <div class="l-topSection">
       <div class="l-topContent">
         <section class="p-topSection">

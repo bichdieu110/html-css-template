@@ -4,7 +4,8 @@
 			var self = this;
 
 			$(function(){
-				self.banner();
+        self.banner();
+        self.feature();
 			});
 		},
 
@@ -65,7 +66,25 @@
 				},
 				retina_detect: true
 			});
-		}
+    },
+    feature: function() {
+      $('.jc_featured-list').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          }
+        ]
+      });
+    }
 	}.init());
 
 }(jQuery));

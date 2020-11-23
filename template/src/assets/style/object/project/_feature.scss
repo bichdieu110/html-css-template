@@ -1,0 +1,102 @@
+.p-featuredSection {
+  padding: 18px 0 225px;
+  background-color: #ededf0;
+
+  .p-featured-list {
+    @include flexbox;
+    @include justify-content(space-between);
+
+    margin: 0 -50px;
+
+    .slick-list {
+      width: 100%;
+    }
+
+    .slick-slide {
+      position: relative;
+
+      .slide-inner {
+        padding: 0 50px;
+
+        .img {
+          width: 84.6%;
+          height: 328px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: auto 100%;
+
+          @include bp(tab) {
+            width: 100%;
+          }
+        }
+      }
+
+      .p-featured-content {
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 41.3%;
+        padding: 24px 80px 7px 29px;
+        background-color: #ededf0;
+
+        .p-featured-title {
+          @include fs(14,21);
+
+          margin-bottom: 7px;
+          letter-spacing: 2.8px;
+          line-height: 24px;
+        }
+
+        .p-featured-date {
+          padding-left: 4px;
+          color: #e88200;
+          font-weight: 500;
+
+          @include fs(12,22);
+
+          span {
+            position: relative;
+            margin-left: 11px;
+            padding-left: 17px;
+            color: #9b9b9b;
+            font-weight: normal;
+
+            @include fs(11,20);
+
+            &::before {
+              content: " ";
+              position: absolute;
+              top: 5px;
+              left: 0;
+              width: 10px;
+              height: 10px;
+              background: url('../images/common/icon_view.png') center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    bottom: -66px;
+    width: 82px;
+    height: 7px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    color: transparent;
+
+    &.slick-prev {
+      left: 42.8%;
+      background-image: url('../images/common/icon-prev.png');
+    }
+
+    &.slick-next {
+      right: 42.8%;
+      background-image: url('../images/common/icon-next.png');
+    }
+  }
+}

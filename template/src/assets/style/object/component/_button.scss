@@ -19,3 +19,28 @@
     opacity: 0.62;
   }
 }
+
+.c-btn-rm {
+  @include fs(14, 14);
+
+  display: inline-block;
+  margin: 42px 4px 0;
+  color: #fff;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 188px;
+    height: 7px;
+    margin-left: 16px;
+    background-image: url('../images/common/icon-rm.png');
+    background-repeat: no-repeat;
+
+    @include bp(tab) {
+      width: 150px;
+      background-size: contain;
+    }
+  }
+}

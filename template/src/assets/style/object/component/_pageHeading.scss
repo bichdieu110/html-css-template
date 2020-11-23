@@ -17,5 +17,16 @@
 }
 
 .c-heading-section {
+  margin-bottom: 45px;
+  text-align: center;
 
+  @include fs(34, 40);
+
+  span {
+    display: block;
+    color: #9b9b9b;
+    font-weight: bold;
+
+    @include fs(15, 22);
+  }
 }
