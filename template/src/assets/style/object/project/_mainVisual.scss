@@ -138,7 +138,8 @@
       overflow: hidden;
       transform: skewX(-15deg);
       transform-origin: bottom;
-      animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.3s both;
+      animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.3s
+        both;
       opacity: 1;
       background: linear-gradient(#e88200, #ffa93d);
       box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
@@ -170,10 +171,18 @@
       -webkit-transform-origin: top;
       -ms-transform-origin: top;
       transform-origin: top;
-      -webkit-animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.5s both;
-      animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.5s both;
+      -webkit-animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0)
+        4.5s both;
+      animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.5s
+        both;
       opacity: 1;
-      background: -webkit-gradient(linear, left top, left bottom, from(#e88200), to(#ffa93d));
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e88200),
+        to(#ffa93d)
+      );
       background: -webkit-linear-gradient(top, #e88200, #ffa93d);
       background: linear-gradient(to top, #e88200, #ffa93d);
       -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
@@ -191,7 +200,13 @@
         transform: skewX(-22deg);
         animation: small1-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 4.9s both;
         opacity: 1;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ffa93d), to(#e88200));
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#ffa93d),
+          to(#e88200)
+        );
         background: -webkit-linear-gradient(top, #ffa93d, #e88200);
         background: linear-gradient(to top, #ffa93d, #e88200);
       }
@@ -211,10 +226,18 @@
       -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
       transform-origin: bottom;
-      -webkit-animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.7s both;
-      animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.7s both;
+      -webkit-animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0)
+        4.7s both;
+      animation: parallelogram-small2 2s cubic-bezier(0.32, 0, 0.67, 0) 4.7s
+        both;
       opacity: 1;
-      background: -webkit-gradient(linear, left top, left bottom, from(#e88200), to(#ffa93d));
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e88200),
+        to(#ffa93d)
+      );
       background: -webkit-linear-gradient(top, #e88200, #ffa93d);
       background: linear-gradient(to top, #e88200, #ffa93d);
       -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
@@ -233,10 +256,17 @@
         -webkit-transform-origin: top;
         -ms-transform-origin: top;
         transform-origin: top;
-        -webkit-animation: small2-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.1s both;
+        -webkit-animation: small2-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.1s
+          both;
         animation: small2-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.1s both;
         opacity: 1;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ffa93d), to(#e88200));
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#ffa93d),
+          to(#e88200)
+        );
         background: -webkit-linear-gradient(top, #ffa93d, #e88200);
         background: linear-gradient(to top, #ffa93d, #e88200);
         will-change: height;
@@ -257,10 +287,18 @@
       -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
       transform-origin: bottom;
-      -webkit-animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.9s both;
-      animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.9s both;
+      -webkit-animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0)
+        4.9s both;
+      animation: parallelogram-small1 2s cubic-bezier(0.32, 0, 0.67, 0) 4.9s
+        both;
       opacity: 1;
-      background: -webkit-gradient(linear, left top, left bottom, from(#e88200), to(#ffa93d));
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e88200),
+        to(#ffa93d)
+      );
       background: -webkit-linear-gradient(top, #e88200, #ffa93d);
       background: linear-gradient(to top, #e88200, #ffa93d);
       -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
@@ -279,10 +317,17 @@
         -webkit-transform-origin: top;
         -ms-transform-origin: top;
         transform-origin: top;
-        -webkit-animation: small1-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.3s both;
+        -webkit-animation: small1-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.3s
+          both;
         animation: small1-child 0.4s cubic-bezier(0.33, 1, 0.68, 1) 5.3s both;
         opacity: 1;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ffa93d), to(#e88200));
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#ffa93d),
+          to(#e88200)
+        );
         background: -webkit-linear-gradient(top, #ffa93d, #e88200);
         background: linear-gradient(to top, #ffa93d, #e88200);
         will-change: height;
@@ -293,7 +338,7 @@
   &_content {
     display: flex;
     position: absolute;
-    z-index: 2;
+    z-index: 20;
     top: calc(50% - 380px);
     bottom: 0;
     left: 50%;

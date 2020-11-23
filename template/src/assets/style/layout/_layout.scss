@@ -5,13 +5,17 @@
   display: inline-block;
   position: relative;
   min-width: 100%;
+
+  .l-topContent {
+    display: flex;
+  }
 }
 
 .l-footer {
+  display: inline-block;
   position: relative;
   min-width: 100%;
   background-color: #ddf;
-  display: inline-block;
 }
 
 // --------------------------------
@@ -24,7 +28,7 @@
 }
 
 .l-topContent {
-  display: flex;
+  // display: flex;
   // @include flexbox;
   // @include justify-content(space-between);
 }

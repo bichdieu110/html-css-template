@@ -169,15 +169,15 @@ a {
   min-width: 100%;
 }
 
+.l-header .l-topContent {
+  display: flex;
+}
+
 .l-footer {
   display: inline-block;
   position: relative;
   min-width: 100%;
   background-color: #ddf;
-}
-
-.l-topContent {
-  display: flex;
 }
 
 .l-topSection {
@@ -649,7 +649,7 @@ a {
 
 .p-mainVisual_content {
   display: flex;
-  z-index: 2;
+  z-index: 20;
   position: absolute;
   top: calc(50% - 380px);
   bottom: 0;
