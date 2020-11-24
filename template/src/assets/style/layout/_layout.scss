@@ -56,7 +56,7 @@
   display: inline-block;
   position: relative;
   min-width: 100%;
-  background-color: #e0f2ff;
+  background-color: #fff;
 }
 
 // --------------------------------
@@ -145,4 +145,13 @@
 
 .l-topMain {
   background: $color_bg_topMain;
+}
+
+.l-career {
+  position: relative;
+  padding: 100px 0 88px;
+  background-image: url(../images/top/bg_career.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
