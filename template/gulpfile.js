@@ -35,7 +35,7 @@ const compileSass = done => {
     .pipe(plumber({
       errorHandler: notify.onError('Error: <%= error.message %>')
     }))
-    .pipe(wait(500))
+    .pipe(wait(1000))
     .pipe(sassGlob())
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(postcss(postcssPlugins))
