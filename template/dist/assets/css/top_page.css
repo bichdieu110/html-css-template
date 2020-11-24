@@ -289,6 +289,18 @@ a {
   justify-content: center;
 }
 
+.l-overlay {
+  z-index: 999;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow-x: hidden;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
 .c-button {
   display: inline-block;
   width: 200px;
@@ -318,8 +330,9 @@ a {
 }
 
 .c-read-more a {
-  margin-right: 10px;
+  margin-right: 18px;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .c-read-more_link {
@@ -340,8 +353,21 @@ a {
   color: #fff;
 }
 
-.c-button-submit .ic-submit {
-  margin-left: 30px;
+.c-button-submit:after {
+  display: inline-block;
+  margin-left: 20px;
+  content: url("../../assets/images/icon/btn-submit.png");
+}
+
+.c-ic-menu {
+  width: 30px;
+  content: url("../../assets/images/icon/ic-menu.png");
+}
+
+.c-button-menu {
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .c-pageHeading {
@@ -393,6 +419,7 @@ a {
   width: 100%;
   padding: 10px 15px;
   border: none;
+  outline: none;
   background: #f3f3f6;
 }
 
@@ -1093,6 +1120,12 @@ a {
   background-position-y: bottom;
 }
 
+@media (max-width: 768px) {
+  .p-corona_background {
+    padding-bottom: 100px;
+  }
+}
+
 .p-corona_background_img {
   width: calc(100% - 12vw);
 }
@@ -1320,8 +1353,6 @@ a {
 
 .p-news_list_item_title {
   font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.858;
 }
 
 .p-news_read-more {
@@ -1342,6 +1373,12 @@ a {
   background: url("../../assets/images/common/column-bg.png") no-repeat;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .p-column_background {
+    padding: 50px 0;
+  }
 }
 
 .p-column_title {
@@ -1436,6 +1473,10 @@ a {
   color: #fff;
 }
 
+.p-column_read-more {
+  justify-content: center;
+}
+
 .p-contact {
   background: #eae9e9;
 }
@@ -1443,6 +1484,7 @@ a {
 .p-contact_background {
   padding-top: 100px;
   padding-bottom: 144px;
+  background: url("../../assets/images/common/bg-contact.png") no-repeat;
   background-position-x: right;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -1450,6 +1492,7 @@ a {
 
 @media (max-width: 768px) {
   .p-contact_background {
+    padding-top: 50px;
     padding-bottom: 80px;
   }
 }

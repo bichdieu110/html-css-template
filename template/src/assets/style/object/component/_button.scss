@@ -25,10 +25,11 @@
   align-items: center;
   margin-top: 20px;
   a {
-    margin-right: 10px;
+    margin-right: 18px;
     font-size: 14px;
+    font-weight: bold;
   }
-  &_link{
+  &_link {
     color: $color_white;
   }
   &:after {
@@ -37,14 +38,27 @@
   }
 }
 
-.c-button-submit{
+.c-button-submit {
   background: $color_orange;
   color: $color_white;
   padding: 10px 50px;
   display: flex;
   align-items: center;
   border: none;
-  .ic-submit {
-    margin-left: 30px;
+  &:after {
+    content: url("../../assets/images/icon/btn-submit.png");
+    display: inline-block;
+    margin-left: 20px;
   }
+}
+
+.c-ic-menu{
+  content: url("../../assets/images/icon/ic-menu.png");
+  width: 30px;
+}
+
+.c-button-menu{
+  background: none;
+  border: none;
+  outline: none;
 }

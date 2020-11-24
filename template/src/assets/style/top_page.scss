@@ -299,6 +299,9 @@
     background-position-x: right;
     background-position-y: bottom;
     padding-bottom: 200px;
+    @include bp(tab){
+      padding-bottom: 100px;
+    }
     &_img {
       width: calc(100% - 12vw);
       @include bp(tab) {
@@ -489,7 +492,8 @@
         }
       }
       &_title {
-        @include fs(14);
+        // @include fs(14);
+        font-size: 14px;
       }
     }
   }
@@ -509,6 +513,9 @@
     background-repeat: no-repeat;
     background-position: left;
     background: url("../../assets/images/common/column-bg.png") no-repeat;
+    @include bp(tab){
+      padding: 50px 0;
+    }
   }
   &_title {
     font-weight: bold;
@@ -582,6 +589,9 @@
       }
     }
   }
+  &_read-more{
+    justify-content: center;
+  }
 }
 
 .p-contact {
@@ -592,8 +602,10 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    background: url("../../assets/images/common/bg-contact.png") no-repeat;
     @include bp(tab) {
       padding-bottom: 80px;
+      padding-top: 50px;
     }
   }
 

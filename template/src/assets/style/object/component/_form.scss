@@ -3,6 +3,7 @@
   width: 100%;
   padding: 10px 15px;
   border: none;
+  outline: none;
 }
 
 .c-form_question {
@@ -11,4 +12,7 @@
   padding: 10px;
   border: none;
   margin: 10px 0;
+  &_option{
+
+  }
 }
