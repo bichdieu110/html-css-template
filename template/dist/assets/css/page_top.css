@@ -856,6 +856,30 @@ h4 {
   transform: translateX(-50%);
 }
 
+.p-serviceSection {
+  position: relative;
+}
+
+.p-serviceSection::after {
+  z-index: -2;
+  position: absolute;
+  top: -339px;
+  left: -300px;
+  transform: scale(0.7);
+  content: url("../../assets/images/common/bg-service.png");
+}
+
+.p-serviceSection::before {
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100%;
+  background: #eae9e9;
+  content: '';
+}
+
 .p-serviceSection .c-heading-section {
   padding-top: 20px;
 }
@@ -1217,7 +1241,7 @@ h4 {
 
 .p-companySection_group-text {
   margin-top: -60px;
-  margin-left: 15vw;
+  margin-left: 160px;
   padding: 115px 100px 167px 155px;
   background-color: #252526;
   color: #fff;

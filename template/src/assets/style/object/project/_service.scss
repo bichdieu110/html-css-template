@@ -1,4 +1,26 @@
 .p-serviceSection {
+  position: relative;
+
+  &::after {
+    content: url("../../assets/images/common/bg-service.png");
+    position: absolute;
+    z-index: -2;
+    top: -339px;
+    left: -300px;
+    transform: scale(0.7);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    background: #eae9e9;
+  }
+
   .c-heading-section {
     padding-top: 20px;
   }
