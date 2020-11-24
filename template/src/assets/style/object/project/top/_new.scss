@@ -1,0 +1,45 @@
+.p-newsSection {
+  padding: 100px 0;
+  text-align: center;
+
+  .p-newsList {
+    li {
+      @include flexbox;
+      @include flex-wrap(wrap);
+      @include align-items(center);
+
+      padding: 25px 0 25px 25px;
+      border-bottom: 1px solid #bebebe;
+
+      @include bp(tab) {
+        margin-bottom: 20px;
+        padding: 0 15px 20px;
+      }
+    }
+
+    &_date {
+      margin-right: 12px;
+    }
+
+    &_category {
+      @include fs(12, 12);
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+
+      min-width: 165px;
+      height: 20px;
+      margin-right: 27px;
+      border: 1px solid #e88200;
+      color: #e88200;
+
+      a {
+        color: #e88200;
+      }
+    }
+  }
+
+  .c-btn-rm {
+    color: #000;
+  }
+}

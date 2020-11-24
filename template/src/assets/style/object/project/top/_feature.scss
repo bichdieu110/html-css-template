@@ -14,9 +14,11 @@
 
     .slick-slide {
       position: relative;
+      outline: none;
 
       .slide-inner {
         padding: 0 50px;
+        outline: none;
 
         .img {
           width: 84.6%;
@@ -91,12 +93,12 @@
 
     &.slick-prev {
       left: 42.8%;
-      background-image: url('../images/common/icon-prev.png');
+      background-image: url('../images/common/icon_prev.png');
     }
 
     &.slick-next {
       right: 42.8%;
-      background-image: url('../images/common/icon-next.png');
+      background-image: url('../images/common/icon_next.png');
     }
   }
 }

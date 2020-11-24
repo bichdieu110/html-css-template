@@ -1,0 +1,51 @@
+.p-careerSection {
+  position: relative;
+  padding: 100px 0 88px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include bp(tab) {
+    padding: 50px 0;
+  }
+
+  &_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .heading-section {
+    margin-bottom: 41px;
+  }
+
+  .l-container {
+    padding: 84px 10px 108px;
+    background-color: #252526;
+    color: #fff;
+    text-align: center;
+
+    @include bp(tab) {
+      padding: 40px;
+    }
+
+    p {
+      @include fs(18,30);
+
+      font-weight: 500;
+      letter-spacing: 3px;
+
+      @include bp(tab) {
+        @include fs(13, 24);
+      }
+    }
+  }
+}

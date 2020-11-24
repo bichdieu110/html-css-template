@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  @include fs(14, 20);
 }
 
 body {
@@ -7,7 +7,6 @@ body {
   width: 100%;
   color: $color-font-base;
   font-family: $global-font-family;
-  font-size: 1.4rem;
   line-height: 1.5;
   word-break: break-all;
   font-feature-settings: 'palt' 1;
@@ -15,6 +14,10 @@ body {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 h2 {
