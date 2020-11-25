@@ -30,3 +30,10 @@
     @include fs(15, 22);
   }
 }
+
+.c-heading-oneline {
+  margin-bottom: 45px;
+  text-align: center;
+
+  @include fs(20, 24);
+}

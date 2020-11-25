@@ -6,6 +6,7 @@
 			$(function(){
         self.banner();
         self.feature();
+        self.faq();
 			});
 		},
 
@@ -84,6 +85,26 @@
           }
         ]
       });
+    },
+    faq: function() {
+      if($('.p-contact_faq-list').length) {
+        $('.p-contact_faq-list').each(function() {
+          var _panel = $(this).find('> .p-contact_faq-list_item');
+          _panel
+            .find('> .p-contact_faq-list_item_faq-content')
+            .hide()
+          _panel
+            .find('> .p-contact_faq-list_item_faq-content.active')
+            .show()
+        })
+
+        $(".c-faq-control").click(function () {
+          $(this).next(".p-contact_faq-list_item_faq-content").slideToggle(),
+          $(".c-faq-control").not($(this)).next(".p-contact_faq-list_item_faq-content").slideUp(),
+          $(".c-faq-control").not($(this)).removeClass("on"),
+          $(this).hasClass("on") ? $(this).removeClass("on") : $(this).addClass("on");
+        });
+      }
     }
 	}.init());
 

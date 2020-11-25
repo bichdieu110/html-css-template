@@ -1,0 +1,62 @@
+.c-form_input {
+  width: 100%;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  background: #f3f3f6;
+}
+
+.c-form_question {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px 15px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f3f3f6;
+  background-image: url(../images/common/icon_arrow_down.png);
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
+
+.c-faq-control {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: none;
+  background: $bg_gray;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    width: 11px;
+    height: 11px;
+    margin-right: 0.5em;
+    margin-left: 1em;
+    transform: rotate(135deg);
+    border-top: 0.2em solid black;
+    border-right: 0.2em solid black;
+  }
+
+  &.on {
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 11px;
+      width: 11px;
+      height: 11px;
+      margin-right: 0.5em;
+      margin-left: 1em;
+      transform: rotate(-45deg);
+      border-top: 0.2em solid black;
+      border-right: 0.2em solid black;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 html {
-  @include fs(14, 20);
+  font-size: 87.5%;
 }
 
 body {
@@ -50,4 +50,11 @@ h4 {
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+select,
+button {
+  &:focus {
+    outline: none;
+  }
 }

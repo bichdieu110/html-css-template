@@ -44,3 +44,19 @@
     }
   }
 }
+
+.c-btn-submit {
+  padding: 10px 50px;
+  border: none;
+  background: $color_orange;
+  color: $color_white;
+
+  @include flexbox();
+  @include align-items(center);
+
+  &::after {
+    content: url("../../assets/images/common/btn_bg.png");
+    display: inline-block;
+    margin-left: 20px;
+  }
+}

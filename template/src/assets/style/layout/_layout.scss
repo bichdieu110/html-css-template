@@ -106,3 +106,8 @@
   max-width: 1240px;
   margin: 0 auto;
 }
+
+.l-center {
+  @include flexbox();
+  @include justify-content(center);
+}
