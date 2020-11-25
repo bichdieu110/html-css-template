@@ -1,0 +1,66 @@
+.c-faq-list {
+  margin-top: 50px;
+
+  &_item {
+    &_title {
+      position: relative;
+      width: 100%;
+      margin-bottom: 25px;
+      padding: 25px 20px 25px 60px;
+      border: none;
+      background: $bg_gray;
+      cursor: pointer;
+
+      &::before {
+        content: 'Q';
+        position: absolute;
+        left: 20px;
+        width: 25px;
+        height: 25px;
+        border: 1px solid $color_orange;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $color_orange;
+
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 11px;
+        width: 11px;
+        height: 11px;
+        margin-right: 0.5em;
+        margin-left: 1em;
+        transform: rotate(135deg);
+        border-top: 0.2em solid black;
+        border-right: 0.2em solid black;
+      }
+
+      &.on {
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 30px;
+          right: 11px;
+          width: 11px;
+          height: 11px;
+          margin-right: 0.5em;
+          margin-left: 1em;
+          transform: rotate(-45deg);
+          border-top: 0.2em solid black;
+          border-right: 0.2em solid black;
+        }
+      }
+    }
+
+    &_content {
+      padding-bottom: 25px;
+    }
+  }
+}

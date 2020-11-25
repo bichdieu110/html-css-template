@@ -87,21 +87,21 @@
       });
     },
     faq: function() {
-      if($('.p-contact_faq-list').length) {
-        $('.p-contact_faq-list').each(function() {
-          var _panel = $(this).find('> .p-contact_faq-list_item');
+      if($('.c-faq-list').length) {
+        $('.c-faq-list').each(function() {
+          var _panel = $(this).find('> .c-faq-list_item');
           _panel
-            .find('> .p-contact_faq-list_item_faq-content')
+            .find('> .c-faq-list_item_content')
             .hide()
           _panel
-            .find('> .p-contact_faq-list_item_faq-content.active')
+            .find('> .c-faq-list_item_content.active')
             .show()
         })
 
-        $(".c-faq-control").click(function () {
-          $(this).next(".p-contact_faq-list_item_faq-content").slideToggle(),
-          $(".c-faq-control").not($(this)).next(".p-contact_faq-list_item_faq-content").slideUp(),
-          $(".c-faq-control").not($(this)).removeClass("on"),
+        $(".c-faq-list_item_title").click(function () {
+          $(this).next(".c-faq-list_item_content").slideToggle(),
+          $(".c-faq-list_item_title").not($(this)).next(".c-faq-list_item_content").slideUp(),
+          $(".c-faq-list_item_title").not($(this)).removeClass("on"),
           $(this).hasClass("on") ? $(this).removeClass("on") : $(this).addClass("on");
         });
       }
