@@ -15,3 +15,19 @@ $('.jc_listFeatured').slick({
     }
   ]
 });
+//Go top footer
+$(document).ready(function() {
+	$(window).scroll(function() {
+    $('#ji-goTop').stop().animate({
+      
+    }, 500);
+	});
+	$('#ji-goTop').click(function() {
+		$('html, body').stop().animate({
+			scrollTop: 0
+		}, 500, function() {
+			$('#ji-goTop').stop().animate({
+			}, 500);
+		});
+	});
+});

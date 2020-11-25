@@ -1,5 +1,5 @@
 .c-button {
-  display: inline-block;
+  display: block;
   position: relative;
   margin: 42px 4px 0;
   color: #fff;
@@ -15,7 +15,32 @@
     width: 188px;
     height: 7px;
     margin-left: 16px;
-    background-image: url('../images/top/c_button.svg');
+    background-image: url('../images/c_button.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.c-btn {
+  display: block;
+  position: relative;
+  padding: 25px 79px;
+  border: none;
+  outline: none;
+  background-color: $color_orange;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+
+  &::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 188px;
+    height: 7px;
+    margin-left: 16px;
+    background-image: url('../images/c_btn.svg');
     background-repeat: no-repeat;
   }
 }

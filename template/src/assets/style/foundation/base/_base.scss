@@ -20,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: $color_primary;
+}
+
+a:hover {
+  color: $color_orange;
+}
+
 @font-face {
   font-family: 'NotoSansJP-Bold';
   font-style: normal;

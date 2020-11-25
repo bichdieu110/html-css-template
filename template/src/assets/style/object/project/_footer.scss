@@ -1,3 +1,29 @@
 .p-footer {
-  padding: 20px 0;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+
+  .c-goTop {
+    position: relative;
+    color: white;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -40px;
+      right: 0;
+      left: 0;
+      width: 1px;
+      height: 42px;
+      margin: 0 auto;
+      background: white;
+      text-align: center;
+    }
+  }
+
+  .c-copyright {
+    padding-top: 15px;
+    color: #aeaeb1;
+    font-size: 1.2rem;
+  }
 }

@@ -98,8 +98,11 @@
     }
 
     &_title {
-      padding-bottom: 20px;
       text-align: center;
+
+      .c-titleSection {
+        margin-bottom: 25px;
+      }
 
       .c-surprise {
         font-size: 4rem;
@@ -112,7 +115,7 @@
 
     &_list {
       position: relative;
-      padding-top: 90px;
+      padding-top: 60px;
       overflow: hidden;
 
       .c-listService {
@@ -241,6 +244,284 @@
 
     .c-paragraph {
       color: white;
+    }
+  }
+
+  .p-news {
+    padding: 110px 0 90px 0;
+
+    &_title {
+      text-align: center;
+    }
+
+    &_list {
+      .c-listNews {
+        &_item {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 37px 30px;
+          border-bottom: 1px solid #bebebe;
+
+          span {
+            display: block;
+            width: 165px;
+            margin: 0 20px 0 12px;
+            padding: 2px;
+            border: 1px solid $color_orange;
+            color: $color_orange;
+            text-align: center;
+          }
+
+          a {
+            letter-spacing: 0.11em;
+          }
+        }
+      }
+
+      .c-button {
+        color: black;
+        text-align: center;
+      }
+    }
+  }
+
+  .p-column {
+    padding: 100px 0;
+    overflow: hidden;
+
+    &_title {
+      text-align: center;
+    }
+
+    &_list {
+      .c-listColumn {
+        display: flex;
+        margin: 0 -60px;
+
+        &_item {
+          position: relative;
+          width: 33.333336%;
+          padding: 0 60px;
+
+          &_img {
+            position: relative;
+            box-shadow: 4px 0 20px 0 rgba(50, 50, 50, 0.3);
+
+            span {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding: 0 15px;
+              background-color: $color_orange;
+              color: white;
+            }
+          }
+
+          &_desc {
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            bottom: -60px;
+            width: 60%;
+            padding: 20px;
+            background-color: #ededf0;
+
+            label {
+              display: block;
+              padding-bottom: 7px;
+              color: $color_orange;
+            }
+
+            h3 {
+              font-size: 1.6rem;
+            }
+
+            p {
+              font-size: 1.4rem;
+              font-weight: 300;
+            }
+
+            &_divide {
+              padding-top: 10px;
+
+              .c-category {
+                color: $color_orange;
+                font-size: 1.2rem;
+                font-weight: 600;
+              }
+
+              .c-view {
+                position: relative;
+                margin-left: 15px;
+                padding-left: 17px;
+                color: #9b9b9b;
+                font-size: 1.1rem;
+
+                &::before {
+                  content: " ";
+                  position: absolute;
+                  top: 5px;
+                  left: 0;
+                  width: 10px;
+                  height: 10px;
+                  background: url(../images/icon_view.svg) center center no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .c-button {
+        margin-top: 90px;
+        color: black;
+        text-align: center;
+      }
+    }
+  }
+
+  .p-contactUs {
+    padding: 90px 0 60px 0;
+    background-color: white;
+    box-shadow: 4px 0 20px 0 rgba(50, 50, 50, 0.3);
+
+    &_title {
+      text-align: center;
+
+      .c-para {
+        font-size: 1.6rem;
+        letter-spacing: 0.1em;
+
+        span {
+          color: $color_orange;
+        }
+      }
+    }
+
+    &_form {
+      margin: 55px 125px 0 125px;
+
+      &_faq {
+        .c-head {
+          &_name {
+            position: relative;
+            z-index: 2;
+            font-size: 2rem;
+            text-align: center;
+
+            &::before {
+              content: " ";
+              position: absolute;
+              z-index: -1;
+              top: 50%;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              border-bottom: 1px solid #d5d5d5;
+            }
+
+            span {
+              padding: 0 70px;
+              background: white;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .c-container {
+          padding: 55px 125px;
+          border-bottom: 1px solid #d5d5d5;
+
+          &_fgroup {
+            padding: 15px 0;
+
+            &_fcontrol {
+              width: 100%;
+              padding: 20px;
+              border: none;
+              outline: none;
+              background: #f3f3f6;
+
+              &.c-select {
+                background-image: url('../images/icon_select.svg');
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 14px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                -o-appearance: none;
+                appearance: none;
+              }
+            }
+          }
+        }
+      }
+
+      &_inquiry {
+        padding-top: 65px;
+
+        .c-head {
+          &_name {
+            position: relative;
+            z-index: 2;
+            font-size: 2rem;
+            text-align: center;
+
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+
+        .c-container {
+          padding: 55px 125px;
+
+          &_fgroup {
+            padding: 15px 0;
+
+            &_notice {
+              margin-left: 10px;
+              padding: 0 5px;
+              border: 1px solid $color_orange;
+              color: $color_orange;
+            }
+
+            &_fcontrol {
+              width: 100%;
+              margin-top: 7px;
+              padding: 20px;
+              border: none;
+              outline: none;
+              background: #f3f3f6;
+
+              &.c-select {
+                background-image: url('../images/icon_select.svg');
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 14px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                -o-appearance: none;
+                appearance: none;
+              }
+            }
+          }
+
+          .c-btn {
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
     }
   }
 }
