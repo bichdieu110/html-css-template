@@ -301,6 +301,11 @@ a {
   transition: 0.5s;
 }
 
+.l-inline {
+  display: flex;
+  align-items: center;
+}
+
 .c-button {
   display: inline-block;
   width: 200px;
@@ -331,8 +336,8 @@ a {
 
 .c-read-more a {
   margin-right: 18px;
+  font-family: "NotoSansJP-Bold", sans-serif;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .c-read-more_link {
@@ -389,9 +394,8 @@ a {
 }
 
 .c-pageHeading_title {
-  color: #000;
+  font-family: "NotoSansJP-Bold", sans-serif;
   font-size: 34px;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -403,15 +407,19 @@ a {
 
 .c-pageHeading_subtitle {
   color: #898989;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 
+@media (max-width: 400px) {
+  .c-pageHeading_subtitle {
+    font-size: 12px;
+  }
+}
+
 .c-box-heading {
+  font-family: "NotoSansJP-Bold", sans-serif;
   font-size: 34px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 24px;
   text-align: center;
 }
 
@@ -446,6 +454,7 @@ a {
   padding: 10px;
   border: none;
   background: #f3f3f6;
+  font-family: "NotoSansJP-Medium", sans-serif;
 }
 
 .p-header {

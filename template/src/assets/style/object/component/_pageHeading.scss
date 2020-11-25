@@ -1,11 +1,8 @@
 .c-pageHeading {
-  // margin-bottom: 30px;
-
   &_title {
     font-size: 34px;
-    font-weight: bold;
     text-align: center;
-    color: $color_black;
+    font-family: $font-family-notosansjpbold;
 
     @include bp(sp) {
       font-size: 24px;
@@ -13,18 +10,19 @@
   }
 
   &_subtitle {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     color: $color_gray_light;
+    @include bp(sp) {
+      font-size: 12px;
+    }
   }
 }
 
 .c-box-heading {
   font-size: 34px;
-  font-weight: 700;
-  letter-spacing: 2px;
   text-align: center;
-  line-height: 24px;
+  font-family: $font-family-notosansjpbold;
   &_sub {
     font-size: 15px;
     color: $color_gray_light;
