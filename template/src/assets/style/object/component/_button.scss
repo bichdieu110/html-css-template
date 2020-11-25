@@ -49,15 +49,29 @@
     content: url("../../assets/images/icon/btn-submit.png");
     display: inline-block;
     margin-left: 20px;
+    @include bp(tab) {
+      content: "";
+    }
   }
 }
 
-.c-ic-menu{
-  content: url("../../assets/images/icon/ic-menu.png");
-  width: 30px;
+.c-button_menu {
+  background: none;
+  border: none;
+  outline: none;
+  &_icon {
+    content: url("../../assets/images/icon/ic-menu.png");
+    width: 30px;
+  }
 }
 
-.c-button-menu{
+.c-ic_question {
+  content: url("../../assets/images/icon/ic-question.png");
+  width: 16px;
+}
+
+.c-icon_button {
+  margin: 0 20px;
   background: none;
   border: none;
   outline: none;

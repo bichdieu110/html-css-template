@@ -1,14 +1,82 @@
+// .p-gnav {
+//   &_list {
+//     display: flex;
+//     align-items: flex-end;
+
+//     &_item {
+//       padding: 5px;
+//       border: 1px solid #999;
+
+//       &.is-logo {
+//         width: 150px;
+//       }
+//     }
+//   }
+// }
+
 .p-gnav {
+  @include bp(tab) {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 71px;
+    left: 0;
+    background-color: $color_white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
   &_list {
     display: flex;
-    align-items: flex-end;
-
+    @include bp(tab) {
+      flex-direction: column;
+    }
     &_item {
-      padding: 5px;
-      border: 1px solid #999;
-
-      &.is-logo {
-        width: 150px;
+      padding: 20px 23px;
+      text-align: center;
+      @include bp(tab) {
+        padding: 15px 0;
+      }
+      a {
+        font-weight: bold;
+        color: $color_gray;
+        font-size: 17px;
+      }
+      span {
+        font-weight: normal;
+        color: $color_gray_light;
+        font-size: 10px;
+      }
+      &:hover {
+        background: $color_orange;
+        a {
+          color: $color_white;
+        }
+        span {
+          color: $color_white;
+        }
+      }
+      &-last {
+        background: $color_orange;
+        a {
+          color: $color_white;
+        }
+        span {
+          color: $color_white;
+        }
+        @include bp(tab) {
+          background: $color_white;
+          a {
+            font-weight: bold;
+            color: $color_gray;
+            font-size: 17px;
+          }
+          span {
+            font-weight: normal;
+            color: $color_gray_light;
+            font-size: 10px;
+          }
+        }
       }
     }
   }

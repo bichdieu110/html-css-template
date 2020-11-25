@@ -1,6 +1,9 @@
 {
   "defaultSeverity": "warning",
-  "extends": ["stylelint-config-standard", "stylelint-config-property-sort-order-smacss"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-property-sort-order-smacss"
+  ],
   "plugins": [
     "stylelint-scss"
   ],
@@ -13,6 +16,13 @@
     "block-no-empty": null,
     "no-duplicate-selectors": null,
     "no-descending-specificity": null,
-    "selector-pseudo-element-no-unknown": [true, {"ignorePseudoElements":["v-deep"]}]
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": [
+          "v-deep"
+        ]
+      }
+    ]
   }
 }

@@ -1,4 +1,5 @@
 var isOpen = true;
+window.onload = prepareButton;
 
 function openNav() {
   if (isOpen === true) {
@@ -10,6 +11,8 @@ function openNav() {
   }
 }
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+function prepareButton() {
+  document.getElementById("button-menu").onclick = function () {
+    openNav();
+  };
 }

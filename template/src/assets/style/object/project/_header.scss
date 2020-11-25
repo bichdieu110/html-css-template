@@ -13,43 +13,4 @@
       margin: 0;
     }
   }
-
-  &_nav {
-    &_list {
-      display: flex;
-      // flex-wrap: wrap;
-      &_item {
-        padding: 20px 23px;
-        text-align: center;
-        a {
-          font-weight: bold;
-          color: $color_gray;
-          font-size: 17px;
-        }
-        span {
-          font-weight: normal;
-          color: $color_gray_light;
-          font-size: 10px;
-        }
-        &:hover{
-          background: $color_orange;
-          a {
-            color: $color_white;
-          }
-          span {
-            color: $color_white;
-          }
-        }
-        &_last {
-          background: $color_orange;
-          a {
-            color: $color_white;
-          }
-          span {
-            color: $color_white;
-          }
-        }
-      }
-    }
-  }
 }

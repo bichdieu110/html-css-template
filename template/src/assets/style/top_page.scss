@@ -2,7 +2,7 @@
 
 .p-banner {
   background: $bg_main;
-  &_background {
+  &_content {
     background: url("../../assets/images/common/mv.png") no-repeat;
     width: 100%;
     position: relative;
@@ -11,36 +11,37 @@
     @include bp(tab) {
       height: 50vh;
     }
-  }
-  &_text {
-    position: absolute;
-    top: 30%;
-    left: 120px;
-    color: $color-white;
-    @include bp(tab) {
-      top: 25%;
-      left: 50px;
-    }
-    @include bp(sp) {
-      left: 30px;
-    }
-    &_title {
-      font-size: 44px;
-      line-height: 1.228;
-      letter-spacing: 9px;
+    &_inner {
+      position: absolute;
+      top: 30%;
+      left: 120px;
+      color: $color-white;
       @include bp(tab) {
-        font-size: 24px;
+        top: 25%;
+        left: 50px;
+      }
+      @include bp(sp) {
+        left: 30px;
+      }
+      &_title {
+        font-size: 44px;
+        line-height: 1.228;
+        letter-spacing: 9px;
+        @include bp(tab) {
+          font-size: 24px;
+        }
+      }
+      &_desc {
+        font-size: 18px;
+        line-height: 1.556;
+        letter-spacing: 4px;
+        @include bp(tab) {
+          font-size: 13px;
+        }
       }
     }
-    &_sub-title {
-      font-size: 18px;
-      line-height: 1.556;
-      letter-spacing: 4px;
-      @include bp(tab) {
-        font-size: 13px;
-      }
-    }
   }
+
   &_new {
     @include bp(tab) {
       flex-direction: column;
@@ -80,7 +81,7 @@
     margin-bottom: 45px;
     padding-top: 30px;
   }
-  &_list {
+  .p-featuredList {
     display: flex;
     @include bp(tab) {
       flex-direction: column;
@@ -131,19 +132,13 @@
     justify-content: center;
     margin-top: 40px;
     padding-bottom: 100px;
-    &_button {
-      margin: 0 20px;
-      background: none;
-      border: none;
-      outline: none;
-    }
   }
 }
 
 .p-company {
   position: relative;
   z-index: 1;
-  &_box {
+  &_inner {
     background: $color_dark_gray;
     padding: 50px 10px 50px 100px;
     color: $color_white;
@@ -153,59 +148,76 @@
       margin-left: 0;
       padding: 20px;
     }
-    &_heading {
-      font-size: 34px;
-      line-height: 28px;
-      &_sub {
-        font-size: 15px;
-        color: $color_gray_light;
-      }
+  }
+  &_heading {
+    font-size: 34px;
+    line-height: 28px;
+  }
+  &_sub {
+    font-size: 15px;
+    color: $color_gray_light;
+    margin: 10px 0;
+  }
+  &_title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    @include bp(tab){
+      font-size: 30px;
     }
-    &_title {
-      font-size: 40px;
-      font-weight: bold;
-    }
-    &_content {
-      font-size: 14px;
-    }
+  }
+  &_content {
+    font-size: 14px;
   }
 }
 
 .p-service {
-  background: $bg_main;
-  padding: 123px 0;
-  text-align: center;
-  margin-right: 15vw;
   position: relative;
-  @include bp(tab) {
-    margin: 0;
-  }
-  &:before {
-    content: url("../../assets/images/common/bg-company.png");
-    top: -339px;
-    left: -246px;
-    transform: scale(0.7);
-    position: absolute;
-    @include bp(tab) {
-      display: none;
-    }
-  }
-  &_box {
+  &_heading {
     position: relative;
+    text-align: center;
+    padding: 123px 0;
+    margin-right: 15vw;
+    background: $bg_main;
+    @include bp(tab) {
+      padding: 70px 0;
+      margin: 0;
+    }
+    &:before {
+      content: url("../../assets/images/common/bg-company.png");
+      top: -339px;
+      left: -246px;
+      transform: scale(0.7);
+      position: absolute;
+      @include bp(tab) {
+        display: none;
+      }
+    }
+    &_inner {
+      position: relative;
+    }
     &_title {
       font-size: 40px;
-      line-height: 1.35;
       font-weight: 700;
-      letter-spacing: 2px;
       margin-bottom: 20px;
+      color: $color_black;
+      margin: 35px 0 30px 0;
+      @include bp(tab) {
+        font-size: 30px;
+        margin: 15px 0 10px 0;
+      }
     }
     &_sub {
-      font-size: 14px;
+      font-size: 18px;
+      color: $color_black;
+      @include bp(tab) {
+        font-size: 14px;
+      }
     }
   }
 }
 
-.p-ar-mr {
+.p-service_ar {
   background: $bg_main;
   margin-right: 15vw;
   position: relative;
@@ -213,7 +225,7 @@
   @include bp(tab) {
     margin: 0;
   }
-  &_backgroud {
+  &_wrapper {
     background: url("../../assets/images/common/bg-mr-ar.png");
     background-size: cover;
     margin-right: -3vw;
@@ -224,8 +236,8 @@
       padding: 20px;
     }
   }
-  &_box {
-    background: white;
+  &_inner {
+    background: $color_white;
     padding: 100px 75px 100px 75px;
     width: 60%;
     margin-left: 12vw;
@@ -242,16 +254,19 @@
       letter-spacing: 2px;
       margin-bottom: 20px;
     }
+    &_content {
+      font-size: 14px;
+    }
   }
 }
 
-.p-siba {
+.p-service_siba {
   background: $bg_main;
   position: relative;
   @include bp(tab) {
     padding-bottom: 100px;
   }
-  &_background {
+  &_wrapper {
     background: url("../../assets/images/common/siba-bg.png");
     background-size: cover;
     padding-top: 20px;
@@ -262,16 +277,17 @@
       padding: 20px;
     }
   }
+
   &_bg {
     height: 100px;
-    background: white;
+    background: $color_white;
     width: 15vw;
     margin-left: calc(100% - 15vw);
     @include bp(tab) {
       display: none;
     }
   }
-  &_box {
+  &_inner {
     background: $color_white;
     width: 60%;
     padding: 100px 75px 100px 75px;
@@ -282,31 +298,34 @@
       padding: 20px;
       width: 100%;
     }
-    &_title {
-      font-size: 40px;
-      line-height: 1.35;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
-    }
+  }
+  &_title {
+    font-size: 40px;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  &_content{
+    font-size: 14px;
   }
 }
 
-.p-corona {
+.p-service_corona {
   position: relative;
-  &_background {
+  &_wrapper {
     background: url("../../assets/images/common/corona-bg.png") no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     padding-bottom: 200px;
-    @include bp(tab){
+    @include bp(tab) {
       padding-bottom: 100px;
     }
-    &_img {
-      width: calc(100% - 12vw);
-      @include bp(tab) {
-        width: 100%;
-      }
+  }
+  &_background {
+    width: calc(100% - 12vw);
+    @include bp(tab) {
+      width: 100%;
     }
   }
   &:after {
@@ -319,7 +338,7 @@
     bottom: 0;
     z-index: -1;
   }
-  &_box {
+  &_inner {
     background: $color_white;
     width: 55%;
     padding: 70px 50px;
@@ -332,31 +351,8 @@
       width: 100%;
       padding: 20px;
     }
-    &_title {
-      // @include fs(26);
-      font-size: 26px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    &_sub-title {
-      // @include fs(18);
-      font-size: 18px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    &_content {
-      // @include fs(14);
-      font-size: 14px;
-      margin: 10px 0;
-    }
-    &_sub-content {
-      // @include fs(16);
-      font-size: 16px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
 
-    &_list {
+    .p-service_coronaList {
       display: flex;
       margin: 0 -10px;
       margin-top: -50px;
@@ -405,45 +401,68 @@
       }
     }
   }
+  &_title {
+    // @include fs(26);
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  &_sub-title {
+    // @include fs(18);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  &_content {
+    // @include fs(14);
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  &_sub-content {
+    // @include fs(16);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
 }
 
 .p-career {
   background: url("../../assets/images/common/bg-career.png") no-repeat;
   padding: 80px 0;
   background-size: cover;
-  &_box {
+  &_inner {
     text-align: center;
     background: $color_dark_gray;
     padding: 80px 0;
-    &_title {
-      color: $color_white;
-      // @include fs(34, 0);
-      font-size: 34px;
-      font-weight: bold;
-      @include bp(tab) {
-        // @include fs(26, 0);
-        font-size: 26px;
-      }
+  }
+  &_title {
+    color: $color_white;
+    // @include fs(34, 0);
+    font-size: 34px;
+    font-weight: bold;
+    @include bp(tab) {
+      // @include fs(26, 0);
+      font-size: 26px;
     }
-    &_sub-title {
-      // @include fs(15);
-      font-size: 15px;
-      color: $color_gray_light;
-      @include bp(tab) {
-        // @include fs(13);
-        font-size: 13px;
-      }
+  }
+  &_sub-title {
+    // @include fs(15);
+    font-size: 15px;
+    color: $color_gray_light;
+    @include bp(tab) {
+      // @include fs(13);
+      font-size: 13px;
     }
-    &_content {
-      color: $color_gray_light;
-      // @include fs(16);
-      font-size: 16px;
-      margin: 50px 0;
-      @include bp(tab) {
-        margin: 30px;
-        // @include fs(14);
-        font-size: 14px;
-      }
+  }
+  &_content {
+    color: $color_gray_light;
+    // @include fs(16);
+    font-size: 16px;
+    margin: 50px 0;
+    @include bp(tab) {
+      margin: 30px;
+      // @include fs(14);
+      font-size: 14px;
     }
   }
   &_read-more {
@@ -508,12 +527,12 @@
 
 .p-column {
   background: $bg_main;
-  &_background {
+  &_inner {
     padding: 70px 0;
     background-repeat: no-repeat;
     background-position: left;
     background: url("../../assets/images/common/column-bg.png") no-repeat;
-    @include bp(tab){
+    @include bp(tab) {
       padding: 50px 0;
     }
   }
@@ -589,7 +608,7 @@
       }
     }
   }
-  &_read-more{
+  &_read-more {
     justify-content: center;
   }
 }
