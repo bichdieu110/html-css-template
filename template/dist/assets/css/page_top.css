@@ -547,6 +547,10 @@ button:focus {
   padding-bottom: 25px;
 }
 
+.c-faq-list_item:last-child {
+  margin-bottom: 50px;
+}
+
 .p-header {
   display: inline-block;
   position: relative;

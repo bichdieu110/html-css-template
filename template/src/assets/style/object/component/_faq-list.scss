@@ -62,5 +62,9 @@
     &_content {
       padding-bottom: 25px;
     }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 }
