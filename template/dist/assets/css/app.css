@@ -393,6 +393,16 @@ a {
   background: none;
 }
 
+.c-icon_question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ea8105;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ea8105;
+}
+
 .c-pageHeading_title {
   font-family: "NotoSansJP-Bold", sans-serif;
   font-size: 34px;

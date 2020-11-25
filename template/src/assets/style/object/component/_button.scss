@@ -76,3 +76,15 @@
   border: none;
   outline: none;
 }
+
+.c-icon_question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 25px;
+  // height: 25px;
+  border: 1px solid #ea8105;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ea8105;
+}

@@ -28,8 +28,11 @@
       font-size: 44px;
       line-height: 1.228;
       letter-spacing: 9px;
+      font-family: $font-family-notosansjpbold;
+      margin-bottom: 20px;
       @include bp(tab) {
         font-size: 24px;
+        margin-bottom: 10px;
       }
     }
     &_desc {
@@ -128,7 +131,7 @@
         &_share {
           font-size: 12px;
           color: $color_gray_light;
-          &::before{
+          &::before {
             content: url("../../assets/images/icon/ic-share.png");
             margin-right: 3px;
           }
@@ -163,7 +166,7 @@
     font-size: 34px;
     line-height: 28px;
     font-family: $font-family-notosansjpbold;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 24px;
     }
   }
@@ -172,7 +175,7 @@
     color: $color_gray_light;
     margin: 10px 0;
     font-family: $font-family-notosansjpbold;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 12px;
     }
   }
@@ -187,7 +190,7 @@
   &_content {
     font-size: 14px;
     font-family: $font-family-notosansjpmedium;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 12px;
     }
   }
@@ -275,16 +278,16 @@
     font-size: 28px;
     margin-bottom: 20px;
     font-family: $font-family-notosansjpbold;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 20px;
       margin-bottom: 10px;
     }
   }
-  &_sub{
+  &_sub {
     font-family: $font-family-notosansjpmedium;
     font-size: 18px;
     margin-bottom: 20px;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 15px;
       margin-bottom: 10px;
     }
@@ -292,7 +295,7 @@
   &_content {
     font-size: 14px;
     margin-bottom: 20px;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 12px;
       margin-bottom: 10px;
     }
@@ -342,22 +345,22 @@
     font-size: 28px;
     font-family: $font-family-notosansjpbold;
     margin-bottom: 20px;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 24px;
       margin-bottom: 10px;
     }
   }
   &_content {
     font-size: 14px;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 12px;
     }
   }
-  &_sub{
+  &_sub {
     font-family: $font-family-notosansjpmedium;
     font-size: 18px;
     margin-bottom: 20px;
-    @include bp(tab){
+    @include bp(tab) {
       font-size: 15px;
       margin-bottom: 10px;
     }
@@ -370,7 +373,7 @@
     background: url("../../assets/images/common/corona-bg.png") no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    padding-bottom: 200px;
+    padding-bottom: 260px;
     @include bp(tab) {
       padding-bottom: 100px;
     }
@@ -636,7 +639,7 @@
         &_share {
           font-size: 12px;
           color: $color_gray_light;
-          &::before{
+          &::before {
             content: url("../../assets/images/icon/ic-share.png");
             margin-right: 3px;
           }
@@ -672,7 +675,7 @@
     }
   }
 
-  &_title{
+  &_title {
     font-family: $font-family-notosansjpbold;
     font-size: 20px;
     text-align: center;
@@ -684,7 +687,7 @@
     &_content {
       font-size: 16px;
       margin-top: 40px;
-      &_link{
+      &_link {
         color: $color_orange;
       }
     }
