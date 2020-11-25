@@ -9,8 +9,7 @@
 }
 
 .c-paragraph-1 {
-  font-size: 21px;
-  line-height: 1.6;
+  @include fs(16, 25);
 
   @include mq_down(sp) {
     font-size: 13px;

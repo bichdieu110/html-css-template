@@ -1,6 +1,7 @@
 .p-serviceSection {
   position: relative;
 
+  h3,
   &::after {
     content: url("../../assets/images/common/bg_service.png");
     position: absolute;

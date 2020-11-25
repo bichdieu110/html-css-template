@@ -65,31 +65,37 @@
 
 @function setvw($target) {
   $vw: (768 * 0.01) * 1px;
+
   @return ($target / $vw) * 1vw;
 }
 
 @function setvwpc($target) {
   $vw: (1440 * 0.01) * 1px;
+
   @return ($target / $vw) * 1vw;
 }
 
 @function setvwsp($target) {
   $vw: (375 * 0.01) * 1px;
+
   @return ($target / $vw) * 1vw;
 }
 
 @function setvh($target) {
   $vh: (1080 * 0.01) * 1px;
+
   @return ($target / $vh) * 1vh;
 }
 
 @function setvhtab($target) {
   $vh: (740 * 0.01) * 1px;
+
   @return ($target / $vh) * 1vh;
 }
 
 @function setvhsp($target) {
   $vh: (670 * 0.01) * 1px;
+
   @return ($target / $vh) * 1vh;
 }
 
@@ -97,23 +103,23 @@
   @return ($target * 100%) / $parent;
 }
 
-@mixin fs($fontsize: 16, $lineheight: 26, $base: 16) {
+@mixin fs($fontsize: 14, $lineheight: 26, $base: 14) {
   font-size: $fontsize + px;
   font-size: ($fontsize / $base) * 1rem;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
-@mixin fs-vw($fontsize: 16, $lineheight: 26, $area-width: 768) {
+@mixin fs-vw($fontsize: 14, $lineheight: 26, $area-width: 768) {
   font-size: #{($fontsize / $area-width) * 100}vw;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
-@mixin fs-vwpc($fontsize: 16, $lineheight: 26, $area-width: 1920) {
+@mixin fs-vwpc($fontsize: 14, $lineheight: 26, $area-width: 1920) {
   font-size: #{($fontsize / $area-width) * 100}vw;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
-@mixin fs-vwsp($fontsize: 16, $lineheight: 26, $area-width: 320) {
+@mixin fs-vwsp($fontsize: 14, $lineheight: 26, $area-width: 320) {
   font-size: #{($fontsize / $area-width) * 100}vw;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
@@ -237,7 +243,7 @@
   background: -moz-linear-gradient(left, $color_1 0%, $color_2 100%);
   background: -webkit-linear-gradient(left, $color_1 0%, $color_2 100%);
   background: linear-gradient(to right, $color_1 0%, $color_1 0%, $color_2 100%);
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='$color_1', endColorstr='$color_2', GradientType=1);
+  filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_1', endcolorstr='$color_2', gradienttype=1);
 }
 
 @mixin block($w: 100%) {
