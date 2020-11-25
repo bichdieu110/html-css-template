@@ -98,10 +98,10 @@
             .show()
         })
 
-        $(".c-faq-list_item_title").click(function () {
+        $(".jc_switch-toggle").click(function () {
           $(this).next(".c-faq-list_item_content").slideToggle(),
-          $(".c-faq-list_item_title").not($(this)).next(".c-faq-list_item_content").slideUp(),
-          $(".c-faq-list_item_title").not($(this)).removeClass("on"),
+          $(".jc_switch-toggle").not($(this)).next(".c-faq-list_item_content").slideUp(),
+          $(".jc_switch-toggle").not($(this)).removeClass("on"),
           $(this).hasClass("on") ? $(this).removeClass("on") : $(this).addClass("on");
         });
       }
