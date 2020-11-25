@@ -484,13 +484,33 @@ button:focus {
   position: relative;
   width: 100%;
   margin-bottom: 25px;
-  padding: 10px;
+  padding: 25px 20px 25px 60px;
   border: none;
   background: #f3f3f6;
   cursor: pointer;
 }
 
 .c-faq-control::before {
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -ms-flex-pack: center;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ea8105;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ea8105;
+  content: 'Q';
+}
+
+.c-faq-control::after {
   display: inline-block;
   position: absolute;
   right: 11px;
@@ -504,10 +524,10 @@ button:focus {
   content: "";
 }
 
-.c-faq-control.on::before {
+.c-faq-control.on::after {
   display: inline-block;
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 11px;
   width: 11px;
   height: 11px;
