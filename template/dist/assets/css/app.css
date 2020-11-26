@@ -1353,8 +1353,7 @@ button:focus {
   font-size: 14px;
   font-size: 1rem;
   letter-spacing: 2.8px;
-  line-height: 1.5;
-  line-height: 24px;
+  line-height: 1.715;
 }
 
 .p-featured .p-featuredList_item_slide_content_date {
@@ -1384,7 +1383,7 @@ button:focus {
   width: 10px;
   height: 10px;
   background: url("../images/common/icon_view.png") center center no-repeat;
-  content: " ";
+  content: "";
 }
 
 .p-featured .p-featuredList .slick-list {

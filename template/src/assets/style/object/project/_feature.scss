@@ -37,11 +37,10 @@
           background-color: #ededf0;
 
           &_title {
-            @include fs(14,21);
+            @include fs(14, 24);
 
             margin-bottom: 7px;
             letter-spacing: 2.8px;
-            line-height: 24px;
           }
 
           &_date {
@@ -49,7 +48,7 @@
             color: #e88200;
             font-weight: 500;
 
-            @include fs(12,22);
+            @include fs(12, 22);
 
             span {
               position: relative;
@@ -58,10 +57,10 @@
               color: #9b9b9b;
               font-weight: normal;
 
-              @include fs(11,20);
+              @include fs(11, 20);
 
               &::before {
-                content: " ";
+                content: "";
                 position: absolute;
                 top: 5px;
                 left: 0;
