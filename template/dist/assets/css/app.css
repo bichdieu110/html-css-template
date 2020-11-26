@@ -301,11 +301,6 @@ a {
   transition: 0.5s;
 }
 
-.l-inline {
-  display: flex;
-  align-items: center;
-}
-
 .c-button {
   display: inline-block;
   width: 200px;
@@ -410,7 +405,6 @@ a {
 .c-pageHeading_title {
   font-family: "NotoSansJP-Bold", sans-serif;
   font-size: 34px;
-  text-align: center;
 }
 
 @media (max-width: 400px) {
@@ -422,7 +416,6 @@ a {
 .c-pageHeading_subtitle {
   color: #898989;
   font-size: 15px;
-  text-align: center;
 }
 
 @media (max-width: 400px) {
@@ -788,4 +781,9 @@ a {
   .u-sp-only {
     display: none;
   }
+}
+
+.u-inline {
+  display: flex;
+  align-items: center;
 }
