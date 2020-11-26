@@ -3,21 +3,13 @@
   background-color: #ededf0;
 
   .p-featuredList {
-    @include flexbox;
-    @include justify-content(space-between);
-
-    margin: 0 -50px;
-
     &_item {
-      position: relative;
-      outline: none;
-
       &_slide {
-        padding: 0 50px;
+        position: relative;
         outline: none;
 
         &_img {
-          width: 84.6%;
+          width: 79%;
           height: 328px;
           background-repeat: no-repeat;
           background-position: center;
@@ -32,7 +24,7 @@
           position: absolute;
           right: 0;
           bottom: -3px;
-          left: 41.3%;
+          left: 40%;
           padding: 24px 80px 7px 29px;
           background-color: #ededf0;
 
@@ -72,10 +64,6 @@
           }
         }
       }
-    }
-
-    .slick-list {
-      width: 100%;
     }
   }
 

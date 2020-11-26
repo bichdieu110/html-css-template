@@ -1306,27 +1306,13 @@ button:focus {
   background-color: #ededf0;
 }
 
-.p-featured .p-featuredList {
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -ms-flex-pack: space-between;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 -50px;
-}
-
-.p-featured .p-featuredList_item {
+.p-featured .p-featuredList_item_slide {
   position: relative;
   outline: none;
 }
 
-.p-featured .p-featuredList_item_slide {
-  padding: 0 50px;
-  outline: none;
-}
-
 .p-featured .p-featuredList_item_slide_img {
-  width: 84.6%;
+  width: 79%;
   height: 328px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1343,7 +1329,7 @@ button:focus {
   position: absolute;
   right: 0;
   bottom: -3px;
-  left: 41.3%;
+  left: 40%;
   padding: 24px 80px 7px 29px;
   background-color: #ededf0;
 }
@@ -1384,10 +1370,6 @@ button:focus {
   height: 10px;
   background: url("../images/common/icon_view.png") center center no-repeat;
   content: "";
-}
-
-.p-featured .p-featuredList .slick-list {
-  width: 100%;
 }
 
 .p-featured .slick-arrow {
@@ -1577,11 +1559,6 @@ button:focus {
   }
 }
 
-.p-contact .c-paragraph-1 {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
 .p-contact_faq-line {
   -moz-justify-content: center;
   -ms-justify-content: center;
@@ -1631,12 +1608,12 @@ button:focus {
   content: '必須';
 }
 
-.p-contact .c-pageHeading_title {
+.p-contact .p-inquiryForm .c-pageHeading_title {
   margin: 60px 0;
 }
 
 @media (max-width: 768px) {
-  .p-contact .c-pageHeading_title {
+  .p-contact .p-inquiryForm .c-pageHeading_title {
     margin: 30px 0;
   }
 }
