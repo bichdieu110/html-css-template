@@ -1546,7 +1546,7 @@ button:focus {
   content: '';
 }
 
-.p-contact_background {
+.p-contact_inner {
   max-width: 90%;
   margin: 0 auto;
   padding-top: 100px;
@@ -1554,13 +1554,13 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-  .p-contact_background {
+  .p-contact_inner {
     padding-top: 50px;
     padding-bottom: 80px;
   }
 }
 
-.p-contact_faq-line {
+.p-contact_inner_line {
   -moz-justify-content: center;
   -ms-justify-content: center;
   -ms-flex-pack: center;
@@ -1569,7 +1569,7 @@ button:focus {
   justify-content: center;
 }
 
-.p-contact_faq-line::before {
+.p-contact_inner_line::before {
   position: absolute;
   top: 10px;
   width: 100%;
@@ -1578,7 +1578,7 @@ button:focus {
   content: '';
 }
 
-.p-contact_faq-line span {
+.p-contact_inner_line span {
   display: block;
   z-index: 1;
   width: 150px;
@@ -1589,16 +1589,16 @@ button:focus {
   text-align: center;
 }
 
-.p-contact_form_item {
+.p-contact_inner_form_item {
   margin-bottom: 30px;
 }
 
-.p-contact_form_item_label {
+.p-contact_inner_form_item_label {
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.p-contact_form_item_label.required::after {
+.p-contact_inner_form_item_label.required::after {
   margin-left: 5px;
   padding: 0 5px;
   border: solid 1px #ea8105;
@@ -1609,12 +1609,12 @@ button:focus {
   content: '必須';
 }
 
-.p-contact .p-inquiryForm .c-pageHeading_title {
+.p-contact_inner_inquiryForm .c-pageHeading_title {
   margin: 60px 0;
 }
 
 @media (max-width: 768px) {
-  .p-contact .p-inquiryForm .c-pageHeading_title {
+  .p-contact_inner_inquiryForm .c-pageHeading_title {
     margin: 30px 0;
   }
 }
