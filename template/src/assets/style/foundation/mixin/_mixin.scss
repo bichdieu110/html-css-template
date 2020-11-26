@@ -70,7 +70,7 @@
 }
 
 @function setvwpc($target) {
-  $vw: (1440 * 0.01) * 1px;
+  $vw: (1040 * 0.01) * 1px;
 
   @return ($target / $vw) * 1vw;
 }
@@ -103,23 +103,23 @@
   @return ($target * 100%) / $parent;
 }
 
-@mixin fs($fontsize: 14, $lineheight: 26, $base: 14) {
+@mixin fs($fontsize: 10, $lineheight: 26, $base: 10) {
   font-size: $fontsize + px;
   font-size: ($fontsize / $base) * 1rem;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
-@mixin fs-vw($fontsize: 14, $lineheight: 26, $area-width: 768) {
+@mixin fs-vw($fontsize: 10, $lineheight: 26, $area-width: 768) {
   font-size: #{($fontsize / $area-width) * 100}vw;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
-@mixin fs-vwpc($fontsize: 14, $lineheight: 26, $area-width: 1920) {
+@mixin fs-vwpc($fontsize: 10, $lineheight: 26, $area-width: 1920) {
   font-size: #{($fontsize / $area-width) * 100}vw;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
 
-@mixin fs-vwsp($fontsize: 14, $lineheight: 26, $area-width: 320) {
+@mixin fs-vwsp($fontsize: 10, $lineheight: 26, $area-width: 320) {
   font-size: #{($fontsize / $area-width) * 100}vw;
   line-height: ceil($lineheight * 1000 / $fontsize) / 1000;
 }
