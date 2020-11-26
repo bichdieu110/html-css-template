@@ -1560,6 +1560,11 @@ button:focus {
   }
 }
 
+.p-contact_inner_faq {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .p-contact_inner_line {
   -moz-justify-content: center;
   -ms-justify-content: center;
@@ -1607,6 +1612,11 @@ button:focus {
   font-size: 0.85714rem;
   line-height: 2.167;
   content: '必須';
+}
+
+.p-contact_inner_inquiryForm {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .p-contact_inner_inquiryForm .c-pageHeading_title {
