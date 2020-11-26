@@ -85,6 +85,8 @@
           }
 
           &_lService {
+            margin-top: 15px;
+
             @include bp(pc) {
               @include flexbox;
               @include justify-content(space-between);
