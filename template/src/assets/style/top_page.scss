@@ -461,7 +461,7 @@
     margin: 10px 0;
     font-family: $font-family-notosansjpbold;
   }
-  &_sub-title {
+  &_subTitle {
     font-size: 18px;
     margin: 10px 0;
     font-family: $font-family-notosansjpmedium;
@@ -489,7 +489,7 @@
       font-size: 26px;
     }
   }
-  &_sub-title {
+  &_subTitle {
     font-size: 15px;
     color: $color_gray_light;
     font-family: $font-family-notosansjpbold;
@@ -506,7 +506,7 @@
       font-size: 14px;
     }
   }
-  &_read-more {
+  &_readMore {
     justify-content: center;
   }
 }
@@ -536,8 +536,9 @@
       &_date {
         font-size: 14px;
         font-weight: bold;
+        white-space: nowrap;
       }
-      &_btn-news {
+      &_news {
         font-size: 12px;
         color: $color_orange;
         border: solid 1px $color_orange;
@@ -554,7 +555,7 @@
       }
     }
   }
-  &_read-more {
+  &_readMore {
     justify-content: center;
     margin-top: 70px;
     &_link {
@@ -601,10 +602,10 @@
         @include bp(tab) {
           width: 100%;
         }
-        &_img {
-          @include bp(tab) {
-            width: 100%;
-          }
+      }
+      &_img {
+        @include bp(tab) {
+          width: 100%;
         }
       }
       &_content {
@@ -655,7 +656,7 @@
       }
     }
   }
-  &_read-more {
+  &_readMore {
     justify-content: center;
   }
 }
@@ -679,6 +680,7 @@
     font-family: $font-family-notosansjpbold;
     font-size: 20px;
     text-align: center;
+    margin-top: 65px;
   }
 
   &_heading {
@@ -687,12 +689,15 @@
     &_content {
       font-size: 16px;
       margin-top: 40px;
+      @include bp(tab){
+        font-size: 14px;
+      }
       &_link {
         color: $color_orange;
       }
     }
   }
-  &_faq-line {
+  &_faq {
     display: flex;
     align-items: center;
     &_line {
@@ -700,7 +705,7 @@
       width: 100%;
       background: $color_gray_light;
     }
-    &_faq {
+    &_text {
       margin: 0 70px;
       white-space: nowrap;
       font-size: 20px;
@@ -716,20 +721,17 @@
     &_item {
       margin-bottom: 30px;
       &_name {
-        display: flex;
-        margin-bottom: 10px;
-        &_name {
-          font-size: 14px;
-          margin-right: 10px;
-          font-family: $font-family-notosansjpmedium;
-        }
-        &_required {
-          font-size: 12px;
-          color: $color_orange;
-          border: solid 1px $color_orange;
-          padding: 0 5px;
-          font-family: $font-family-notosansjpmedium;
-        }
+        font-size: 14px;
+        margin-right: 10px;
+        font-family: $font-family-notosansjpmedium;
+      }
+      &_required {
+        font-size: 12px;
+        color: $color_orange;
+        border: solid 1px $color_orange;
+        padding: 0 5px;
+        font-family: $font-family-notosansjpmedium;
+        white-space: nowrap;
       }
     }
     .btn-submit-wrapper {

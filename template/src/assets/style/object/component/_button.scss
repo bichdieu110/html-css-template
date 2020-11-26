@@ -20,7 +20,7 @@
   }
 }
 
-.c-read-more {
+.c-readMore {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -29,8 +29,11 @@
     font-size: 14px;
     font-family: $font-family-notosansjpbold;
   }
-  &_link {
+  &_link-white {
     color: $color_white;
+  }
+  &_link-black {
+    color: $color_black;
   }
   &:after {
     content: url("../../assets/images/icon/btn-read-more.png");
@@ -38,7 +41,7 @@
   }
 }
 
-.c-button-submit {
+.c-button_submit {
   background: $color_orange;
   color: $color_white;
   padding: 10px 50px;
