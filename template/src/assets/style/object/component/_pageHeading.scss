@@ -1,41 +1,46 @@
+// .c-pageHeading {
+//   margin-bottom: 30px;
+
+//   &_title {
+//     font-size: 30px;
+//     font-weight: bold;
+
+//     @include mq_down(sp) {
+//       font-size: 24px;
+//     }
+//   }
+
+//   &_desc {
+//     font-size: 24px;
+//     font-weight: bold;
+//   }
+// }
+
 .c-pageHeading {
-  margin-bottom: 30px;
-
-  &_title {
-    font-size: 30px;
-    font-weight: bold;
-
-    @include mq_down(sp) {
-      font-size: 24px;
-    }
-  }
-
-  &_desc {
-    font-size: 24px;
-    font-weight: bold;
-  }
-}
-
-.c-heading-section {
   margin-bottom: 45px;
   text-align: center;
 
-  @include fs(34, 40);
+  &_title {
+    @include fs(34, 40);
 
-  span {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  &_subtitle {
     display: block;
+    margin-bottom: 40px;
     color: #9b9b9b;
     font-weight: bold;
 
     @include fs(15, 22);
   }
-}
 
-.c-heading-oneline {
-  margin-bottom: 45px;
-  text-align: center;
+  &_desc {
+    margin: 35px 0 60px;
 
-  @include fs(20, 24);
+    @include fs(18);
+  }
 }
 
 .c-textCenter {

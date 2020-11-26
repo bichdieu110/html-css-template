@@ -1,7 +1,10 @@
 .c-faq-list {
   margin-top: 50px;
+  padding-bottom: 50px;
 
   &_item {
+    @include transition();
+
     &_title {
       position: relative;
       width: 100%;
@@ -64,7 +67,7 @@
     }
 
     &:last-child {
-      margin-bottom: 50px;
+      padding-bottom: 0;
     }
   }
 }
