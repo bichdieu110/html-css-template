@@ -21,7 +21,7 @@
   text-align: center;
 
   &_title {
-    @include fs(34, 40);
+    @include fs(34, 24);
 
     margin-bottom: 0;
     font-weight: bold;
@@ -33,19 +33,19 @@
     color: #9b9b9b;
     font-weight: bold;
 
-    @include fs(15, 22);
+    @include fs(15, 77);
   }
 
   &_desc {
     margin: 0 0 60px;
 
-    @include fs(18);
+    @include fs(18, 30);
   }
 
   &_descAdvance {
     margin: 0 0 30px;
 
-    @include fs(16);
+    @include fs(16, 28);
 
     span {
       &.c-textEmphasize {

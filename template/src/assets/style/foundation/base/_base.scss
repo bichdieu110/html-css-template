@@ -23,31 +23,31 @@ a {
 }
 
 h2 {
-  @include fs(34,50);
+  @include fs(34, 50);
 
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
 
   @include bp(tab) {
-    @include fs(20,30);
+    @include fs(20, 30);
   }
 }
 
 h3 {
-  @include fs(40,54);
+  @include fs(40, 54);
 
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
 
   @include bp(tab) {
-    @include fs(22,32);
+    @include fs(22, 32);
   }
 }
 
 h4 {
-  @include fs(22,32);
+  @include fs(22, 32);
 
   margin-bottom: 20px;
   font-weight: bold;

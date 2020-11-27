@@ -345,7 +345,7 @@ button:focus {
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 2.715;
 }
 
 .c-btn-rm::after {
@@ -372,10 +372,13 @@ button:focus {
   -ms-align-items: center;
   display: flex;
   align-items: center;
-  padding: 15px 50px;
+  padding: 10px 50px;
   border: none;
   background: #ea8105;
   color: #fff;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2.715;
 }
 
 .c-btn-submit::after {
@@ -394,7 +397,7 @@ button:focus {
   font-size: 34px;
   font-size: 3.4rem;
   font-weight: bold;
-  line-height: 1.177;
+  line-height: 0.706;
 }
 
 .c-pageHeading_subtitle {
@@ -404,21 +407,21 @@ button:focus {
   font-size: 15px;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.467;
+  line-height: 5.134;
 }
 
 .c-pageHeading_desc {
   margin: 0 0 60px;
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.445;
+  line-height: 1.667;
 }
 
 .c-pageHeading_descAdvance {
   margin: 0 0 30px;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.625;
+  line-height: 1.75;
 }
 
 .c-pageHeading_descAdvance span.c-textEmphasize {
@@ -481,6 +484,9 @@ button:focus {
 .c-faq-list {
   margin-top: 50px;
   padding-bottom: 50px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.572;
 }
 
 .c-faq-list_item {
@@ -642,7 +648,7 @@ button:focus {
   padding: 36px 34px;
   font-size: 17px;
   font-size: 1.7rem;
-  line-height: 1;
+  line-height: 1.412;
 }
 
 .p-gnav_list_item a.is-active, .p-gnav_list_item a:hover {
@@ -733,7 +739,7 @@ button:focus {
   position: relative;
   width: 100%;
   min-width: 1000px;
-  height: 58.65385vw;
+  height: 42.30769vw;
   overflow: hidden;
   background-color: #ededf0;
 }
@@ -766,7 +772,7 @@ button:focus {
   left: 0;
   align-items: center;
   width: 100%;
-  height: 54.80769vw;
+  height: 38.46154vw;
   background-image: url("../images/common/slide.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -783,14 +789,15 @@ button:focus {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 54.80769vw;
+  height: 38.46154vw;
 }
 
 .p-banner_parallelogram-big1 {
   position: absolute;
   right: 0;
-  width: 660px;
-  height: 100%;
+  bottom: -3.7vw;
+  width: 560px;
+  height: calc(100% + 3.7vw);
   transform: skew(20deg);
   transform-origin: top;
   background-color: #d37117;
@@ -801,8 +808,9 @@ button:focus {
 .p-banner_parallelogram-big2 {
   position: absolute;
   right: 0;
-  width: 580px;
-  height: 100%;
+  bottom: -3.7vw;
+  width: 377px;
+  height: calc(100% + 3.7vw);
   transform: skew(-12deg);
   transform-origin: bottom;
   background-color: #ea8104;
@@ -812,10 +820,10 @@ button:focus {
 
 .p-banner_parallelogram-small1 {
   position: absolute;
-  right: 435px;
-  bottom: 210px;
+  right: 410px;
+  bottom: 247px;
   width: 130px;
-  height: 42%;
+  height: 53%;
   overflow: hidden;
   transform: skewX(-15deg);
   transform-origin: bottom;
@@ -872,7 +880,7 @@ button:focus {
   right: 175px;
   bottom: -70px;
   width: 200px;
-  height: 53%;
+  height: 60%;
   overflow: hidden;
   transform: skewX(-15deg);
   transform-origin: bottom;
@@ -900,10 +908,10 @@ button:focus {
 .p-banner_parallelogram-small4 {
   z-index: 1;
   position: absolute;
-  right: 189px;
-  bottom: 75px;
-  width: 200px;
-  height: 62%;
+  right: 242px;
+  bottom: 129px;
+  width: 135px;
+  height: 66%;
   overflow: hidden;
   transform: skewX(15deg);
   transform-origin: bottom;
@@ -959,7 +967,7 @@ button:focus {
   font-size: 74px;
   font-size: 7.4rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.163;
 }
 
 @media screen and (max-width: 768px) {
@@ -975,7 +983,7 @@ button:focus {
   font-size: 20px;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 @media (max-width: 768px) {
@@ -989,7 +997,7 @@ button:focus {
   z-index: 20;
   position: absolute;
   right: 0;
-  bottom: 1.1vw;
+  bottom: 1.8vw;
   left: 0;
   padding: 27px 37px;
   background-color: #fff;
@@ -1008,7 +1016,7 @@ button:focus {
   font-size: 16px;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .p-banner_content_news span {
@@ -1017,14 +1025,14 @@ button:focus {
   font-size: 14px;
   font-size: 1.4rem;
   letter-spacing: 1px;
-  line-height: 1.429;
+  line-height: 1.715;
 }
 
 .p-banner_content_news a {
   font-size: 14px;
   font-size: 1.4rem;
   letter-spacing: 2.5px;
-  line-height: 1.429;
+  line-height: 2.286;
 }
 
 @media (max-width: 768px) {
@@ -1112,7 +1120,7 @@ button:focus {
 .p-service .p-listService_item h4.p-listService_inner_en-text {
   font-size: 28px;
   font-size: 2.8rem;
-  line-height: 1.143;
+  line-height: 0.858;
 }
 
 .p-service .p-listService_item h5 {
@@ -1131,7 +1139,7 @@ button:focus {
   font-size: 14px;
   font-size: 1.4rem;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 1.858;
 }
 
 .p-service .p-listService_item p:last-child {
@@ -1141,7 +1149,13 @@ button:focus {
 .p-service .p-listService_item p.p-listService_inner_lService_name {
   font-size: 13px;
   font-size: 1.3rem;
-  line-height: 1.616;
+  line-height: 2.154;
+}
+
+.p-service .p-listService_item p.p-listService_inner_lService_desc {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.643;
 }
 
 .p-service .p-listService_item_box::after {
@@ -1350,7 +1364,7 @@ button:focus {
   font-size: 14px;
   font-size: 1.4rem;
   letter-spacing: 2.8px;
-  line-height: 1.715;
+  line-height: 1.572;
 }
 
 .p-featured .p-featuredList_item .p-featuredSlide_content_date {
@@ -1359,7 +1373,7 @@ button:focus {
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.834;
+  line-height: 2;
 }
 
 .p-featured .p-featuredList_item .p-featuredSlide_content_date span {
@@ -1370,7 +1384,7 @@ button:focus {
   font-size: 11px;
   font-size: 1.1rem;
   font-weight: normal;
-  line-height: 1.819;
+  line-height: 2.182;
 }
 
 .p-featured .p-featuredList_item .p-featuredSlide_content_date span::before {
@@ -1413,7 +1427,7 @@ button:focus {
 .p-news .p-newsList {
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.715;
 }
 
 .p-news .p-newsList li {
@@ -1435,6 +1449,7 @@ button:focus {
 
 .p-news .p-newsList_date {
   margin-right: 12px;
+  font-weight: bold;
 }
 
 .p-news .p-newsList_category {
@@ -1453,11 +1468,17 @@ button:focus {
   color: #e88200;
   font-size: 12px;
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: 2.167;
 }
 
 .p-news .p-newsList_category a {
   color: #e88200;
+}
+
+.p-news .p-newsList_title {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.858;
 }
 
 .p-news .c-btn-rm {
@@ -1543,7 +1564,7 @@ button:focus {
 .p-company_content_desc {
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.556;
+  line-height: 1.667;
 }
 
 .p-contact {
@@ -1598,7 +1619,7 @@ button:focus {
   top: 10px;
   width: 100%;
   height: 1px;
-  background-color: #898989;
+  background-color: #d5d5d5;
   content: '';
 }
 
@@ -1610,7 +1631,7 @@ button:focus {
   font-size: 20px;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.35;
   text-align: center;
 }
 
@@ -1620,7 +1641,10 @@ button:focus {
 
 .p-contact_inner .p-contact_form_item_label {
   margin-bottom: 10px;
+  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
+  line-height: 1.572;
 }
 
 .p-contact_inner .p-contact_form_item_label.required::after {
@@ -1640,10 +1664,10 @@ button:focus {
 }
 
 .p-contact_inner_inquiryForm .c-pageHeading_title {
-  margin: 60px 0;
+  margin: 55px 0;
   font-size: 20px;
   font-size: 2rem;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 @media (max-width: 768px) {

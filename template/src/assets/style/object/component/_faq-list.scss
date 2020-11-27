@@ -2,6 +2,8 @@
   margin-top: 50px;
   padding-bottom: 50px;
 
+  @include fs(14, 22);
+
   &_item {
     @include transition();
 

@@ -21,7 +21,7 @@
 }
 
 .c-btn-rm {
-  @include fs(14, 14);
+  @include fs(14, 38);
 
   display: inline-block;
   margin: 42px 4px 0;
@@ -47,11 +47,12 @@
 }
 
 .c-btn-submit {
-  padding: 15px 50px;
+  padding: 10px 50px;
   border: none;
   background: $color_orange;
   color: $color_white;
 
+  @include fs(14, 38);
   @include flexbox();
   @include align-items(center);
 

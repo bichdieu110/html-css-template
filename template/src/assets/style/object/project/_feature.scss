@@ -29,7 +29,7 @@
           background-color: #ededf0;
 
           &_title {
-            @include fs(14, 24);
+            @include fs(14, 22);
 
             margin-bottom: 7px;
             letter-spacing: 2.8px;
@@ -40,7 +40,7 @@
             color: #e88200;
             font-weight: 500;
 
-            @include fs(12, 22);
+            @include fs(12, 24);
 
             span {
               position: relative;
@@ -49,7 +49,7 @@
               color: #9b9b9b;
               font-weight: normal;
 
-              @include fs(11, 20);
+              @include fs(11, 24);
 
               &::before {
                 content: "";

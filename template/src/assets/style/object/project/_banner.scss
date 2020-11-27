@@ -57,7 +57,7 @@
   position: relative;
   width: 100%;
   min-width: $pc_min_width;
-  height: setvwpc(610px);
+  height: setvwpc(440px);
   // min-height: $pc_top_visual_min_height;
   // max-height: $pc_top_visual_max_height;
   overflow: hidden;
@@ -87,7 +87,7 @@
     left: 0;
     align-items: center;
     width: 100%;
-    height: setvwpc(570px);
+    height: setvwpc(400px);
     background-image: url("../images/common/slide.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -104,13 +104,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: setvwpc(570px);
+    height: setvwpc(400px);
 
     &-big1 {
       position: absolute;
       right: 0;
-      width: 660px;
-      height: 100%;
+      bottom: -3.7vw;
+      width: 560px;
+      height: calc(100% + 3.7vw);
       transform: skew(20deg);
       transform-origin: top;
       animation: parallelogram-big1 2s ease-out 2.7s both;
@@ -121,8 +122,9 @@
     &-big2 {
       position: absolute;
       right: 0;
-      width: 580px;
-      height: 100%;
+      bottom: -3.7vw;
+      width: 377px;
+      height: calc(100% + 3.7vw);
       transform: skew(-12deg);
       transform-origin: bottom;
       animation: parallelogram-big1 3s ease-out 2.9s both;
@@ -132,10 +134,10 @@
 
     &-small1 {
       position: absolute;
-      right: 435px;
-      bottom: 210px;
+      right: 410px;
+      bottom: 247px;
       width: 130px;
-      height: 42%;
+      height: 53%;
       overflow: hidden;
       transform: skewX(-15deg);
       transform-origin: bottom;
@@ -220,7 +222,7 @@
       right: 175px;
       bottom: -70px;
       width: 200px;
-      height: 53%;
+      height: 60%;
       overflow: hidden;
       -webkit-transform: skewX(-15deg);
       -ms-transform: skewX(-15deg);
@@ -278,10 +280,10 @@
     &-small4 {
       position: absolute;
       z-index: 1;
-      right: 189px;
-      bottom: 75px;
-      width: 200px;
-      height: 62%;
+      right: 242px;
+      bottom: 129px;
+      width: 135px;
+      height: 66%;
       overflow: hidden;
       -webkit-transform: skewX(15deg);
       -ms-transform: skewX(15deg);
@@ -364,7 +366,7 @@
       margin-bottom: 37px;
       font-weight: bold;
 
-      @include fs(74, 111);
+      @include fs(74, 86);
 
       @include mq_down(sp) {
         @include fs(20, 30);
@@ -375,7 +377,7 @@
       z-index: 2;
       font-weight: bold;
 
-      @include fs(20, 40);
+      @include fs(20, 34);
 
       @include bp(tab) {
         @include fs-vwsp(12, 18);
@@ -386,7 +388,7 @@
       position: absolute;
       z-index: 20;
       right: 0;
-      bottom: 1.1vw;
+      bottom: 1.8vw;
       left: 0;
       padding: 27px 37px;
       background-color: #fff;
@@ -401,7 +403,7 @@
         color: #000;
         letter-spacing: 1px;
 
-        @include fs(16, 20);
+        @include fs(16, 24);
       }
 
       span {
@@ -409,13 +411,13 @@
         color: #e88200;
         letter-spacing: 1px;
 
-        @include fs(14, 20);
+        @include fs(14, 24);
       }
 
       a {
         letter-spacing: 2.5px;
 
-        @include fs(14, 20);
+        @include fs(14, 32);
 
         @include bp(tab) {
           display: block;

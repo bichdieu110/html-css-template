@@ -23,12 +23,13 @@
         min-width: 145px;
         padding: 36px 34px;
 
-        &.is-active, &:hover {
+        &.is-active,
+        &:hover {
           background-color: #eb8205;
           color: #fff;
         }
 
-        @include fs(17, 17);
+        @include fs(17, 24);
 
         span {
           display: block;

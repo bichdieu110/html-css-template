@@ -59,7 +59,7 @@
         @include fs(26, 32);
 
         &.p-listService_inner_en-text {
-          @include fs(28, 32);
+          @include fs(28, 24);
         }
       }
 
@@ -77,14 +77,20 @@
         margin-bottom: 24px;
         letter-spacing: 1px;
 
-        @include fs(14, 21);
+        @include fs(14, 26);
 
         &:last-child {
           margin-bottom: 0;
         }
 
-        &.p-listService_inner_lService_name {
-          @include fs(13, 21);
+        &.p-listService_inner_lService {
+          &_name {
+            @include fs(13, 28);
+          }
+
+          &_desc {
+            @include fs(14, 23);
+          }
         }
       }
 

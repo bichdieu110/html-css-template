@@ -3,7 +3,7 @@
   text-align: center;
 
   .p-newsList {
-    @include fs(14, 14);
+    @include fs(14, 24);
 
     li {
       @include flexbox;
@@ -21,10 +21,11 @@
 
     &_date {
       margin-right: 12px;
+      font-weight: bold;
     }
 
     &_category {
-      @include fs(12, 12);
+      @include fs(12, 26);
       @include flexbox();
       @include align-items(center);
       @include justify-content(center);
@@ -38,6 +39,10 @@
       a {
         color: #e88200;
       }
+    }
+
+    &_title {
+      @include fs(14, 26);
     }
   }
 
