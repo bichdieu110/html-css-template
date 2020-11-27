@@ -144,10 +144,16 @@
 }
 
 .l-topMain {
+  position: relative;
   background: $color_bg_topMain;
 }
 
-.l-career {
+.l-topCompany {
+  position: relative;
+  z-index: 3;
+}
+
+.l-topCareer {
   position: relative;
   padding: 100px 0 88px;
   background-image: url(../images/top/bg_career.jpg);
@@ -156,6 +162,12 @@
   background-size: cover;
 }
 
-.l-contactUs {
+.l-topColumn {
+  background: url(../images/bg_column.png) top -220px left no-repeat;
+}
+
+.l-mainContact {
+  position: relative;
   padding-bottom: 90px;
+  background: url(../images/bg_mainContact.png) bottom right no-repeat;
 }

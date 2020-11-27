@@ -3,7 +3,7 @@
   color: white;
   text-align: center;
 
-  .c-goTop {
+  &_goTop {
     position: relative;
     color: white;
 
@@ -21,7 +21,7 @@
     }
   }
 
-  .c-copyright {
+  &_copyright {
     padding-top: 15px;
     color: #aeaeb1;
     font-size: 1.2rem;

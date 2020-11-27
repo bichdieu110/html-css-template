@@ -1,0 +1,38 @@
+.p-topNews {
+  padding: 110px 0 90px 0;
+
+  &_title {
+    text-align: center;
+  }
+
+  &_content {
+    &_list {
+      &_item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 37px 30px;
+        border-bottom: 1px solid #bebebe;
+
+        span {
+          display: block;
+          width: 165px;
+          margin: 0 20px 0 12px;
+          padding: 2px;
+          border: 1px solid $color_orange;
+          color: $color_orange;
+          text-align: center;
+        }
+
+        a {
+          letter-spacing: 0.11em;
+        }
+      }
+    }
+
+    &_readMore {
+      color: black;
+      text-align: center;
+    }
+  }
+}

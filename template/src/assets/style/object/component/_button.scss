@@ -43,4 +43,8 @@
     background-image: url('../images/c_btn.svg');
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

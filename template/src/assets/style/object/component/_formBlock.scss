@@ -1,0 +1,54 @@
+.c-formBlock {
+  padding: 55px 125px;
+
+  &_question {
+    position: relative;
+    padding: 15px 0;
+
+    &_control {
+      width: 100%;
+      margin-top: 7px;
+      padding: 20px 20px 20px 50px;
+      border: none;
+      outline: none;
+      background: #f3f3f6;
+    }
+
+    &::before {
+      content: "Q";
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: calc(50% - 10px);
+      left: 15px;
+      width: 25px;
+      height: 25px;
+      border: 1px solid $color_orange;
+      border-radius: 50%;
+      background: white;
+      color: $color_orange;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  &_group {
+    padding: 15px 0;
+
+    &_notice {
+      margin-left: 10px;
+      padding: 0 5px;
+      border: 1px solid $color_orange;
+      color: $color_orange;
+    }
+
+    &_control {
+      width: 100%;
+      margin-top: 7px;
+      padding: 20px;
+      border: none;
+      outline: none;
+      background: #f3f3f6;
+    }
+  }
+}

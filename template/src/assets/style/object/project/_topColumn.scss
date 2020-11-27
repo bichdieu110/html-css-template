@@ -1,0 +1,92 @@
+.p-topColumn {
+  padding: 100px 0;
+  overflow: hidden;
+
+  &_title {
+    text-align: center;
+  }
+
+  &_list {
+    display: flex;
+    margin: 0 -60px;
+
+    &_item {
+      position: relative;
+      width: 33.333336%;
+      padding: 0 60px;
+
+      &_img {
+        position: relative;
+        box-shadow: 4px 0 20px 0 rgba(50, 50, 50, 0.3);
+
+        figcaption {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 15px;
+          background-color: $color_orange;
+          color: white;
+        }
+      }
+
+      &_desc {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        bottom: -60px;
+        width: 60%;
+        padding: 20px;
+        background-color: #ededf0;
+
+        label {
+          display: block;
+          padding-bottom: 7px;
+          color: $color_orange;
+        }
+
+        h3 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+
+        &_divide {
+          padding-top: 10px;
+
+          strong {
+            color: $color_orange;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+
+          span {
+            position: relative;
+            margin-left: 15px;
+            padding-left: 17px;
+            color: #9b9b9b;
+            font-size: 1.1rem;
+
+            &::before {
+              content: " ";
+              position: absolute;
+              top: 5px;
+              left: 0;
+              width: 10px;
+              height: 10px;
+              background: url(../images/icon_view.svg) center center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_readMore {
+    margin-top: 90px;
+    color: black;
+    text-align: center;
+  }
+}
