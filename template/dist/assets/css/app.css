@@ -498,6 +498,16 @@ a {
   text-align: center;
 }
 
+.p-footer::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 40px;
+  background: #fff;
+  content: '';
+}
+
 .p-footer a {
   color: #fff;
   font-size: 14px;
