@@ -50,6 +50,44 @@
         margin-bottom: 80px;
       }
 
+      h4 {
+        width: 100%;
+        margin-bottom: 40px;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        @include fs(26, 32);
+
+        &.p-listService_inner_en-text {
+          @include fs(28, 32);
+        }
+      }
+
+      h5 {
+        width: 100%;
+        margin-bottom: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+        @include fs(18, 24);
+      }
+
+      p {
+        width: 100%;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+
+        @include fs(14, 21);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &.p-listService_inner_lService_name {
+          @include fs(13, 21);
+        }
+      }
+
       &_box {
         @include clearfix;
 
@@ -61,7 +99,7 @@
           padding: 0 15px;
         }
 
-        &_inner {
+        .p-listService_inner {
           float: left;
           background-color: rgba(255, 255, 255, 0.949);
           box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
@@ -78,10 +116,6 @@
 
           @include bp(tab) {
             padding: 30px 20px;
-          }
-
-          &_en-text {
-            @include fs(28, 32);
           }
 
           &_lService {
@@ -134,12 +168,6 @@
               color: #fff;
               letter-spacing: 1px;
               text-align: center;
-
-              @include fs(13, 21);
-
-              & + p {
-                @include fs(14, 23);
-              }
             }
           }
         }
@@ -184,36 +212,6 @@
 
         .p-listService_item-inner {
           float: right;
-        }
-      }
-
-      h4 {
-        width: 100%;
-        margin-bottom: 40px;
-        font-weight: 700;
-        letter-spacing: 2px;
-
-        @include fs(26, 32);
-      }
-
-      h5 {
-        width: 100%;
-        margin-bottom: 14px;
-        font-weight: bold;
-        letter-spacing: 2px;
-
-        @include fs(18, 24);
-      }
-
-      p {
-        width: 100%;
-        margin-bottom: 24px;
-        letter-spacing: 1px;
-
-        @include fs(14, 26);
-
-        &:last-child {
-          margin-bottom: 0;
         }
       }
 

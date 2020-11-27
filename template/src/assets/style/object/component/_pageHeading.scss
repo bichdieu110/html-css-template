@@ -41,6 +41,18 @@
 
     @include fs(18);
   }
+
+  &_descAdvance {
+    margin: 35px 0 60px;
+
+    @include fs(16);
+
+    span {
+      &.c-textEmphasize {
+        color: #e88200;
+      }
+    }
+  }
 }
 
 .c-textCenter {

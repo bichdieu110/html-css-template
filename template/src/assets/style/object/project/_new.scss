@@ -3,6 +3,8 @@
   text-align: center;
 
   .p-newsList {
+    @include fs(14, 14);
+
     li {
       @include flexbox;
       @include flex-wrap(wrap);

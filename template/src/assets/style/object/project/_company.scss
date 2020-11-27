@@ -15,4 +15,10 @@
       text-align: left;
     }
   }
+
+  &_content {
+    &_desc {
+      @include fs(18, 28);
+    }
+  }
 }
