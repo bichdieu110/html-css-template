@@ -823,10 +823,10 @@ button:focus {
 
 .p-banner_parallelogram-small1 {
   position: absolute;
-  right: 410px;
+  right: 440px;
   bottom: 247px;
   width: 130px;
-  height: 53%;
+  height: 46%;
   overflow: hidden;
   transform: skewX(-15deg);
   transform-origin: bottom;
