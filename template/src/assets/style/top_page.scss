@@ -6,15 +6,15 @@
     background: url("../../assets/images/common/mv.png") no-repeat;
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 86vh;
     background-size: cover;
     @include bp(tab) {
       height: 50vh;
     }
     &_inner {
       position: absolute;
-      top: 30%;
-      left: 120px;
+      top: 28%;
+      left: 112px;
       color: $color-white;
       @include bp(tab) {
         top: 15%;
@@ -25,11 +25,11 @@
       }
     }
     &_title {
-      font-size: 44px;
+      font-size: 73px;
       line-height: 1.228;
-      letter-spacing: 9px;
       font-family: $font-family-notosansjpbold;
       margin-bottom: 20px;
+      letter-spacing: 5px;
       @include bp(tab) {
         font-size: 24px;
         margin-bottom: 10px;
