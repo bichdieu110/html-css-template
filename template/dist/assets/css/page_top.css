@@ -520,6 +520,9 @@ button:focus {
   border-radius: 50%;
   background-color: #fff;
   color: #ea8105;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 4.643;
   content: 'Q';
 }
 

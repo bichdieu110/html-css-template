@@ -27,6 +27,8 @@
         background-color: #fff;
         color: $color_orange;
 
+        @include fs(14, 65);
+
         @include flexbox();
         @include align-items(center);
         @include justify-content(center);
