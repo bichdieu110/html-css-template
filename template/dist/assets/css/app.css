@@ -1422,6 +1422,105 @@ button:focus {
   background-image: url("../images/common/icon_next.png");
 }
 
+.p-column {
+  padding: 100px 0 225px;
+  background-color: #ededf0;
+}
+
+.p-column .p-columnList_item:focus {
+  outline: none;
+}
+
+.p-column .p-columnList_item .p-columnSlide {
+  position: relative;
+  outline: none;
+}
+
+.p-column .p-columnList_item .p-columnSlide_img {
+  width: 79%;
+  height: 328px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.p-column .p-columnList_item .p-columnSlide_img:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .p-column .p-columnList_item .p-columnSlide_img {
+    width: 100%;
+  }
+}
+
+.p-column .p-columnList_item .p-columnSlide_content {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 40%;
+  padding: 24px 80px 7px 29px;
+  background-color: #ededf0;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content:focus {
+  outline: none;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content_title {
+  margin-bottom: 7px;
+  letter-spacing: 2.8px;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content_title a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.625;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content_desc a {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.572;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content_date, .p-column .p-columnList_item .p-columnSlide_content_status {
+  padding-left: 4px;
+  color: #e88200;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content_date span, .p-column .p-columnList_item .p-columnSlide_content_status span {
+  position: relative;
+  margin-left: 11px;
+  padding-left: 17px;
+  color: #9b9b9b;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 2.182;
+}
+
+.p-column .p-columnList_item .p-columnSlide_content_date span::before, .p-column .p-columnList_item .p-columnSlide_content_status span::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url("../images/common/icon_view.png") center center no-repeat;
+  content: "";
+}
+
+.p-column .c-btn-rm {
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+
 .p-news {
   padding: 100px 0;
   text-align: center;

@@ -6,6 +6,7 @@
 			$(function(){
         self.banner();
         self.feature();
+        self.column();
         self.faq();
 			});
 		},
@@ -74,6 +75,24 @@
         slidesToScroll: 1,
         infinite: false,
         arrows: true,
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          }
+        ]
+      });
+    },
+    column: function() {
+      $('.jc_columnList').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: false,
         responsive: [
           {
             breakpoint: 1000,
