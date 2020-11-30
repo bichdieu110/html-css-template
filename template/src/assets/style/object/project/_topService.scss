@@ -60,15 +60,23 @@
       min-height: 560px;
       margin-bottom: 90px;
 
+      @include mq_down(sp) {
+        flex-wrap: wrap;
+      }
+
       &_img {
         position: absolute;
         z-index: 0;
         top: 60px;
+
+        @include mq_down(sp) {
+          position: relative;
+        }
       }
 
       &_desc {
         z-index: 1;
-        width: 800px;
+        width: setvw(800px);
         padding: 90px 80px 70px;
         background: white;
         box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
@@ -95,8 +103,10 @@
       }
 
       &:nth-child(odd) & {
-        &_img {
-          margin-left: -125px;
+        @include mq_up(pc) {
+          &_img {
+            margin-left: -125px;
+          }
         }
       }
 
@@ -105,8 +115,10 @@
       }
 
       &:nth-child(even) & {
-        &_img {
-          margin-right: -125px;
+        @include mq_up(pc) {
+          &_img {
+            margin-right: -125px;
+          }
         }
       }
     }

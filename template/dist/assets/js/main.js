@@ -31,3 +31,32 @@ $(document).ready(function() {
 		});
 	});
 });
+$(document).ready(function(){
+
+	if ($('.jc_header').length) {
+
+		var jsnavHeader = $('.jc_header'),
+			burgerMenu = jsnavHeader.find('.jc_burgerMenu'),
+			jsnavMenuListWrapper = $('.jc_gnav_menu > ul'),
+			jsnavMenuListDropdown = $('.jc_gnav_menu ul li:has(ul)')
+		
+		burgerMenu.on("click", function(){
+			$(this).toggleClass('is-openMenu');
+			jsnavMenuListWrapper.slideToggle(300);
+		});
+		
+		jsnavMenuListDropdown.each(function(){
+			$(this).append( '<span class="jc_plus"></span>' );
+			$(this).addClass('is-dropdown');
+		});
+		
+		$('.jc_plus').on("click", function(){
+			$(this).prev('ul').slideToggle(300);
+			$(this).toggleClass('is-open');
+		});
+		
+		$('.is-dropdown a').append('<span></span>');
+
+	}
+
+});

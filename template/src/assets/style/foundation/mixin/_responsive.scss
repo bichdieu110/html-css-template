@@ -20,6 +20,18 @@ $breakpoint_down: (
   }
 }
 
+@function setvw($target) {
+  $vw: (768 * 0.01) * 1px;
+
+  @return ($target / $vw) * 1vw;
+}
+
+@function setvwpc($target) {
+  $vw: (1440 * 0.01) * 1px;
+
+  @return ($target / $vw) * 1vw;
+}
+
 //使用例
 // .foo {
 //   color: blue;
