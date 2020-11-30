@@ -17,7 +17,7 @@
           height: 328px;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: auto 100%;
+          background-size: cover;
 
           &:focus {
             outline: none;
@@ -26,6 +26,15 @@
           @include bp(tab) {
             width: 100%;
           }
+        }
+
+        &_category {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 10px;
+          background: #ea8105;
+          color: #fff;
         }
 
         &_content {

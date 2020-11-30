@@ -1441,7 +1441,7 @@ button:focus {
   height: 328px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .p-column .p-columnList_item .p-columnSlide_img:focus {
@@ -1452,6 +1452,15 @@ button:focus {
   .p-column .p-columnList_item .p-columnSlide_img {
     width: 100%;
   }
+}
+
+.p-column .p-columnList_item .p-columnSlide_category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  background: #ea8105;
+  color: #fff;
 }
 
 .p-column .p-columnList_item .p-columnSlide_content {
