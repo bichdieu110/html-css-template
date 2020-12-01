@@ -1,5 +1,5 @@
 .p-mainContact {
-  padding: 90px 0 60px 0;
+  padding: setvwpc(90px) 0 setvwpc(60px) 0;
   background-color: white;
   box-shadow: 4px 0 20px 0 rgba(50, 50, 50, 0.3);
 
@@ -7,8 +7,13 @@
     text-align: center;
 
     &_para {
+      padding: 0 10px;
       font-size: 1.6rem;
       letter-spacing: 0.1em;
+
+      @include mq_down(sp) {
+        font-size: 1.2rem;
+      }
 
       span {
         color: $color_orange;
@@ -17,7 +22,11 @@
   }
 
   &_form {
-    margin: 55px 125px 0 125px;
+    margin: setvwpc(55px) setvwpc(125px) 0 setvwpc(125px);
+
+    @include mq_down(sp) {
+      margin: setvw(35px) setvw(15px) 0 setvw(15px);
+    }
 
     &_faq {
       &_head {

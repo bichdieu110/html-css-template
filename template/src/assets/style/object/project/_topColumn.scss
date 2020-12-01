@@ -1,5 +1,5 @@
 .p-topColumn {
-  padding: 100px 0;
+  padding: setvwpc(100px) 0;
   overflow: hidden;
 
   &_title {
@@ -10,14 +10,27 @@
     display: flex;
     margin: 0 -60px;
 
+    @include mq_down(sp) {
+      flex-wrap: wrap;
+      margin: 0 -20px;
+    }
+
     &_item {
       position: relative;
       width: 33.333336%;
       padding: 0 60px;
 
+      @include mq_down(sp) {
+        width: 100%;
+        padding: setvw(60px);
+      }
+
       &_img {
         position: relative;
-        box-shadow: 4px 0 20px 0 rgba(50, 50, 50, 0.3);
+
+        img {
+          box-shadow: 4px 0 20px 0 rgba(50, 50, 50, 0.3);
+        }
 
         figcaption {
           position: absolute;
@@ -37,6 +50,10 @@
         width: 60%;
         padding: 20px;
         background-color: #ededf0;
+
+        @include mq_down(sp) {
+          bottom: -10px;
+        }
 
         label {
           display: block;
@@ -85,8 +102,12 @@
   }
 
   &_readMore {
-    margin-top: 90px;
+    margin-top: setvwpc(90px);
     color: black;
     text-align: center;
+
+    @include mq_down(sp) {
+      margin-top: setvw(30px);
+    }
   }
 }

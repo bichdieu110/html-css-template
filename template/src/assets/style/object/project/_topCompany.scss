@@ -1,18 +1,31 @@
 .p-topCompany {
   margin-top: -60px;
-  margin-left: 15.27778vw;
-  padding: setvw(115px) setvw(100px) setvw(167px) setvw(155px);
+  margin-left: setvwpc(220px);
+  padding: setvwpc(115px) setvwpc(100px) setvwpc(167px) setvwpc(155px);
   background-color: #252526;
   color: #fff;
+
+  @include mq_down(sp) {
+    margin-left: 0;
+    padding: setvw(80px) setvw(45px) setvw(80px) setvw(45px);
+  }
 
   &_desc {
     &_name {
       padding-bottom: 20px;
       font-size: 4rem;
+
+      @include mq_down(sp) {
+        font-size: 2rem;
+      }
     }
 
     &_paragraph {
       line-height: 1.8em;
+
+      @include mq_down(sp) {
+        line-height: 1.4em;
+      }
     }
   }
 }

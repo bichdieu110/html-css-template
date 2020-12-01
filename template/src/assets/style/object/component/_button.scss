@@ -23,7 +23,7 @@
 .c-btn {
   display: block;
   position: relative;
-  padding: 25px 79px;
+  padding: setvwpc(25px) setvwpc(79px);
   border: none;
   outline: none;
   background-color: $color_orange;
@@ -32,16 +32,24 @@
   font-weight: 700;
   letter-spacing: 0.15em;
 
+  @include mq_down(sp) {
+    padding: setvw(20px) setvw(59px);
+  }
+
   &::after {
     content: " ";
     display: inline-block;
     position: relative;
     top: 0;
-    width: 188px;
+    width: setvwpc(188px);
     height: 7px;
     margin-left: 16px;
     background-image: url('../images/c_btn.svg');
     background-repeat: no-repeat;
+
+    @include mq_down(sp) {
+      width: setvw(188px);
+    }
   }
 
   &:hover {

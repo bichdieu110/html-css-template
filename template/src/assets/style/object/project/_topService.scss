@@ -9,9 +9,13 @@
     z-index: 0;
     top: 0;
     right: 0;
-    width: 180px;
+    width: setvwpc(180px);
     height: 90%;
     background-color: #fff;
+
+    @include mq_down(sp) {
+      display: none;
+    }
   }
 
   &::after {
@@ -20,8 +24,8 @@
     z-index: 0;
     right: 0;
     bottom: 0;
-    width: 290px;
-    height: 887px;
+    width: setvwpc(290px);
+    height: setvwpc(887px);
     background: url(../images/after_topService.png) right bottom -13px no-repeat;
   }
 
@@ -34,10 +38,19 @@
 
     &_surprise {
       font-size: 4rem;
+
+      @include mq_down(sp) {
+        font-size: 2rem;
+      }
     }
 
     &_text {
       font-size: 1.8rem;
+
+      @include mq_down(sp) {
+        padding-top: 5px;
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -45,6 +58,10 @@
     position: absolute;
     top: -395px;
     left: 0;
+
+    @include mq_down(sp) {
+      display: none;
+    }
   }
   // list
   &_list {
@@ -52,16 +69,22 @@
     padding-top: 60px;
     overflow: hidden;
 
+    @include mq_down(sp) {
+      padding-top: setvw(60px);
+      padding-bottom: setvw(50px);
+    }
+
     &_item {
       display: flex;
       position: relative;
       z-index: 2;
       align-items: flex-start;
-      min-height: 560px;
-      margin-bottom: 90px;
+      min-height: setvwpc(560px);
+      margin-bottom: setvwpc(90px);
 
       @include mq_down(sp) {
         flex-wrap: wrap;
+        margin-bottom: setvw(10px);
       }
 
       &_img {
@@ -76,11 +99,15 @@
 
       &_desc {
         z-index: 1;
-        width: setvw(800px);
-        padding: 90px 80px 70px;
+        width: setvwpc(800px);
+        padding: setvwpc(90px) setvwpc(80px) setvwpc(70px);
         background: white;
         box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
         line-height: 2.6em;
+
+        @include mq_down(sp) {
+          width: 100%;
+        }
 
         &_name {
           padding-bottom: 30px;
@@ -130,9 +157,17 @@
     margin: 0 -11px;
     counter-reset: section;
 
+    @include mq_down(sp) {
+      flex-wrap: wrap;
+    }
+
     &_item3d {
       width: 33.3336%;
       padding: 11px;
+
+      @include mq_down(sp) {
+        width: 100%;
+      }
 
       &_head {
         position: relative;
@@ -163,7 +198,7 @@
       }
 
       &_para {
-        dt {
+        li {
           position: relative;
           text-indent: 13px;
 

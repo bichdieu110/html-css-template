@@ -1,7 +1,7 @@
 .p-mainVisual {
   position: relative;
   width: 100%;
-  padding-bottom: 120px;
+  padding-bottom: setvwpc(120px);
   overflow: hidden;
   -webkit-animation: wrapfade 0.5s linear 2s both;
   animation: wrapfade 0.5s linear 2s both;
@@ -12,18 +12,23 @@
     min-width: auto;
     min-height: auto;
     max-height: $sp_top_visual_max_height;
+    padding-bottom: 0;
   }
 
   &_content {
     display: flex;
     position: relative;
     align-items: center;
-    height: 800px;
+    height: setvwpc(800px);
     background-image: url(../images/bg_visual.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: #fff;
+
+    @include mq_down(sp) {
+      height: setvw(800px);
+    }
 
     &_text {
       display: flex;
@@ -38,19 +43,18 @@
 
       @include mq_down(sp) {
         min-width: auto;
-        padding-right: $sp_top_content_side_padding;
-        padding-left: $sp_top_content_side_padding;
+        padding: setvw(45px);
       }
 
       .c-title {
         z-index: 3;
         margin-bottom: 20px;
-        font-size: 74px;
+        font-size: 7.4rem;
         font-weight: bold;
-        letter-spacing: 9px;
+        letter-spacing: 0.1em;
 
         @include mq_down(sp) {
-          font-size: 40px;
+          font-size: 3rem;
         }
       }
 
@@ -78,7 +82,7 @@
       &_base1 {
         position: absolute;
         right: 0;
-        width: 900px;
+        width: setvwpc(900px);
         height: 100%;
         transform: skewX(39deg);
         -webkit-transform-origin: top;
@@ -95,7 +99,7 @@
       &_base2 {
         position: absolute;
         right: 0;
-        width: 527px;
+        width: setvwpc(527px);
         height: 100%;
         max-height: 775px;
         transform: skewX(-12deg);
@@ -111,9 +115,9 @@
       &_base3 {
         position: absolute;
         right: 0;
-        bottom: 0;
-        width: 271px;
-        height: 115px;
+        bottom: 10px;
+        width: setvwpc(240px);
+        height: setvwpc(115px);
         transform: skewX(39deg);
         -webkit-transform-origin: top;
         -ms-transform-origin: top;
@@ -133,9 +137,9 @@
       &_obj1 {
         position: absolute;
         z-index: 10;
-        right: 440px;
-        bottom: 210px;
-        width: 133px;
+        right: setvwpc(440px);
+        bottom: setvwpc(210px);
+        width: setvwpc(133px);
         height: 42%;
         overflow: hidden;
         -webkit-transform: skewX(-15deg);
@@ -153,6 +157,10 @@
         -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
         will-change: height;
+
+        @include mq_down(sp) {
+          display: none;
+        }
 
         &_s1 {
           position: absolute;
@@ -180,8 +188,8 @@
         position: absolute;
         z-index: 12;
         top: -10px;
-        right: 330px;
-        width: 130px;
+        right: setvwpc(330px);
+        width: setvwpc(130px);
         height: 39%;
         overflow: hidden;
         -webkit-transform: skewX(15deg);
@@ -200,12 +208,16 @@
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
         will-change: height;
 
+        @include mq_down(sp) {
+          display: none;
+        }
+
         &_s2 {
           position: absolute;
           top: 0;
           right: 0;
-          width: 200px;
-          height: 500px;
+          width: setvwpc(200px);
+          height: setvwpc(500px);
           -webkit-transform: skewX(-22deg);
           -ms-transform: skewX(-22deg);
           transform: skewX(-22deg);
@@ -225,9 +237,9 @@
       &_obj3 {
         position: absolute;
         z-index: 10;
-        top: 150px;
-        right: 170px;
-        width: 170px;
+        top: setvwpc(150px);
+        right: setvwpc(170px);
+        width: setvwpc(170px);
         height: 60%;
         overflow: hidden;
         -webkit-transform: skewX(-15deg);
@@ -246,15 +258,19 @@
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
         will-change: height;
 
+        @include mq_down(sp) {
+          display: none;
+        }
+
         &_s3 {
           position: absolute;
           top: 0;
           right: 0;
           width: 100%;
           height: 100%;
-          -webkit-transform: skewX(21deg);
-          -ms-transform: skewX(21deg);
-          transform: skewX(21deg);
+          -webkit-transform: skewX(17deg);
+          -ms-transform: skewX(17deg);
+          transform: skewX(17deg);
           -webkit-transform-origin: top;
           -ms-transform-origin: top;
           transform-origin: top;
@@ -271,9 +287,9 @@
       &_obj4 {
         position: absolute;
         z-index: 11;
-        right: 100px;
-        bottom: -50px;
-        width: 200px;
+        right: setvwpc(100px);
+        bottom: setvwpc(-50px);
+        width: setvwpc(200px);
         height: 62%;
         overflow: hidden;
         -webkit-transform: skewX(15deg);
@@ -292,12 +308,16 @@
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
         will-change: height;
 
+        @include mq_down(sp) {
+          display: none;
+        }
+
         &_s4 {
           position: absolute;
           top: 0;
           right: 0;
-          width: 200px;
-          height: 500px;
+          width: setvwpc(200px);
+          height: setvwpc(500px);
           -webkit-transform: skewX(-21.6deg);
           -ms-transform: skewX(-21.6deg);
           transform: skewX(-21.6deg);
@@ -329,8 +349,12 @@
       box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
       color: #000;
 
+      @include mq_down(sp) {
+        display: none;
+      }
+
       &_list {
-        padding: 27px 37px;
+        padding: setvwpc(27px) setvwpc(37px);
 
         &_item {
           b {
@@ -348,6 +372,11 @@
           a {
             color: $color_primary;
             font-size: 15px;
+
+            @include mq_down(sp) {
+              display: block;
+              padding-top: 7px;
+            }
           }
         }
       }
@@ -385,7 +414,7 @@
 
 @-webkit-keyframes base1 {
   0% {
-    right: -900px;
+    right: setvwpc(-900px);
     opacity: 0;
   }
 
@@ -402,7 +431,7 @@
 
 @keyframes base1 {
   0% {
-    right: -900px;
+    right: setvwpc(-900px);
     opacity: 0;
   }
 
@@ -419,7 +448,7 @@
 
 @-webkit-keyframes base2 {
   0% {
-    right: -580px;
+    right: setvwpc(-580px);
     opacity: 0;
   }
 
@@ -436,7 +465,7 @@
 
 @keyframes base2 {
   0% {
-    right: -580px;
+    right: setvwpc(-580px);
     opacity: 0;
   }
 
