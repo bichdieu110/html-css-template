@@ -285,8 +285,8 @@ button:focus {
 }
 
 .l-pageContent {
-  min-width: 1000px;
-  max-width: 1200px;
+  min-width: 1246px;
+  max-width: 1246px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -299,13 +299,6 @@ button:focus {
     padding-right: 3.5%;
     padding-left: 3.5%;
   }
-}
-
-.l-pageContent {
-  position: relative;
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
 }
 
 .l-center {
@@ -340,11 +333,12 @@ button:focus {
 
 .c-btn-rm {
   display: inline-block;
-  margin: 42px 4px 0;
+  margin: 28px 4px 0;
   color: #fff;
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: bold;
+  letter-spacing: 2px;
   line-height: 2.715;
 }
 
@@ -354,7 +348,7 @@ button:focus {
   top: -1px;
   width: 188px;
   height: 7px;
-  margin-left: 16px;
+  margin-left: 12px;
   background-image: url("../images/common/icon_rm.png");
   background-repeat: no-repeat;
   content: "";
@@ -397,24 +391,40 @@ button:focus {
   font-size: 34px;
   font-size: 3.4rem;
   font-weight: bold;
+  letter-spacing: 0;
   line-height: 0.706;
 }
 
 .c-pageHeading_subtitle {
   display: block;
-  margin-bottom: 25px;
+  margin-top: -15px;
+  margin-bottom: -25px;
   color: #9b9b9b;
   font-size: 15px;
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 3px;
   line-height: 5.134;
+}
+
+@media (max-width: 768px) {
+  .c-pageHeading_subtitle {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
 
 .c-pageHeading_desc {
   margin: 0 0 60px;
   font-size: 18px;
   font-size: 1.8rem;
+  letter-spacing: 3.5px;
   line-height: 1.667;
+}
+
+.c-pageHeading_slogan {
+  margin-top: 25px;
+  letter-spacing: 5px;
 }
 
 .c-pageHeading_descAdvance {
@@ -647,8 +657,8 @@ button:focus {
 
 .p-gnav_list_item a {
   display: block;
-  min-width: 145px;
-  padding: 36px 34px;
+  min-width: 140px;
+  padding: 30px 40px;
   font-size: 17px;
   font-size: 1.7rem;
   line-height: 1.412;
@@ -665,6 +675,10 @@ button:focus {
   font-size: 10px;
   font-size: 1rem;
   line-height: 1;
+}
+
+.p-gnav_list_item:last-child a {
+  min-width: 155px;
 }
 
 .p-section {
@@ -742,7 +756,7 @@ button:focus {
   position: relative;
   width: 100%;
   min-width: 1000px;
-  height: 42.30769vw;
+  height: 61.53846vw;
   overflow: hidden;
   background-color: #ededf0;
 }
@@ -775,7 +789,7 @@ button:focus {
   left: 0;
   align-items: center;
   width: 100%;
-  height: 38.46154vw;
+  height: 54.23077vw;
   background-image: url("../images/common/slide.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -792,16 +806,16 @@ button:focus {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 38.46154vw;
+  height: 61.53846vw;
 }
 
 .p-banner_parallelogram-big1 {
   position: absolute;
   right: 0;
-  bottom: -3.7vw;
-  width: 560px;
+  bottom: 0;
+  width: 46vw;
   height: calc(100% + 3.7vw);
-  transform: skew(20deg);
+  transform: skew(23deg);
   transform-origin: top;
   background-color: #d37117;
   animation: parallelogram-big1 2s ease-out 2.7s both;
@@ -811,8 +825,8 @@ button:focus {
 .p-banner_parallelogram-big2 {
   position: absolute;
   right: 0;
-  bottom: -3.7vw;
-  width: 377px;
+  bottom: 0;
+  width: 300px;
   height: calc(100% + 3.7vw);
   transform: skew(-12deg);
   transform-origin: bottom;
@@ -823,10 +837,10 @@ button:focus {
 
 .p-banner_parallelogram-small1 {
   position: absolute;
-  right: 440px;
-  bottom: 247px;
-  width: 130px;
-  height: 46%;
+  right: 27%;
+  bottom: 300px;
+  width: 9vw;
+  height: 38%;
   overflow: hidden;
   transform: skewX(-15deg);
   transform-origin: bottom;
@@ -853,8 +867,8 @@ button:focus {
   z-index: 3;
   position: absolute;
   top: -10px;
-  right: 330px;
-  width: 130px;
+  right: 19vw;
+  width: 9vw;
   height: 39%;
   overflow: hidden;
   transform: skewX(15deg);
@@ -880,10 +894,10 @@ button:focus {
 .p-banner_parallelogram-small3 {
   z-index: 2;
   position: absolute;
-  right: 175px;
-  bottom: -70px;
-  width: 200px;
-  height: 60%;
+  right: 8.5%;
+  bottom: 0;
+  width: 13vw;
+  height: 56%;
   overflow: hidden;
   transform: skewX(-15deg);
   transform-origin: bottom;
@@ -911,9 +925,9 @@ button:focus {
 .p-banner_parallelogram-small4 {
   z-index: 1;
   position: absolute;
-  right: 242px;
-  bottom: 129px;
-  width: 135px;
+  right: 15vw;
+  bottom: 175px;
+  width: 9vw;
   height: 66%;
   overflow: hidden;
   transform: skewX(15deg);
@@ -943,18 +957,19 @@ button:focus {
   display: flex;
   z-index: 20;
   position: absolute;
-  top: calc(50% - 380px);
+  top: 0;
   bottom: 0;
   left: 50%;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  min-width: 1000px;
-  max-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px;
+  min-width: 1246px;
+  max-width: 1246px;
+  padding-right: 30px;
+  padding-left: 30px;
   transform: translateX(-50%);
   color: #fff;
+  letter-spacing: 9.5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -966,10 +981,12 @@ button:focus {
 }
 
 .p-banner_content_title {
-  margin-bottom: 37px;
+  margin-top: -9vw;
+  margin-bottom: 25px;
+  margin-left: -1.25vw;
   font-size: 74px;
   font-size: 7.4rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.163;
 }
 
@@ -982,10 +999,11 @@ button:focus {
 }
 
 .p-banner_content_desc {
-  z-index: 2;
+  margin-left: -0.5vw;
   font-size: 20px;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 4px;
   line-height: 1.7;
 }
 
@@ -1000,7 +1018,7 @@ button:focus {
   z-index: 20;
   position: absolute;
   right: 0;
-  bottom: 1.8vw;
+  bottom: 4.5vw;
   left: 0;
   padding: 27px 37px;
   background-color: #fff;
@@ -1014,7 +1032,7 @@ button:focus {
 }
 
 .p-banner_content_news b {
-  margin-right: 10px;
+  margin-right: 40px;
   color: #000;
   font-size: 16px;
   font-size: 1.6rem;
@@ -1058,8 +1076,8 @@ button:focus {
 .p-service::after {
   z-index: -2;
   position: absolute;
-  top: -339px;
-  left: -300px;
+  top: -22.5vw;
+  left: -19vw;
   content: url("../../assets/images/common/bg_service.png");
 }
 
@@ -1075,7 +1093,7 @@ button:focus {
 }
 
 .p-service .c-pageHeading {
-  padding-top: 60px;
+  padding-top: 110px;
 }
 
 .p-service .p-listService {
@@ -1112,7 +1130,7 @@ button:focus {
 
 .p-service .p-listService_item h4 {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   font-size: 26px;
   font-size: 2.6rem;
   font-weight: 700;
@@ -1132,7 +1150,7 @@ button:focus {
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   line-height: 1.334;
 }
 
@@ -1169,7 +1187,7 @@ button:focus {
 
 @media (min-width: 769px) {
   .p-service .p-listService_item_box {
-    padding: 0 55px;
+    padding: 0 155px;
   }
 }
 
@@ -1193,7 +1211,7 @@ button:focus {
   .p-service .p-listService_item_box .p-listService_inner {
     max-width: 70%;
     min-height: 490px;
-    padding: 74px 72px 60px 75px;
+    padding: 28px 72px 60px 75px;
   }
 }
 
@@ -1270,7 +1288,7 @@ button:focus {
   .p-service .p-listService_item_bg {
     z-index: -1;
     position: absolute;
-    top: 60px;
+    top: 55px;
     right: 10.8%;
     left: 0;
     height: 500px;
@@ -1291,6 +1309,23 @@ button:focus {
   }
 }
 
+.p-service .p-listService_item:nth-child(even) .p-listService_inner {
+  padding: 55px 72px 60px 75px;
+  float: right;
+}
+
+.p-service .p-listService_item:nth-child(even) .p-listService_inner h5 {
+  letter-spacing: 3.5px;
+}
+
+.p-service .p-listService_item:nth-child(even) .p-listService_inner h4 {
+  margin-bottom: 35px;
+}
+
+.p-service .p-listService_item:nth-child(even) .p-listService_inner p {
+  margin-bottom: 8px;
+}
+
 @media (min-width: 769px) {
   .p-service .p-listService_item:nth-child(even) {
     margin-bottom: 170px;
@@ -1300,10 +1335,6 @@ button:focus {
 .p-service .p-listService_item:nth-child(even) .p-listService_item_bg {
   right: 0;
   left: 11%;
-}
-
-.p-service .p-listService_item:nth-child(even) .p-listService_item-inner {
-  float: right;
 }
 
 .p-service .p-listService_item:last-child {
@@ -1329,9 +1360,17 @@ button:focus {
   margin-bottom: 10px;
 }
 
+.p-service .p-listService_item:last-child .p-listService_inner {
+  padding: 70px 72px 60px 75px;
+}
+
 .p-featured {
-  padding: 18px 0 225px;
+  padding: 32px 0 225px;
   background-color: #ededf0;
+}
+
+.p-featured .p-featuredList_item {
+  margin-right: 90px;
 }
 
 .p-featured .p-featuredList_item .p-featuredSlide {
@@ -1340,11 +1379,11 @@ button:focus {
 }
 
 .p-featured .p-featuredList_item .p-featuredSlide_img {
-  width: 79%;
+  width: 80%;
   height: 328px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -1357,8 +1396,8 @@ button:focus {
   position: absolute;
   right: 0;
   bottom: -3px;
-  left: 40%;
-  padding: 24px 80px 7px 29px;
+  left: 38%;
+  padding: 24px 28px 7px 28px;
   background-color: #ededf0;
 }
 
@@ -1611,6 +1650,7 @@ button:focus {
 }
 
 .p-career_bg {
+  z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
@@ -1656,8 +1696,8 @@ button:focus {
 
 .p-company_group-text {
   margin-top: -60px;
-  margin-left: 160px;
-  padding: 115px 100px 167px 155px;
+  margin-left: 15.5%;
+  padding: 128px 220px 160px 150px;
   background-color: #252526;
   color: #fff;
 }
@@ -1669,12 +1709,18 @@ button:focus {
 }
 
 .p-company_group-text .c-pageHeading {
+  margin-bottom: 25px;
   text-align: left;
+}
+
+.p-company_content_title {
+  letter-spacing: 5px;
 }
 
 .p-company_content_desc {
   font-size: 18px;
   font-size: 1.8rem;
+  letter-spacing: 3.5px;
   line-height: 1.667;
 }
 

@@ -1,9 +1,8 @@
-
 .p-company {
   &_group-text {
     margin-top: -60px;
-    margin-left: 160px;
-    padding: 115px 100px 167px 155px;
+    margin-left: 15.5%;
+    padding: 128px 220px 160px 150px;
     background-color: #252526;
     color: #fff;
 
@@ -12,12 +11,19 @@
     }
 
     .c-pageHeading {
+      margin-bottom: 25px;
       text-align: left;
     }
   }
 
   &_content {
+    &_title {
+      letter-spacing: 5px;
+    }
+
     &_desc {
+      letter-spacing: 3.5px;
+
       @include fs(18, 30);
     }
   }

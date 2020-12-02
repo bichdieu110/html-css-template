@@ -25,21 +25,35 @@
 
     margin-bottom: 0;
     font-weight: bold;
+    letter-spacing: 0;
   }
 
   &_subtitle {
     display: block;
-    margin-bottom: 25px;
+    margin-top: -15px;
+    margin-bottom: -25px;
     color: #9b9b9b;
     font-weight: bold;
+    letter-spacing: 3px;
 
     @include fs(15, 77);
+
+    @include bp(tab) {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
   }
 
   &_desc {
     margin: 0 0 60px;
+    letter-spacing: 3.5px;
 
     @include fs(18, 30);
+  }
+
+  &_slogan {
+    margin-top: 25px;
+    letter-spacing: 5px;
   }
 
   &_descAdvance {

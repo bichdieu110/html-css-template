@@ -86,8 +86,9 @@
 }
 
 .l-pageContent {
-  min-width: $pc_min_width;
-  max-width: $pc_max_width;
+  min-width: 1246px;
+  max-width: 1246px;
+  // max-width: $pc_max_width;
   margin-right: auto;
   margin-left: auto;
   padding-right: $pc_page_content_side_padding;
@@ -100,12 +101,12 @@
   }
 }
 
-.l-pageContent {
-  position: relative;
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-}
+// .l-pageContent {
+//   position: relative;
+//   width: 100%;
+//   max-width: 1240px;
+//   margin: 0 auto;
+// }
 
 .l-center {
   @include flexbox();

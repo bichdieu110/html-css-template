@@ -5,8 +5,8 @@
     content: url("../../assets/images/common/bg_service.png");
     position: absolute;
     z-index: -2;
-    top: -339px;
-    left: -300px;
+    top: -22.5vw;
+    left: -19vw;
   }
 
   &::before {
@@ -21,7 +21,7 @@
   }
 
   .c-pageHeading {
-    padding-top: 60px;
+    padding-top: 110px;
   }
 
   .p-listService {
@@ -52,7 +52,7 @@
 
       h4 {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 45px;
         font-weight: 700;
         letter-spacing: 2px;
 
@@ -67,7 +67,7 @@
         width: 100%;
         margin-bottom: 14px;
         font-weight: bold;
-        letter-spacing: 2px;
+        letter-spacing: 2.5px;
 
         @include fs(18, 24);
       }
@@ -98,7 +98,7 @@
         @include clearfix;
 
         @include bp(pc) {
-          padding: 0 55px;
+          padding: 0 155px;
         }
 
         @include bp(tab) {
@@ -117,7 +117,7 @@
           @include bp(pc) {
             max-width: 70%;
             min-height: 490px;
-            padding: 74px 72px 60px 75px;
+            padding: 28px 72px 60px 75px;
           }
 
           @include bp(tab) {
@@ -184,7 +184,7 @@
           content: "";
           position: absolute;
           z-index: -1;
-          top: 60px;
+          top: 55px;
           right: 10.8%;
           left: 0;
           height: 500px;
@@ -207,6 +207,23 @@
       }
 
       &:nth-child(even) {
+        .p-listService_inner {
+          padding: 55px 72px 60px 75px;
+          float: right;
+
+          h5 {
+            letter-spacing: 3.5px;
+          }
+
+          h4 {
+            margin-bottom: 35px;
+          }
+
+          p {
+            margin-bottom: 8px;
+          }
+        }
+
         @include bp(pc) {
           margin-bottom: 170px;
         }
@@ -214,10 +231,6 @@
         .p-listService_item_bg {
           right: 0;
           left: 11%;
-        }
-
-        .p-listService_item-inner {
-          float: right;
         }
       }
 
@@ -239,6 +252,10 @@
 
         p {
           margin-bottom: 10px;
+        }
+
+        .p-listService_inner {
+          padding: 70px 72px 60px 75px;
         }
       }
     }

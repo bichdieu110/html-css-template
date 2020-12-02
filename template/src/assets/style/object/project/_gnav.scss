@@ -20,8 +20,8 @@
 
       a {
         display: block;
-        min-width: 145px;
-        padding: 36px 34px;
+        min-width: 140px;
+        padding: 30px 40px;
 
         &.is-active,
         &:hover {
@@ -36,6 +36,12 @@
           margin-top: 7px;
 
           @include fs(10, 10);
+        }
+      }
+
+      &:last-child {
+        a {
+          min-width: 155px;
         }
       }
     }

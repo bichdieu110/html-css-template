@@ -57,7 +57,7 @@
   position: relative;
   width: 100%;
   min-width: $pc_min_width;
-  height: setvwpc(440px);
+  height: setvwpc(640px);
   // min-height: $pc_top_visual_min_height;
   // max-height: $pc_top_visual_max_height;
   overflow: hidden;
@@ -87,7 +87,7 @@
     left: 0;
     align-items: center;
     width: 100%;
-    height: setvwpc(400px);
+    height: setvwpc(564px);
     background-image: url("../images/common/slide.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -104,15 +104,15 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: setvwpc(400px);
+    height: setvwpc(640px);
 
     &-big1 {
       position: absolute;
       right: 0;
-      bottom: -3.7vw;
-      width: 560px;
+      bottom: 0;
+      width: 46vw;
       height: calc(100% + 3.7vw);
-      transform: skew(20deg);
+      transform: skew(23deg);
       transform-origin: top;
       animation: parallelogram-big1 2s ease-out 2.7s both;
       opacity: 0.8;
@@ -122,8 +122,8 @@
     &-big2 {
       position: absolute;
       right: 0;
-      bottom: -3.7vw;
-      width: 377px;
+      bottom: 0;
+      width: 300px;
       height: calc(100% + 3.7vw);
       transform: skew(-12deg);
       transform-origin: bottom;
@@ -134,10 +134,10 @@
 
     &-small1 {
       position: absolute;
-      right: 440px;
-      bottom: 247px;
-      width: 130px;
-      height: 46%;
+      right: 27%;
+      bottom: 300px;
+      width: 9vw;
+      height: 38%;
       overflow: hidden;
       transform: skewX(-15deg);
       transform-origin: bottom;
@@ -165,8 +165,8 @@
       position: absolute;
       z-index: 3;
       top: -10px;
-      right: 330px;
-      width: 130px;
+      right: 19vw;
+      width: 9vw;
       height: 39%;
       overflow: hidden;
       -webkit-transform: skewX(15deg);
@@ -219,10 +219,10 @@
     &-small3 {
       position: absolute;
       z-index: 2;
-      right: 175px;
-      bottom: -70px;
-      width: 200px;
-      height: 60%;
+      right: 8.5%;
+      bottom: 0;
+      width: 13vw;
+      height: 56%;
       overflow: hidden;
       -webkit-transform: skewX(-15deg);
       -ms-transform: skewX(-15deg);
@@ -280,9 +280,9 @@
     &-small4 {
       position: absolute;
       z-index: 1;
-      right: 242px;
-      bottom: 129px;
-      width: 135px;
+      right: 15vw;
+      bottom: 175px;
+      width: 9vw;
       height: 66%;
       overflow: hidden;
       -webkit-transform: skewX(15deg);
@@ -343,18 +343,20 @@
     display: flex;
     position: absolute;
     z-index: 20;
-    top: calc(50% - 380px);
+    // top: 11.5vw;
+    top: 0;
     bottom: 0;
     left: 50%;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-width: $pc_min_width;
-    max-width: $pc_max_width;
-    padding-right: $pc_top_content_side_padding;
-    padding-left: $pc_top_content_side_padding;
+    min-width: 1246px;
+    max-width: 1246px;
+    padding-right: 30px;
+    padding-left: 30px;
     transform: translateX(-50%);
     color: #fff;
+    letter-spacing: 9.5px;
 
     @include mq_down(sp) {
       min-width: auto;
@@ -363,8 +365,10 @@
     }
 
     &_title {
-      margin-bottom: 37px;
-      font-weight: bold;
+      margin-top: -9vw;
+      margin-bottom: 25px;
+      margin-left: -1.25vw;
+      font-weight: 700;
 
       @include fs(74, 86);
 
@@ -374,8 +378,9 @@
     }
 
     &_desc {
-      z-index: 2;
-      font-weight: bold;
+      margin-left: -0.5vw;
+      font-weight: 500;
+      letter-spacing: 4px;
 
       @include fs(20, 34);
 
@@ -388,7 +393,7 @@
       position: absolute;
       z-index: 20;
       right: 0;
-      bottom: 1.8vw;
+      bottom: 4.5vw;
       left: 0;
       padding: 27px 37px;
       background-color: #fff;
@@ -399,7 +404,7 @@
       }
 
       b {
-        margin-right: 10px;
+        margin-right: 40px;
         color: #000;
         letter-spacing: 1px;
 

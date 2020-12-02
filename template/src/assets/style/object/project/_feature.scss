@@ -1,19 +1,21 @@
 .p-featured {
-  padding: 18px 0 225px;
+  padding: 32px 0 225px;
   background-color: #ededf0;
 
   .p-featuredList {
     &_item {
+      margin-right: 90px;
+
       .p-featuredSlide {
         position: relative;
         outline: none;
 
         &_img {
-          width: 79%;
+          width: 80%;
           height: 328px;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: auto 100%;
+          background-size: cover;
 
           @include bp(tab) {
             width: 100%;
@@ -24,8 +26,8 @@
           position: absolute;
           right: 0;
           bottom: -3px;
-          left: 40%;
-          padding: 24px 80px 7px 29px;
+          left: 38%;
+          padding: 24px 28px 7px 28px;
           background-color: #ededf0;
 
           &_title {
