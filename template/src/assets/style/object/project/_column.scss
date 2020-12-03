@@ -2,6 +2,10 @@
   padding: 100px 0 225px;
   background-color: #ededf0;
 
+  .c-pageHeading_subtitle {
+    margin-top: -5px;
+  }
+
   .p-columnList {
     @include flexbox();
 
@@ -40,6 +44,12 @@
               left: 0;
             }
           }
+
+          &_content {
+            @include bp(768px, 1440px) {
+              left: 41.5%;
+            }
+          }
         }
       }
 
@@ -50,6 +60,7 @@
             padding: 24px 29px 7px 29px;
 
             @include bp(768px, 1440px) {
+              left: 51.5%;
               padding: 14px 20px 10px 20px;
             }
 
@@ -94,8 +105,8 @@
           }
 
           @include bp(768px, 1440px) {
-            width: 80%;
-            height: 200px;
+            width: 81%;
+            height: 270px;
           }
 
           @include bp(tab) {
@@ -121,7 +132,9 @@
           background-color: #ededf0;
 
           @include bp(768px, 1440px) {
-            padding: 14px 20px 10px 20px;
+            bottom: -4.5vw;
+            left: 31.5%;
+            padding: 14px 25px 10px 25px;
           }
 
           &:focus {
@@ -142,6 +155,11 @@
           }
 
           &_desc {
+            @include bp(768px, 1440px) {
+              position: relative;
+              top: -10px;
+            }
+
             a {
               @include fs(14, 22);
               @include limit_lines(2);
