@@ -334,6 +334,7 @@ button:focus {
 .c-btn-rm {
   display: inline-block;
   margin: 28px 0 0;
+  padding-left: 4px;
   color: #fff;
   font-size: 14px;
   font-size: 1.4rem;
@@ -1464,6 +1465,14 @@ button:focus {
 .p-column {
   padding: 100px 0 225px;
   background-color: #ededf0;
+}
+
+.p-column .p-columnList {
+  display: flex;
+}
+
+.p-column .p-columnList_item {
+  width: calc(100% / 3);
 }
 
 .p-column .p-columnList_item:focus {

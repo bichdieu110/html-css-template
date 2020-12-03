@@ -3,9 +3,19 @@
   background-color: #ededf0;
 
   .p-columnList {
+    @include flexbox();
+
     &_item {
+      width: calc(100% / 3);
+
       &:focus {
         outline: none;
+      }
+
+      &:last-child {
+        .p-columnSlide_img {
+          // width: 100%;
+        }
       }
 
       .p-columnSlide {

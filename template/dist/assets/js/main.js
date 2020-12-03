@@ -6,7 +6,7 @@
 			$(function(){
         self.banner();
         self.feature();
-        self.column();
+        // self.column();
         self.faq();
 			});
 		},
