@@ -5,16 +5,76 @@
   .p-columnList {
     @include flexbox();
 
+    @include bp(tab) {
+      @include flex-direction(column);
+    }
+
     &_item {
       width: calc(100% / 3);
+      margin-bottom: 50px;
+
+      @include bp(tab) {
+        width: 100%;
+      }
 
       &:focus {
         outline: none;
       }
 
+      &:nth-child(2) {
+        .p-columnSlide {
+          &_img {
+            position: relative;
+            left: 10%;
+
+            @include bp(tab) {
+              left: 0;
+            }
+          }
+
+          &_category {
+            z-index: 1;
+            left: 10%;
+
+            @include bp(tab) {
+              left: 0;
+            }
+          }
+        }
+      }
+
       &:last-child {
-        .p-columnSlide_img {
-          // width: 100%;
+        .p-columnSlide {
+          &_content {
+            left: 60%;
+            padding: 24px 29px 7px 29px;
+
+            @include bp(768px, 1440px) {
+              padding: 14px 20px 10px 20px;
+            }
+
+            @include bp(tab) {
+              left: 40%;
+            }
+          }
+
+          &_img {
+            position: relative;
+            left: 20%;
+
+            @include bp(tab) {
+              left: 0;
+            }
+          }
+
+          &_category {
+            z-index: 1;
+            left: 20%;
+
+            @include bp(tab) {
+              left: 0;
+            }
+          }
         }
       }
 
@@ -23,7 +83,7 @@
         outline: none;
 
         &_img {
-          width: 79%;
+          width: 80%;
           height: 328px;
           background-repeat: no-repeat;
           background-position: center;
@@ -31,6 +91,11 @@
 
           &:focus {
             outline: none;
+          }
+
+          @include bp(768px, 1440px) {
+            width: 80%;
+            height: 200px;
           }
 
           @include bp(tab) {
@@ -50,10 +115,14 @@
         &_content {
           position: absolute;
           right: 0;
-          bottom: -3px;
+          bottom: -3vw;
           left: 40%;
           padding: 24px 80px 7px 29px;
           background-color: #ededf0;
+
+          @include bp(768px, 1440px) {
+            padding: 14px 20px 10px 20px;
+          }
 
           &:focus {
             outline: none;
@@ -62,6 +131,8 @@
           &_title {
             margin-bottom: 7px;
             letter-spacing: 2.8px;
+
+            @include limit_lines(1);
 
             a {
               font-weight: bold;
@@ -73,6 +144,7 @@
           &_desc {
             a {
               @include fs(14, 22);
+              @include limit_lines(2);
             }
           }
 

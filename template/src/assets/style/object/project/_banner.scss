@@ -63,6 +63,10 @@
   overflow: hidden;
   background-color: #ededf0;
 
+  @include bp(0, 1440px) {
+    min-width: 100%;
+  }
+
   @include mq_down(sp) {
     min-width: auto;
     min-height: auto;
@@ -357,6 +361,11 @@
     transform: translateX(-50%);
     color: #fff;
     letter-spacing: 9.5px;
+
+    @include bp(0, 1440px) {
+      min-width: 86%;
+      max-width: 86%;
+    }
 
     @include mq_down(sp) {
       min-width: auto;

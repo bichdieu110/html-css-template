@@ -1,6 +1,14 @@
 .p-news {
-  padding: 100px 0;
+  padding: 115px 0 90px 0;
   text-align: center;
+
+  .l-pageContent {
+    padding: 0;
+
+    .c-pageHeading {
+      margin-bottom: 10px;
+    }
+  }
 
   .p-newsList {
     @include fs(14, 24);
@@ -10,7 +18,7 @@
       @include flex-wrap(wrap);
       @include align-items(center);
 
-      padding: 25px 0 25px 25px;
+      padding: 35px 0 35px 25px;
       border-bottom: 1px solid #bebebe;
 
       @include bp(tab) {
@@ -20,7 +28,7 @@
     }
 
     &_date {
-      margin-right: 12px;
+      margin-right: 22px;
       font-weight: bold;
     }
 
@@ -47,6 +55,7 @@
   }
 
   .c-btn-rm {
+    margin: 55px 0 0;
     color: #000;
   }
 }

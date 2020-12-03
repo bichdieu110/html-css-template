@@ -1,6 +1,6 @@
 .p-career {
   position: relative;
-  padding: 100px 0 88px;
+  padding: 100px 0 90px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,7 +29,7 @@
   }
 
   .l-pageContent {
-    padding: 84px 10px 108px;
+    padding: 100px 50px 100px;
     background-color: #252526;
     color: #fff;
     text-align: center;
@@ -45,6 +45,10 @@
       @include bp(tab) {
         @include fs(13, 24);
       }
+    }
+
+    .c-pageHeading_desc {
+      margin: 40px 0 -30px;
     }
   }
 }

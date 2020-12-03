@@ -94,6 +94,11 @@
   padding-right: $pc_page_content_side_padding;
   padding-left: $pc_page_content_side_padding;
 
+  @include bp(0, 1440px) {
+    min-width: 86%;
+    max-width: 86%;
+  }
+
   @include mq_down(sp) {
     min-width: auto;
     padding-right: $sp_page_content_side_padding;

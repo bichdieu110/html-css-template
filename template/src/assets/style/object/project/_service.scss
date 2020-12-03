@@ -85,7 +85,8 @@
 
         &.p-listService_inner_lService {
           &_name {
-            @include fs(13, 28);
+            // @include fs(13, 28);
+            @include fs(13, 21);
           }
 
           &_desc {
@@ -124,9 +125,34 @@
             padding: 30px 20px;
           }
 
-          &_lService {
-            margin-top: 15px;
+          &_intro {
+            padding: 0 70px 0 0;
+            letter-spacing: 1.5px;
+          }
 
+          &_question {
+            @include fs(16, 28);
+          }
+
+          a {
+            @include fs(14, 26);
+
+            &::before {
+              content: '';
+              display: inline-block;
+              position: relative;
+              top: -4px;
+              left: -2px;
+              margin-right: 4px;
+              padding: 1px;
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              border: solid #ea8104;
+              border-width: 0 1px 1px 0;
+            }
+          }
+
+          &_lService {
             @include bp(pc) {
               @include flexbox;
               @include justify-content(space-between);
@@ -149,7 +175,7 @@
               &::before {
                 content: "0" counter(stt);
                 position: absolute;
-                top: 0;
+                top: 10px;
                 width: 100%;
                 color: rgba(68, 67, 90, 0.1);
                 font-family: "Roboto";
@@ -238,7 +264,7 @@
         margin-bottom: 0;
 
         @include bp(pc) {
-          padding-bottom: 60px;
+          padding-bottom: 105px;
         }
 
         h4 {
@@ -246,12 +272,13 @@
         }
 
         h5 {
-          margin-bottom: 9px;
+          margin-bottom: 7px;
+          letter-spacing: 2px;
           line-height: 28px;
         }
 
         p {
-          margin-bottom: 10px;
+          margin-bottom: 8px;
         }
 
         .p-listService_inner {
