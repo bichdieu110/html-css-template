@@ -111,6 +111,35 @@
   background-color: #fff;
 }
 
+.l-topMain {
+  position: relative;
+  background: $color_bg_topMain;
+}
+
+.l-topCompany {
+  position: relative;
+  z-index: 3;
+}
+
+.l-topCareer {
+  position: relative;
+  padding: 100px 0 88px;
+  background-image: url(../images/top/bg_career.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.l-topColumn {
+  background: url(../images/bg_column.png) top -220px left no-repeat;
+}
+
+.l-mainContact {
+  position: relative;
+  padding: 90px 0;
+  background: url(../images/bg_mainContact.png) bottom right no-repeat;
+}
+
 // --------------------------------
 // Page
 // --------------------------------
@@ -142,7 +171,12 @@
 }
 
 .l-pageMain {
-  flex-grow: 1;
+  background-color: #fbfbfc;
+}
+
+.l-pageNews {
+  padding-top: setvwpc(80px);
+  background: url('../images/bg_mainpage.png') top right no-repeat;
 }
 
 .l-pageSidebar {
@@ -158,26 +192,7 @@
 }
 
 .l-pageBody {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: stretch;
 
-  @include mq_down(sp) {
-    display: block;
-  }
-
-  .is-sidebar-right {
-    flex-direction: row;
-
-    .l-pageSidebar {
-      margin-right: 0;
-      margin-left: $pc_page_sidebar_margin;
-
-      @include mq_down(sp) {
-        margin-left: 0;
-      }
-    }
-  }
 }
 
 .l-pageContent {
@@ -193,33 +208,4 @@
     padding-right: $sp_page_content_side_padding;
     padding-left: $sp_page_content_side_padding;
   }
-}
-
-.l-topMain {
-  position: relative;
-  background: $color_bg_topMain;
-}
-
-.l-topCompany {
-  position: relative;
-  z-index: 3;
-}
-
-.l-topCareer {
-  position: relative;
-  padding: 100px 0 88px;
-  background-image: url(../images/top/bg_career.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.l-topColumn {
-  background: url(../images/bg_column.png) top -220px left no-repeat;
-}
-
-.l-mainContact {
-  position: relative;
-  padding-bottom: 90px;
-  background: url(../images/bg_mainContact.png) bottom right no-repeat;
 }

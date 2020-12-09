@@ -1,7 +1,6 @@
-.p-mainVisual {
+.p-pageVisual {
   position: relative;
   width: 100%;
-  padding-bottom: setvwpc(120px);
   overflow: hidden;
   -webkit-animation: wrapfade 0.5s linear 2s both;
   animation: wrapfade 0.5s linear 2s both;
@@ -19,7 +18,8 @@
     display: flex;
     position: relative;
     align-items: center;
-    height: setvwpc(800px);
+    padding-top: setvwpc(225px);
+    padding-bottom: setvwpc(125px);
     background-image: url(../images/bg_visual.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@
     color: #fff;
 
     @include mq_down(sp) {
-      height: setvw(800px);
+      height: setvw(240px);
     }
 
     &_text {
@@ -46,26 +46,26 @@
         padding: setvw(45px);
       }
 
-      .c-title {
+      &_title {
         z-index: 3;
-        margin-bottom: 20px;
-        font-size: 7.4rem;
+        margin-bottom: 10px;
+        font-size: 6.4rem;
         font-weight: bold;
         letter-spacing: 0.1em;
+        line-height: 4.6rem;
 
         @include mq_down(sp) {
           font-size: 3rem;
         }
       }
 
-      .c-desc {
+      p {
         z-index: 2;
-        font-size: 20px;
+        font-size: 2.6rem;
         font-weight: bold;
         letter-spacing: 4px;
 
         @include mq_down(sp) {
-          font-size: 20px;
         }
       }
     }
@@ -331,53 +331,6 @@
           background: -webkit-linear-gradient(top, #ffa93d, #e88200);
           background: linear-gradient(to top, #ffa93d, #e88200);
           will-change: height;
-        }
-      }
-    }
-
-    &_news {
-      position: absolute;
-      z-index: 999;
-      right: 0;
-      bottom: -40px;
-      left: 0;
-      width: 100%;
-      min-width: $pc_min_width;
-      max-width: $pc_max_width;
-      margin: 0 auto;
-      background-color: white;
-      box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
-      color: #000;
-
-      @include mq_down(sp) {
-        display: none;
-      }
-
-      &_list {
-        padding: setvwpc(27px) setvwpc(37px);
-
-        &_item {
-          b {
-            padding-right: 35px;
-            font-size: 16px;
-            font-weight: bold;
-          }
-
-          span {
-            padding-right: 15px;
-            color: #e88200;
-            font-weight: bold;
-          }
-
-          a {
-            color: $color_primary;
-            font-size: 15px;
-
-            @include mq_down(sp) {
-              display: block;
-              padding-top: 7px;
-            }
-          }
         }
       }
     }
