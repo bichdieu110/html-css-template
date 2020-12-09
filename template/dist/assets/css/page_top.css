@@ -1641,6 +1641,7 @@ button:focus {
 @media (max-width: 768px) {
   .p-column .p-columnList_item:last-child .p-columnSlide_content {
     left: 40%;
+    padding: 14px 20px 10px 20px;
   }
 }
 
@@ -1718,6 +1719,12 @@ button:focus {
   .p-column .p-columnList_item .p-columnSlide_content {
     bottom: -4.5vw;
     left: 31.5%;
+    padding: 14px 25px 10px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-column .p-columnList_item .p-columnSlide_content {
     padding: 14px 25px 10px 25px;
   }
 }
