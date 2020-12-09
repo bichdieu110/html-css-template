@@ -2,16 +2,49 @@
   padding: 32px 0 225px;
   background-color: #ededf0;
 
+  .l-pageContent {
+    min-width: 89%;
+    max-width: 89%;
+  }
+
   .p-featuredList {
     &_item {
       margin-right: 90px;
+
+      &:nth-child(even) {
+        .p-featuredSlide {
+          &_img {
+            left: 10%;
+          }
+
+          &_content {
+            left: 52%;
+          }
+        }
+
+      }
+
+      &:nth-child(odd) {
+        .p-featuredSlide {
+          &_img {
+            left: 0;
+          }
+
+          &_content {
+            left: 43%;
+          }
+        }
+
+      }
+
 
       .p-featuredSlide {
         position: relative;
         outline: none;
 
         &_img {
-          width: 80%;
+          position: relative;
+          width: 91%;
           height: 328px;
           background-repeat: no-repeat;
           background-position: center;
@@ -26,7 +59,8 @@
           position: absolute;
           right: 0;
           bottom: -3px;
-          left: 38%;
+          width: 65%;
+          left: 43%;
           padding: 24px 28px 7px 28px;
           background-color: #ededf0;
 
@@ -40,6 +74,7 @@
           &_date {
             padding-left: 4px;
             color: #e88200;
+            letter-spacing: 1px;
             font-weight: 500;
 
             @include fs(12, 24);
@@ -47,7 +82,7 @@
             span {
               position: relative;
               margin-left: 11px;
-              padding-left: 17px;
+              padding-left: 13px;
               color: #9b9b9b;
               font-weight: normal;
 

@@ -7,6 +7,10 @@
     z-index: -2;
     top: -22.5vw;
     left: -19vw;
+
+    @include bp(tab) {
+      display: none;
+    }
   }
 
   &::before {
@@ -37,6 +41,10 @@
       height: 591px;
       background-image: url(../../assets/images/top/services/bg_service2.png);
       background-size: cover;
+
+      @include bp(tab) {
+        display: none;
+      }
     }
 
     &_item {

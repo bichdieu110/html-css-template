@@ -29,7 +29,7 @@
         .p-columnSlide {
           &_img {
             position: relative;
-            left: 10%;
+            left: 9%;
 
             @include bp(tab) {
               left: 0;
@@ -38,7 +38,7 @@
 
           &_category {
             z-index: 1;
-            left: 10%;
+            left: 9%;
 
             @include bp(tab) {
               left: 0;
@@ -71,7 +71,7 @@
 
           &_img {
             position: relative;
-            left: 20%;
+            left: 18%;
 
             @include bp(tab) {
               left: 0;
@@ -80,7 +80,7 @@
 
           &_category {
             z-index: 1;
-            left: 20%;
+            left: 18%;
 
             @include bp(tab) {
               left: 0;
@@ -94,7 +94,7 @@
         outline: none;
 
         &_img {
-          width: 80%;
+          width: 82%;
           height: 328px;
           background-repeat: no-repeat;
           background-position: center;
@@ -105,7 +105,7 @@
           }
 
           @include bp(768px, 1440px) {
-            width: 81%;
+            width: 82%;
             height: 270px;
           }
 
@@ -171,6 +171,7 @@
             padding-left: 4px;
             color: #e88200;
             font-weight: 500;
+            letter-spacing: 1px;
 
             @include fs(12, 24);
 
@@ -200,6 +201,7 @@
   }
 
   .c-btn-rm {
+    margin-top: 40px;
     width: 100%;
     color: #000;
     text-align: center;

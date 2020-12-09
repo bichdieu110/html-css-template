@@ -1,6 +1,6 @@
 .c-faq-list {
-  margin-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 55px;
+  padding-bottom: 40px;
 
   @include fs(14, 22);
 
@@ -10,11 +10,12 @@
     &_title {
       position: relative;
       width: 100%;
-      margin-bottom: 25px;
-      padding: 25px 20px 25px 60px;
+      margin-bottom: 30px;
+      padding: 19px 20px 19px 55px;
       border: none;
       background: $bg_gray;
       cursor: pointer;
+      letter-spacing: 3px;
 
       &::before {
         content: 'Q';
@@ -37,9 +38,10 @@
         content: "";
         display: inline-block;
         position: absolute;
-        right: 11px;
-        width: 11px;
-        height: 11px;
+        right: 25px;
+        bottom: 30px;
+        width: 10px;
+        height: 10px;
         margin-right: 0.5em;
         margin-left: 1em;
         transform: rotate(135deg);

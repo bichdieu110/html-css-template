@@ -49,17 +49,25 @@
 }
 
 .c-btn-submit {
+  width: 432px;
   padding: 10px 50px;
   border: none;
-  background: $color_orange;
+  background-color: $color_orange;
+  background-image: url("../../assets/images/common/btn_bg.png");
+  background-position: center right 80px;
+  background-repeat: no-repeat;
   color: $color_white;
 
   @include fs(14, 38);
   @include flexbox();
   @include align-items(center);
 
+  @include bp(tab) {
+    background-position: center right 15px;
+    background-size: 40%;
+  }
+
   &::after {
-    content: url("../../assets/images/common/btn_bg.png");
     display: inline-block;
     margin-left: 20px;
   }

@@ -72,7 +72,7 @@
     feature: function() {
       $('.jc_featured-list').slick({
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         infinite: false,
         arrows: true,
         responsive: [

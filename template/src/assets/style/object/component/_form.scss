@@ -1,14 +1,17 @@
 .c-form_input {
-  width: 100%;
-  padding: 20px 15px;
+  position: relative;
+  width: 94%;
+  left: 3%;
+  padding: 19px 15px;
   border: none;
   outline: none;
   background: #f3f3f6;
 }
 
 .c-form_question {
-  width: 100%;
-  margin: 10px 0;
+  position: relative;
+  width: 94%;
+  left: 3%;
   padding: 20px 15px;
   border: none;
   -webkit-appearance: none;
