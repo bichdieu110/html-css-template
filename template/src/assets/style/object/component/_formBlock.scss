@@ -51,4 +51,96 @@
       background: #f3f3f6;
     }
   }
+
+  &_sorts {
+    &_control {
+      display: none;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      margin-top: 7px;
+      padding: setvwpc(12px) setvwpc(15px);
+      border: none;
+      outline: none;
+      background: #f3f3f6;
+
+      .c-trigger {
+        display: block;
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: setvwpc(5px);
+          width: 10px;
+          height: 10px;
+          margin-top: -3px;
+          transform: rotate(45deg) translateY(-50%);
+          transform-origin: 50% 0;
+          transition: all 0.4s ease-in-out;
+          border-right: 2px solid #252526;
+          border-bottom: 2px solid #252526;
+        }
+      }
+
+      .c-opt {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        box-sizing: border-box;
+        min-width: 100%;
+        transform: translateY(-15px);
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        background: #f6f6f8;
+        pointer-events: none;
+
+        &.is-hover {
+          &::before {
+            background: #f9f9f9;
+          }
+        }
+      }
+
+      .c-option {
+        display: block;
+        position: relative;
+        padding: 0 setvwpc(15px);
+        transition: all 0.4s ease-in-out;
+        color: #000;
+        font-size: 14px;
+        line-height: 42px;
+        cursor: pointer;
+
+        &:hover,
+        &.selection {
+          background: #252526;
+          color: white;
+        }
+      }
+
+      &.is-open {
+        .c-trigger {
+          &::after {
+            margin-top: 3px;
+            transform: rotate(-135deg) translateY(-50%);
+          }
+        }
+
+        .c-opt {
+          visibility: visible;
+          transform: translateY(0);
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+    }
+  }
 }

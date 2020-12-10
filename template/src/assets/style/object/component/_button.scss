@@ -60,7 +60,7 @@
 .c-linkContact {
   display: block;
   position: relative;
-  padding: setvwpc(25px) setvwpc(119px);
+  padding: 0 setvwpc(100px);
   border: none;
   outline: none;
   background-color: $color_orange;
@@ -68,6 +68,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.15em;
+  line-height: 6.5rem;
 
   @include mq_down(sp) {
     padding: setvw(20px) setvw(59px);

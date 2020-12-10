@@ -60,3 +60,38 @@ $(document).ready(function(){
 	}
 
 });
+$(".jc_customSelect").each(function() {
+	var classes = $(this).attr("class"),
+		id      = $(this).attr("id"),
+		name    = $(this).attr("name");
+	var template =  '<div class="' + classes + '">';
+		template += '<span class="c-trigger">' + $(this).attr("placeholder") + '</span>';
+		template += '<div class="c-opt">';
+		$(this).find("option").each(function() {
+		  template += '<span class="c-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+		});
+	template += '</div></div>';
+	
+	$(this).wrap('<div class="c-slWrapper"></div>');
+	$(this).hide();
+	$(this).after(template);
+  });
+  $(".c-option:first-of-type").hover(function() {
+	$(this).parents(".c-opt").addClass("is-hover");
+  }, function() {
+	$(this).parents(".c-opt").removeClass("is-hover");
+  });
+  $(".c-trigger").on("click", function() {
+	$('html').one('click',function() {
+	  $(".jc_customSelect").removeClass("is-open");
+	});
+	$(this).parents(".jc_customSelect").toggleClass("is-open");
+	event.stopPropagation();
+  });
+  $(".c-option").on("click", function() {
+	$(this).parents(".c-slWrapper").find("select").val($(this).data("value"));
+	$(this).parents(".c-opt").find(".c-option").removeClass("selection");
+	$(this).addClass("selection");
+	$(this).parents(".jc_customSelect").removeClass("is-open");
+	$(this).parents(".jc_customSelect").find(".c-slWrapper").text($(this).text());
+  });

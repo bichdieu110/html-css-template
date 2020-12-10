@@ -445,7 +445,7 @@ a:hover {
 .c-linkContact {
   display: block;
   position: relative;
-  padding: 1.73611vw 8.26389vw;
+  padding: 0 6.94444vw;
   border: none;
   outline: none;
   background-color: #e88200;
@@ -453,6 +453,7 @@ a:hover {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.15em;
+  line-height: 6.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -586,6 +587,89 @@ a:hover {
   border: none;
   outline: none;
   background: #f3f3f6;
+}
+
+.c-formBlock_sorts_control {
+  display: none;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 7px;
+  padding: 0.83333vw 1.04167vw;
+  border: none;
+  outline: none;
+  background: #f3f3f6;
+}
+
+.c-formBlock_sorts_control .c-trigger {
+  display: block;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c-formBlock_sorts_control .c-trigger::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0.34722vw;
+  width: 10px;
+  height: 10px;
+  margin-top: -3px;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: 50% 0;
+  border-right: 2px solid #252526;
+  border-bottom: 2px solid #252526;
+  content: '';
+  transition: all 0.4s ease-in-out;
+}
+
+.c-formBlock_sorts_control .c-opt {
+  box-sizing: border-box;
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+  transform: translateY(-15px);
+  background: #f6f6f8;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.c-formBlock_sorts_control .c-opt.is-hover::before {
+  background: #f9f9f9;
+}
+
+.c-formBlock_sorts_control .c-option {
+  display: block;
+  position: relative;
+  padding: 0 1.04167vw;
+  color: #000;
+  font-size: 14px;
+  line-height: 42px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.c-formBlock_sorts_control .c-option:hover, .c-formBlock_sorts_control .c-option.selection {
+  background: #252526;
+  color: white;
+}
+
+.c-formBlock_sorts_control.is-open .c-trigger::after {
+  margin-top: 3px;
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+.c-formBlock_sorts_control.is-open .c-opt {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
 }
 
 .p-header {
@@ -1354,6 +1438,20 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+.p-mainSocial_list {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.86111vw;
+}
+
+.p-mainSocial_list_sns {
+  padding: 0 10px;
+}
+
+.p-mainSocial_list_sns a:hover {
+  opacity: 0.7;
 }
 
 .p-topFeatured {
@@ -2324,7 +2422,14 @@ a:hover {
 }
 
 .p-pageNews_content_sort_gr select {
-  padding: 10px;
+  padding: 0.83333vw;
+}
+
+.p-pageNews_content_sort_gr select option {
+  display: flex;
+  padding: 6px 0;
+  background: #f3f3f6;
+  line-height: 28px;
 }
 
 .p-pageNews_content_list_item {

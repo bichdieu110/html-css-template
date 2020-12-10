@@ -19,7 +19,14 @@
         padding-left: 19px;
 
         select {
-          padding: 10px;
+          padding: setvwpc(12px);
+
+          option {
+            display: flex;
+            padding: 6px 0;
+            background: #f3f3f6;
+            line-height: 28px;
+          }
         }
       }
     }
