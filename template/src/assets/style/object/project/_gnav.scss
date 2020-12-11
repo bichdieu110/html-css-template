@@ -3,6 +3,20 @@
 
   @include bp(0, 1320px) {
     width: 0;
+    height: 45px;
+  }
+
+  &_btn {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    background-image: url("../images/common/btn_nav01.gif");
+    background-position: 0 0;
+    background-size: 100%;
+    text-indent: -9999px;
+    border: none;
   }
 
   &_list {
@@ -12,6 +26,13 @@
 
     @include bp(0, 1320px) {
       display: none;
+      min-height: 619px;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background-color: #f19616;
     }
 
     .c-open-menu {

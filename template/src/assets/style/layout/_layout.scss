@@ -6,7 +6,7 @@
   position: relative;
   min-width: 100%;
 
-  .l-topContent {
+  &_container {
     display: flex;
   }
 }
@@ -27,11 +27,11 @@
 .l-topMain {
 }
 
-.l-topContent {
+// .l-topContent {
   // display: flex;
   // @include flexbox;
   // @include justify-content(space-between);
-}
+// }
 
 .l-topSection {
   display: inline-block;

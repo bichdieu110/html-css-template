@@ -4,10 +4,11 @@
 			var self = this;
 
 			$(function(){
-        self.banner();
-        self.feature();
-        // self.column();
-        self.faq();
+				self.banner();
+				self.feature();
+				// self.column();
+				self.faq();
+				self.headerSP();
 			});
 		},
 
@@ -124,7 +125,21 @@
           $(this).hasClass("on") ? $(this).removeClass("on") : $(this).addClass("on");
         });
       }
-    }
+	},
+	headerSP: function() {
+		if ($('.jc_header').length) {
+
+			var jsnavHeader = $('.jc_header'),
+				burgerMenu = jsnavHeader.find('.jc_burgerMenu'),
+				jsnavMenuListWrapper = $('.jc_gnav_menu > ul')
+			
+			burgerMenu.on("click", function(){
+				$(this).toggleClass('is-openMenu');
+				jsnavMenuListWrapper.slideToggle(300);
+			});
+
+		}
+	}
 	}.init());
 
 }(jQuery));

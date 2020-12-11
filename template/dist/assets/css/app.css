@@ -221,7 +221,7 @@ button:focus {
   min-width: 100%;
 }
 
-.l-header .l-topContent {
+.l-header_container {
   display: flex;
 }
 
@@ -688,7 +688,21 @@ button:focus {
 @media (max-width: 1320px) {
   .p-gnav {
     width: 0;
+    height: 45px;
   }
+}
+
+.p-gnav_btn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 40px;
+  height: 100%;
+  border: none;
+  background-image: url("../images/common/btn_nav01.gif");
+  background-position: 0 0;
+  background-size: 100%;
+  text-indent: -9999px;
 }
 
 .p-gnav_list {
@@ -700,6 +714,13 @@ button:focus {
 @media (max-width: 1320px) {
   .p-gnav_list {
     display: none;
+    z-index: 999;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    left: 0;
+    min-height: 619px;
+    background-color: #f19616;
   }
 }
 
