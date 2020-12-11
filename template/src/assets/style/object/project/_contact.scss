@@ -70,7 +70,7 @@
 
     .p-contact_form {
       &_item {
-        margin-bottom: 30px;
+        margin-bottom: 34px;
 
         &_label {
           margin-bottom: 8.5px;
@@ -83,12 +83,13 @@
           &.required {
             &::after {
               content: '必須';
+              display: inline-block;
               margin-left: 5px;
               padding: 0 3px;
               border: solid 1px #ea8105;
               color: #ea8105;
 
-              @include fs(12, 26);
+              @include fs(12, 18);
             }
           }
         }

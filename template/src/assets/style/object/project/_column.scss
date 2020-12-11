@@ -61,7 +61,7 @@
 
             @include bp(768px, 1440px) {
               left: 51.5%;
-              padding: 14px 20px 10px 20px;
+              padding: 14px 20px 10px 25px;
             }
 
             @include bp(tab) {
@@ -154,6 +154,7 @@
 
             a {
               font-weight: bold;
+              letter-spacing: 4px;
 
               @include fs(16, 26);
             }
@@ -200,13 +201,20 @@
               }
             }
           }
+
+          &_status {
+            @include bp(0, 1440px) {
+              position: relative;
+              top: -8px;
+            }
+          }
         }
       }
     }
   }
 
   .c-btn-rm {
-    margin-top: 40px;
+    margin-top: 38px;
     width: 100%;
     color: #000;
     text-align: center;

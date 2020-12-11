@@ -256,6 +256,10 @@
           p {
             margin-bottom: 8px;
           }
+
+          @include bp(tab) {
+            padding: 55px 20px 60px 20px;
+          }
         }
 
         @include bp(pc) {
@@ -291,6 +295,10 @@
 
         .p-listService_inner {
           padding: 70px 72px 60px 75px;
+
+          @include bp(tab) {
+            padding: 70px 20px 60px 20px;
+          }
         }
       }
     }

@@ -7,7 +7,7 @@
     color: #fff;
 
     @include bp(tab) {
-      padding: 115px 40px 167px 40px;
+      padding: 80px 40px 80px 40px;
     }
 
     .c-pageHeading {
@@ -19,12 +19,20 @@
   &_content {
     &_title {
       letter-spacing: 5px;
+
+      @include bp(tab) {
+        @include fs(18, 30);
+      }
     }
 
     &_desc {
       letter-spacing: 3.5px;
 
       @include fs(18, 30);
+
+      @include bp(tab) {
+        @include fs(13, 26);
+      }
     }
   }
 }

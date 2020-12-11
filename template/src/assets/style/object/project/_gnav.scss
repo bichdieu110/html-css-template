@@ -1,13 +1,22 @@
 .p-gnav {
   width: calc(100% - 241px);
 
+  @include bp(0, 1320px) {
+    width: 0;
+  }
+
   &_list {
     display: flex;
     justify-content: flex-end;
     height: 100%;
 
-    @include bp(0, 1200px) {
+    @include bp(0, 1320px) {
       display: none;
+    }
+
+    .c-open-menu {
+      position: absolute;
+      right: 0;
     }
 
     &_item {
@@ -21,7 +30,7 @@
       a {
         display: block;
         min-width: 140px;
-        padding: 30px 40px;
+        padding: 30px 38px;
 
         &.is-active,
         &:hover {

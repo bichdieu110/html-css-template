@@ -25,7 +25,7 @@
 
     margin-bottom: 0;
     font-weight: bold;
-    letter-spacing: 0;
+    letter-spacing: 1px;
   }
 
   &_subtitle {
@@ -58,7 +58,8 @@
 
   &_descAdvance {
     margin: 0 0 30px;
-
+    letter-spacing: 2.5px;
+    
     @include fs(16, 28);
 
     span {

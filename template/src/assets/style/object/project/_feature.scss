@@ -11,6 +11,10 @@
     &_item {
       margin-right: 90px;
 
+      @include bp(tab) {
+        margin-right: 0;
+      }
+
       &:nth-child(even) {
         .p-featuredSlide {
           &_img {

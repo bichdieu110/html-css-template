@@ -5,16 +5,37 @@
   padding: 20px 0;
 
   &_logo {
-    max-width: 241px;
-    margin-left: 53px;
-    padding: 17px 0 0;
+    @include bp(1321px, 0) {
+      max-width: 241px;
+      margin-left: 53px;
+      padding: 17px 0 0;
+    }
 
-    @include bp(tab) {
-      padding: 17px 0;
+    @include bp(0, 1320px) {
+      width: 100%;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      // padding: 17px 0;
+
+      img {
+        max-width: 145px;
+      }
     }
 
     img {
-      max-width: 241px;
+      @include bp(pc) {
+        max-width: 241px;
+      }
+
+      @include bp(1200px, 1320px) {
+        max-width: 145px;
+        padding: 20px 0;
+      }
+
+      @include bp(0, 1200px) {
+        max-width: 145px;
+      }
     }
   }
 }
