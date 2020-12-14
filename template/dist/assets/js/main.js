@@ -130,10 +130,10 @@
 		if ($('.jc_header').length) {
 
 			var jsnavHeader = $('.jc_header'),
-				burgerMenu = jsnavHeader.find('.jc_burgerMenu'),
+				menuSp = jsnavHeader.find('.jc_menuSp'),
 				jsnavMenuListWrapper = $('.jc_gnav_menu > ul')
 			
-			burgerMenu.on("click", function(){
+			menuSp.on("click", function(){
 				$(this).toggleClass('is-openMenu');
 				jsnavMenuListWrapper.slideToggle(300);
 			});

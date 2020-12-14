@@ -577,10 +577,10 @@ button:focus {
 .c-faq-list_item_title.on::after {
   display: inline-block;
   position: absolute;
-  top: 30px;
-  right: 11px;
-  width: 11px;
-  height: 11px;
+  right: 25px;
+  bottom: 25px;
+  width: 10px;
+  height: 10px;
   margin-right: 0.5em;
   margin-left: 1em;
   transform: rotate(-45deg);
@@ -744,8 +744,10 @@ button:focus {
   display: block;
   min-width: 140px;
   padding: 30px 38px;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-size: 1.7rem;
+  font-weight: 700;
   line-height: 1.412;
 }
 
@@ -2010,6 +2012,7 @@ button:focus {
   font-size: 1.4rem;
   letter-spacing: 3px;
   line-height: 1.858;
+  text-align: left;
 }
 
 .p-news .c-btn-rm {
