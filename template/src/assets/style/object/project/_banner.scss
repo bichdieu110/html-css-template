@@ -411,7 +411,8 @@
     }
 
     &_desc {
-      margin-left: -0.5vw;
+      margin-top: 10px;
+      margin-left: -0.8vw;
       font-weight: 500;
       letter-spacing: 4px;
 
@@ -426,7 +427,7 @@
       position: absolute;
       z-index: 20;
       right: 0;
-      bottom: 4.5vw;
+      bottom: setvh(100px);
       left: 0;
       padding: 27px 37px;
       background-color: #fff;
@@ -443,7 +444,8 @@
         margin-right: 35px;
         color: #000;
         letter-spacing: 1px;
-
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
         @include fs(16, 24);
       }
 
@@ -451,6 +453,8 @@
         margin-right: 14px;
         color: #e88200;
         letter-spacing: 1px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
 
         @include fs(14, 24);
       }

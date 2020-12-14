@@ -1137,7 +1137,8 @@ button:focus {
 }
 
 .p-banner_content_desc {
-  margin-left: -0.5vw;
+  margin-top: 10px;
+  margin-left: -0.8vw;
   font-size: 20px;
   font-size: 2rem;
   font-weight: 500;
@@ -1156,7 +1157,7 @@ button:focus {
   z-index: 20;
   position: absolute;
   right: 0;
-  bottom: 4.5vw;
+  bottom: 9.25926vh;
   left: 0;
   padding: 27px 37px;
   background-color: #fff;
@@ -1175,8 +1176,10 @@ button:focus {
 .p-banner_content_news b {
   margin-right: 35px;
   color: #000;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
+  font-weight: 700;
   letter-spacing: 1px;
   line-height: 1.5;
 }
@@ -1184,8 +1187,10 @@ button:focus {
 .p-banner_content_news span {
   margin-right: 14px;
   color: #e88200;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.715;
 }
