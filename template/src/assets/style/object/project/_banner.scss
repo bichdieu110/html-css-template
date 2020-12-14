@@ -57,7 +57,7 @@
   position: relative;
   width: 100%;
   min-width: $pc_min_width;
-  height: setvh(1245px);
+  height: setvh(1435px);
   // min-height: $pc_top_visual_min_height;
   // max-height: $pc_top_visual_max_height;
   overflow: hidden;
@@ -99,7 +99,7 @@
     left: 0;
     align-items: center;
     width: 100%;
-    height: setvh(1090px);
+    height: setvh(1260px);
     background-image: url("../images/common/slide.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -124,7 +124,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: setvh(1250px);
+    height: setvh(1440px);
 
     @include bp(tab) {
       height: setvhtab(1250px);
@@ -440,7 +440,7 @@
       }
 
       b {
-        margin-right: 40px;
+        margin-right: 35px;
         color: #000;
         letter-spacing: 1px;
 
