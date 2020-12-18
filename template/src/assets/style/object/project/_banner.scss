@@ -100,10 +100,17 @@
     align-items: center;
     width: 100%;
     height: setvh(1260px);
-    background-image: url("../images/common/slide.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    .top-page & {
+      background-image: url("../images/common/slide.png");
+    }
+
+    .service-page & {
+      background-color: #8a8a8a;
+    }
 
     @include bp(tab) {
       height: setvhtab(1090px);

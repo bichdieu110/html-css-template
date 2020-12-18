@@ -50,21 +50,36 @@
 
 .c-btn-submit {
   width: 432px;
-  padding: 10px 50px;
   border: none;
   background-color: $color_orange;
-  background-image: url("../../assets/images/common/btn_bg.png");
-  background-position: center right 80px;
   background-repeat: no-repeat;
   color: $color_white;
 
-  @include fs(14, 38);
   @include flexbox();
   @include align-items(center);
 
-  @include bp(tab) {
-    background-position: center right 15px;
-    background-size: 40%;
+  .top-page & {
+    padding: 10px 50px;
+    background-image: url("../../assets/images/common/btn_bg.png");
+    background-position: center right 80px;
+
+    @include fs(14, 38);
+
+    @include bp(tab) {
+      background-position: center right 15px;
+      background-size: 40%;
+    }
+  }
+
+  .service-page & {
+    background-image: url("../../assets/images/common/ico-mail.png");
+    background-position: center left 80px;
+    padding: 20px 50px 20px 140px;
+
+    @include bp(sp) {
+      background-position: center left 20px;
+      padding: 20px 10px 20px 60px;
+    }
   }
 
   &::after {

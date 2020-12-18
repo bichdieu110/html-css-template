@@ -1,0 +1,130 @@
+.p-ourStrength {
+    padding: 65px 0;
+
+    &.block1 {
+        background-color: #ededf0;
+
+        .p-listImage {
+            @include flexbox();
+
+            @include bp(0, 600px) {
+                @include flex-direction(column);
+            }
+    
+            li {
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(center);
+                width: calc(100% / 3);
+
+                @include bp(0, 600px) {
+                    width: 100%;
+                }
+
+                .img {
+                    margin-bottom: 10px;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    background-color: #8a8a8a;
+                }
+        
+                .name {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &.block2 {
+        .l-pageContent {
+            padding: 65px;
+
+            @include bp(sp) {
+                padding: 30px;
+            }
+    
+            &.box-shadow {
+                box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
+            }
+        }
+    }
+
+    
+
+    &_list {
+        margin-bottom: 70px;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+
+        @include bp(tab) {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+
+        &_name {
+            margin-bottom: 20px;
+            background-color: #282828;
+            color: #fff;
+            letter-spacing: 1px;
+            text-align: center;
+
+            @include fs(18, 24);
+        }
+
+        &_desc {
+            @include fs(14, 26);
+        }
+    }
+
+    &_web-block {
+        h2 {
+            margin-bottom: 25px;
+
+            @include fs(22, 24);
+        }
+
+        .p-ourStrength_web {
+            &_item {
+                @include flexbox();
+                @include flex-wrap(wrap);
+                @include align-items(center);
+                padding: 35px 0;
+                border-bottom: 1px solid #bebebe;
+                @include fs(14, 26);
+
+                @include bp(tab) {
+                    @include flex-direction(column);
+                }
+
+                &:first-child {
+                    border-top: 1px solid #bebebe;
+                }
+
+                &_title {
+                    width: 20%;
+                    padding-left: 30px;
+                    font-weight: bold;
+
+                    @include bp(tab) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+    
+                &_desc {
+                    width: 80%;
+                    ul {
+                        margin-left: 20px;
+                        li {
+                            list-style-type: disc;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}

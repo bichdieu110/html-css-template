@@ -21,7 +21,7 @@
   text-align: center;
 
   &_title {
-    @include fs(34, 24);
+    @include fs(34, 50);
 
     margin-bottom: 0;
     font-weight: bold;
@@ -67,6 +67,11 @@
         color: #e88200;
       }
     }
+  }
+
+  &_text {
+    margin: 20px 0;
+    @include fs(16, 28);
   }
 }
 

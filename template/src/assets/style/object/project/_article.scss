@@ -1,0 +1,106 @@
+.p-article {
+    .p-listArticle {
+        margin-bottom: 45px;
+        @include flexbox();
+        @include justify-content(space-between);
+
+        &_item {
+            width: 45%;
+            &_img {
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+                background-color: #8a8a8a;
+                color: #fff;
+                height: 370px;
+                padding: 170px 0;
+            }
+
+            &_group-text {
+                padding-top: 15px;
+                .title {
+                    @include fs(16, 24);
+                    font-weight: bold
+                }
+
+                .desc {
+                    @include fs(14, 26);
+                }
+            }
+        }
+    }
+
+    .l-pageContent {
+        box-shadow: 0 4px 20px 0 rgba(107, 107, 107, 0.2);
+        margin: 35px auto 50px auto;
+        padding: 40px 25px 50px;
+    }
+
+    .p-strengthsDev {
+        &_item {
+            @include flexbox();
+            margin-bottom: 20px;
+
+            &_img {
+                position: relative;
+                width: 25%;
+                background-color: #252526;
+                color: #fff;
+
+                span {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    display: block;
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    text-align: center;
+                }
+            }
+
+            &_desc {
+                position: relative;
+                width: 75%;
+                padding: 40px;
+                border: 1px solid #252526;
+                @include fs(14, 26);
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    width: 20px;
+                    height: 1px;
+                    border: 1px solid #252526;
+                }
+            }
+        }
+    }
+
+    .p-listContent {
+        margin-bottom: 50px;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+
+        padding: 30px;
+        background-color: #ededf0;
+
+        li {
+            position: relative;
+            padding-left: 10px;
+            @include fs(16, 30);
+            
+            &::before {
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                top: 10px;
+                left: -15px;
+                background-color: #f38f10;
+            }
+        }
+    }
+}
